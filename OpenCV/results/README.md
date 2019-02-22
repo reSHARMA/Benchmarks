@@ -5,9 +5,9 @@
  | Property | Value |
  | ---------| --------------------| 
  | CPU Name | Intel core i5-4670 |
-  | CPU freq | 3.80GHz |
-    | Cores | 4 |
-  | Memory | 7.461 GB |
+ | CPU freq | 3.80GHz |
+ | Cores | 4 |
+ | Memory | 7.461 GB |
   
 ### Software
 
