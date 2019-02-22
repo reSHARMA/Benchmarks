@@ -1,0 +1,1555 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<title>Summary report for 121 tests from 2 test logs</title>
+<style type="text/css">
+html, body {font-family: Lucida Console, Courier New, Courier;font-size: 16px;color:#3e4758;}
+.tbl{background:none repeat scroll 0 0 #FFFFFF;border-collapse:collapse;font-family:"Lucida Sans Unicode","Lucida Grande",Sans-Serif;font-size:14px;margin:20px;text-align:left;width:480px;margin-left: auto;margin-right: auto;white-space:nowrap;}
+.tbl span{display:block;white-space:nowrap;}
+.tbl thead tr:last-child th {padding-bottom:5px;}
+.tbl tbody tr:first-child td {border-top:3px solid #6678B1;}
+.tbl th{border:none;color:#003399;font-size:16px;font-weight:normal;white-space:nowrap;padding:3px 10px;}
+.tbl td{border:none;border-bottom:1px solid #CCCCCC;color:#666699;padding:6px 8px;white-space:nowrap;}
+.tbl tbody tr:hover td{color:#000099;}
+.tbl caption{font:italic 16px "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;padding:0 0 5px;text-align:right;white-space:normal;}
+.firstingroup {border-top:2px solid #6678B1;}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+function abs(val) { return val < 0 ? -val : val }
+$(function(){
+  //generate filter rows
+  $("div.tableFormatter table.tbl").each(function(tblIdx, tbl) {
+    var head = $("thead", tbl)
+    var filters = $("<tr></tr>")
+    var hasAny = false
+    $("tr:first th", head).each(function(colIdx, col) {
+      col = $(col)
+      var cell
+      var id = "t" + tblIdx + "r" + colIdx
+      if (col.hasClass("col_name")){
+        cell = $("<th><input id='" + id + "' name='" + id + "' type='text' style='width:100%' class='filter_col_name' title='Regular expression for name filtering (&quot;resize.*640x480&quot; - resize tests on VGA resolution)'></input></th>")
+        hasAny = true
+      }
+      else if (col.hasClass("col_rel")){
+        cell = $("<th><input id='" + id + "' name='" + id + "' type='text' style='width:100%' class='filter_col_rel' title='Filter out lines with a x-factor of acceleration less than Nx'></input></th>")
+        hasAny = true
+      }
+      else if (col.hasClass("col_cr")){
+        cell = $("<th><input id='" + id + "' name='" + id + "' type='text' style='width:100%' class='filter_col_cr' title='Filter out lines with a percentage of acceleration less than N%'></input></th>")
+        hasAny = true
+      }
+      else
+        cell = $("<th></th>")
+      cell.appendTo(filters)
+    })
+
+   if (hasAny){
+     $(tbl).wrap("<form id='form_t" + tblIdx + "' method='get' action=''></form>")
+     $("<input it='test' type='submit' value='Apply Filters' style='margin-left:10px;'></input>")
+       .appendTo($("th:last", filters.appendTo(head)))
+   }
+  })
+
+  //get filter values
+  var vars = []
+  var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&')
+  for(var i = 0; i < hashes.length; ++i)
+  {
+     hash = hashes[i].split('=')
+     vars.push(decodeURIComponent(hash[0]))
+     vars[decodeURIComponent(hash[0])] = decodeURIComponent(hash[1]);
+  }
+
+  //set filter values
+  for(var i = 0; i < vars.length; ++i)
+     $("#" + vars[i]).val(vars[vars[i]])
+
+  //apply filters
+  $("div.tableFormatter table.tbl").each(function(tblIdx, tbl) {
+      filters = $("input:text", tbl)
+      var predicate = function(row) {return true;}
+      var empty = true
+      $.each($("input:text", tbl), function(i, flt) {
+         flt = $(flt)
+         var val = flt.val()
+         var pred = predicate;
+         if(val) {
+           empty = false
+           var colIdx = parseInt(flt.attr("id").slice(flt.attr("id").indexOf('r') + 1))
+           if(flt.hasClass("filter_col_name")) {
+              var re = new RegExp(val);
+              predicate = function(row) {
+                if (re.exec($(row.get(colIdx)).text()) == null)
+                  return false
+                return pred(row)
+          }
+           } else if(flt.hasClass("filter_col_rel")) {
+              var percent = parseFloat(val)
+              if (percent < 0) {
+                predicate = function(row) {
+                  var val = parseFloat($(row.get(colIdx)).text())
+                  if (!val || val >= 1 || val > 1+percent)
+                    return false
+                  return pred(row)
+            }
+              } else {
+                predicate = function(row) {
+                  var val = parseFloat($(row.get(colIdx)).text())
+                  if (!val || val < percent)
+                    return false
+                  return pred(row)
+            }
+              }
+           } else if(flt.hasClass("filter_col_cr")) {
+              var percent = parseFloat(val)
+              predicate = function(row) {
+                var val = parseFloat($(row.get(colIdx)).text())
+                if (!val || val < percent)
+                  return false
+                return pred(row)
+          }
+           }
+         }
+      });
+      if (!empty){
+         $("tbody tr", tbl).each(function (i, tbl_row) {
+            if(!predicate($("td", tbl_row)))
+               $(tbl_row).remove()
+         })
+         if($("tbody tr", tbl).length == 0) {
+           $("<tr><td colspan='"+$("thead tr:first th", tbl).length+"'>No results mathing your search criteria</td></tr>")
+             .appendTo($("tbody", tbl))
+         }
+      }
+  })
+})
+</script>
+</head>
+<body>
+<div class="tableFormatter">
+<table class="tbl">
+ <caption>Geometric mean (ms)</caption>
+ <thead>
+  <tr>
+   <th align="center" valign="top" class="col_name">
+    Name of Test
+   </th>
+   <th align="center" valign="top">
+    dnn<br/>20190222-124150
+   </th>
+   <th align="center" valign="top">
+    dnn<br/>20190222-124160
+   </th>
+   <th align="center" valign="top" class="col_rel">
+    dnn<br/>20190222-124160<br/>vs<br/>dnn<br/>20190222-124150<br/>(x-factor)
+   </th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr class=" firstingroup">
+   <td>
+    conv::Conv::(GFLOPS=0.014, K=[3 x 3], IN={1, 128, 14, 14}, OCN=32, P=[1 x 1], OCV/CPU)
+   </td>
+   <td align="center">
+    0.151
+   </td>
+   <td align="center" style="color:green;">
+    0.101
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.49
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.017, K=[1 x 1], IN={1, 32, 32, 64}, OCN=128, OCV/CPU)
+   </td>
+   <td align="center">
+    0.204
+   </td>
+   <td align="center" style="color:green;">
+    0.104
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.96
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.017, K=[1 x 1], IN={1, 128, 32, 64}, OCN=32, OCV/CPU)
+   </td>
+   <td align="center">
+    0.268
+   </td>
+   <td align="center" style="color:green;">
+    0.137
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.95
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.038, K=[3 x 3], IN={1, 16, 64, 128}, OCN=16, P=[1 x 1], BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    0.641
+   </td>
+   <td align="center" style="color:green;">
+    0.329
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.95
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.040, K=[1 x 1], IN={1, 576, 19, 19}, OCN=96, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    0.436
+   </td>
+   <td align="center" style="color:green;">
+    0.252
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.73
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.053, K=[1 x 1], IN={1, 576, 19, 19}, OCN=128, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    0.585
+   </td>
+   <td align="center" style="color:green;">
+    0.325
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.80
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.058, K=[3 x 3], IN={1, 128, 28, 28}, OCN=32, P=[1 x 1], OCV/CPU)
+   </td>
+   <td align="center">
+    0.628
+   </td>
+   <td align="center" style="color:green;">
+    0.334
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.88
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.080, K=[3 x 3], IN={1, 96, 19, 19}, OCN=128, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    0.615
+   </td>
+   <td align="center" style="color:green;">
+    0.334
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.84
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.103, K=[1 x 1], IN={1, 128, 28, 28}, OCN=512, OCV/CPU)
+   </td>
+   <td align="center">
+    0.951
+   </td>
+   <td align="center" style="color:green;">
+    0.495
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.92
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.103, K=[1 x 1], IN={1, 256, 14, 14}, OCN=1024, OCV/CPU)
+   </td>
+   <td align="center">
+    0.964
+   </td>
+   <td align="center" style="color:green;">
+    0.624
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.54
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.103, K=[1 x 1], IN={1, 512, 7, 7}, OCN=2048, OCV/CPU)
+   </td>
+   <td align="center">
+    1.915
+   </td>
+   <td align="center" style="color:green;">
+    0.918
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.09
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.103, K=[1 x 1], IN={1, 512, 28, 28}, OCN=128, OCV/CPU)
+   </td>
+   <td align="center">
+    1.080
+   </td>
+   <td align="center" style="color:green;">
+    0.550
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.96
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.103, K=[1 x 1], IN={1, 1024, 14, 14}, OCN=256, OCV/CPU)
+   </td>
+   <td align="center">
+    0.982
+   </td>
+   <td align="center" style="color:green;">
+    0.672
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.46
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.104, K=[1 x 1], IN={1, 64, 56, 56}, OCN=256, OCV/CPU)
+   </td>
+   <td align="center">
+    0.971
+   </td>
+   <td align="center" style="color:green;">
+    0.482
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.111, K=[3 x 3], IN={1, 192, 10, 10}, OCN=320, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    0.604
+   </td>
+   <td align="center" style="color:green;">
+    0.495
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.22
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.126, K=[3 x 3], IN={1, 512, 5, 5}, OCN=546, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    2.424
+   </td>
+   <td align="center" style="color:green;">
+    0.964
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.51
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.133, K=[3 x 3], IN={1, 128, 19, 19}, OCN=160, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    0.989
+   </td>
+   <td align="center" style="color:green;">
+    0.521
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.90
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.160, K=[3 x 3], IN={1, 64, 38, 38}, OCN=96, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    1.235
+   </td>
+   <td align="center" style="color:green;">
+    0.625
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.98
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.185, K=[1 x 1], IN={1, 192, 75, 100}, OCN=64, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    2.931
+   </td>
+   <td align="center" style="color:green;">
+    1.272
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.30
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.189, K=[1 x 1], IN={1, 512, 19, 19}, OCN=512, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    2.043
+   </td>
+   <td align="center" style="color:green;">
+    1.074
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.90
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.189, K=[1 x 1], IN={1, 512, 19, 19}, OCN=512, PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    2.005
+   </td>
+   <td align="center" style="color:green;">
+    1.082
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.85
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.210, K=[1 x 1], IN={1, 576, 38, 50}, OCN=96, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    3.042
+   </td>
+   <td align="center" style="color:green;">
+    1.203
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.53
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.213, K=[3 x 3], IN={1, 128, 19, 19}, OCN=256, D=[2 x 2], P=[2 x 2], OCV/CPU)
+   </td>
+   <td align="center">
+    1.517
+   </td>
+   <td align="center" style="color:green;">
+    0.796
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.90
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.213, K=[3 x 3], IN={1, 128, 38, 38}, OCN=256, S=[2 x 2], P=[1 x 1], OCV/CPU)
+   </td>
+   <td align="center">
+    1.499
+   </td>
+   <td align="center" style="color:green;">
+    0.795
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.89
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.231, K=[3 x 3], IN={1, 64, 56, 56}, OCN=64, P=[1 x 1], OCV/CPU)
+   </td>
+   <td align="center">
+    2.000
+   </td>
+   <td align="center" style="color:green;">
+    1.000
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.231, K=[3 x 3], IN={1, 128, 28, 28}, OCN=128, P=[1 x 1], OCV/CPU)
+   </td>
+   <td align="center">
+    1.712
+   </td>
+   <td align="center" style="color:green;">
+    0.884
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.94
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.231, K=[3 x 3], IN={1, 128, 56, 56}, OCN=32, P=[1 x 1], OCV/CPU)
+   </td>
+   <td align="center">
+    2.608
+   </td>
+   <td align="center" style="color:green;">
+    1.295
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.231, K=[3 x 3], IN={1, 256, 14, 14}, OCN=256, P=[1 x 1], OCV/CPU)
+   </td>
+   <td align="center">
+    1.462
+   </td>
+   <td align="center" style="color:green;">
+    0.953
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.53
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.231, K=[3 x 3], IN={1, 512, 7, 7}, OCN=512, P=[1 x 1], OCV/CPU)
+   </td>
+   <td align="center">
+    3.101
+   </td>
+   <td align="center" style="color:green;">
+    1.479
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.10
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.237, K=[7 x 7], IN={1, 3, 224, 224}, OCN=64, S=[2 x 2], P=[3 x 3], BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    2.292
+   </td>
+   <td align="center" style="color:green;">
+    1.095
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.09
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.237, K=[7 x 7], IN={1, 3, 224, 224}, OCN=64, S=[2 x 2], P=[3 x 3], OCV/CPU)
+   </td>
+   <td align="center">
+    2.208
+   </td>
+   <td align="center" style="color:green;">
+    1.089
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.03
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.237, K=[7 x 7], IN={1, 3, 224, 224}, OCN=64, S=[2 x 2], PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    2.211
+   </td>
+   <td align="center" style="color:green;">
+    1.094
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.02
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.240, K=[3 x 3], IN={1, 96, 38, 38}, OCN=96, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    1.883
+   </td>
+   <td align="center" style="color:green;">
+    0.968
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.94
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.240, K=[3 x 3], IN={1, 192, 19, 19}, OCN=192, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    1.728
+   </td>
+   <td align="center" style="color:green;">
+    0.913
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.89
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.240, K=[3 x 3], IN={1, 192, 38, 38}, OCN=192, S=[2 x 2], PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    1.746
+   </td>
+   <td align="center" style="color:green;">
+    0.904
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.93
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.246, K=[1 x 1], IN={1, 256, 75, 100}, OCN=64, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    3.994
+   </td>
+   <td align="center" style="color:green;">
+    1.884
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.12
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.248, K=[1 x 1], IN={1, 64, 150, 200}, OCN=64, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    3.466
+   </td>
+   <td align="center" style="color:green;">
+    1.923
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.80
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.280, K=[1 x 1], IN={1, 576, 38, 50}, OCN=128, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    3.419
+   </td>
+   <td align="center" style="color:green;">
+    1.547
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.21
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.299, K=[3 x 3], IN={1, 256, 13, 13}, OCN=384, P=[1 x 1], BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    2.171
+   </td>
+   <td align="center" style="color:green;">
+    1.197
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.81
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.299, K=[3 x 3], IN={1, 384, 13, 13}, OCN=256, G=2, P=[1 x 1], BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    1.251
+   </td>
+   <td align="center" style="color:green;">
+    0.621
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.308, K=[1 x 1], IN={1, 320, 75, 100}, OCN=64, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    4.925
+   </td>
+   <td align="center" style="color:green;">
+    2.374
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.07
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.315, K=[3 x 3], IN={1, 96, 75, 100}, OCN=96, S=[2 x 2], PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    3.292
+   </td>
+   <td align="center" style="color:green;">
+    1.278
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.58
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.319, K=[3 x 3], IN={1, 192, 19, 19}, OCN=256, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    2.650
+   </td>
+   <td align="center" style="color:green;">
+    1.184
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.24
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.347, K=[3 x 3], IN={1, 128, 28, 28}, OCN=192, P=[1 x 1], BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    2.623
+   </td>
+   <td align="center" style="color:green;">
+    1.242
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.11
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.347, K=[3 x 3], IN={1, 128, 28, 28}, OCN=192, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    2.447
+   </td>
+   <td align="center" style="color:green;">
+    1.241
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.97
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.351, K=[1 x 1], IN={1, 576, 38, 50}, OCN=160, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    4.071
+   </td>
+   <td align="center" style="color:green;">
+    1.913
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.13
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.376, K=[1 x 1], IN={1, 24, 300, 400}, OCN=64, PM=VALID, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    8.080
+   </td>
+   <td align="center" style="color:green;">
+    5.035
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.60
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.415, K=[3 x 3], IN={1, 32, 150, 150}, OCN=32, G=32, P=[1 x 1], BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    3.457
+   </td>
+   <td align="center" style="color:green;">
+    1.717
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.415, K=[3 x 3], IN={1, 32, 150, 150}, OCN=32, PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    4.664
+   </td>
+   <td align="center" style="color:green;">
+    2.222
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.10
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.415, K=[3 x 3], IN={1, 64, 150, 150}, OCN=64, G=64, S=[2 x 2], P=[1 x 1], BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    1.856
+   </td>
+   <td align="center" style="color:green;">
+    0.932
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.99
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.415, K=[3 x 3], IN={1, 64, 150, 150}, OCN=64, S=[2 x 2], PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    4.380
+   </td>
+   <td align="center" style="color:green;">
+    2.019
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.17
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.420, K=[3 x 3], IN={1, 96, 38, 50}, OCN=128, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    3.330
+   </td>
+   <td align="center" style="color:green;">
+    1.593
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.09
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.421, K=[1 x 1], IN={1, 576, 38, 50}, OCN=192, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    4.681
+   </td>
+   <td align="center" style="color:green;">
+    2.235
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.09
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.426, K=[3 x 3], IN={1, 128, 38, 38}, OCN=128, P=[1 x 1], OCV/CPU)
+   </td>
+   <td align="center">
+    3.149
+   </td>
+   <td align="center" style="color:green;">
+    1.614
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.95
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.426, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, G=128, S=[2 x 2], P=[1 x 1], BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    1.389
+   </td>
+   <td align="center" style="color:green;">
+    0.554
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.51
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.426, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, S=[2 x 2], PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    3.338
+   </td>
+   <td align="center" style="color:green;">
+    1.663
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.426, K=[3 x 3], IN={1, 256, 19, 19}, OCN=256, P=[1 x 1], OCV/CPU)
+   </td>
+   <td align="center">
+    3.074
+   </td>
+   <td align="center" style="color:green;">
+    1.580
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.95
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.426, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, G=256, S=[2 x 2], P=[1 x 1], BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    0.604
+   </td>
+   <td align="center" style="color:green;">
+    0.301
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.426, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, S=[2 x 2], PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    3.171
+   </td>
+   <td align="center" style="color:green;">
+    1.593
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.99
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.449, K=[3 x 3], IN={1, 384, 13, 13}, OCN=384, G=2, P=[1 x 1], BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    2.158
+   </td>
+   <td align="center" style="color:green;">
+    0.889
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.43
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.472, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, G=512, S=[2 x 2], P=[1 x 1], BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    0.432
+   </td>
+   <td align="center" style="color:green;">
+    0.215
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.472, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, S=[2 x 2], PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    3.706
+   </td>
+   <td align="center" style="color:green;">
+    2.475
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.50
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.491, K=[1 x 1], IN={1, 576, 38, 50}, OCN=224, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    5.842
+   </td>
+   <td align="center" style="color:green;">
+    2.562
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.28
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.539, K=[3 x 3], IN={1, 144, 75, 75}, OCN=144, S=[2 x 2], PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    4.319
+   </td>
+   <td align="center" style="color:green;">
+    2.100
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.06
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.553, K=[3 x 3], IN={1, 64, 75, 100}, OCN=64, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    4.897
+   </td>
+   <td align="center" style="color:green;">
+    2.328
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.10
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.561, K=[3 x 3], IN={1, 128, 38, 50}, OCN=128, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    4.216
+   </td>
+   <td align="center" style="color:green;">
+    2.078
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.03
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.597, K=[3 x 3], IN={1, 576, 19, 19}, OCN=576, S=[2 x 2], PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    4.598
+   </td>
+   <td align="center" style="color:green;">
+    3.163
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.45
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.615, K=[1 x 1], IN={1, 320, 75, 100}, OCN=128, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    8.146
+   </td>
+   <td align="center" style="color:green;">
+    3.858
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.11
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.694, K=[3 x 3], IN={1, 64, 56, 56}, OCN=192, P=[1 x 1], BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    4.872
+   </td>
+   <td align="center" style="color:green;">
+    2.387
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.04
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.694, K=[3 x 3], IN={1, 64, 56, 56}, OCN=192, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    4.843
+   </td>
+   <td align="center" style="color:green;">
+    2.388
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.03
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.701, K=[3 x 3], IN={1, 128, 38, 50}, OCN=160, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    5.322
+   </td>
+   <td align="center" style="color:green;">
+    2.522
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.11
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.701, K=[3 x 3], IN={1, 128, 75, 100}, OCN=160, S=[2 x 2], PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    5.615
+   </td>
+   <td align="center" style="color:green;">
+    2.714
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.07
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.830, K=[3 x 3], IN={1, 64, 75, 100}, OCN=96, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    6.847
+   </td>
+   <td align="center" style="color:green;">
+    3.132
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.19
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.841, K=[3 x 3], IN={1, 128, 38, 50}, OCN=192, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    5.992
+   </td>
+   <td align="center" style="color:green;">
+    2.940
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.04
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.850, K=[7 x 7], IN={1, 3, 600, 800}, OCN=24, S=[2 x 2], PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    9.983
+   </td>
+   <td align="center" style="color:green;">
+    5.088
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.96
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.876, K=[3 x 3], IN={1, 160, 38, 50}, OCN=160, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    6.439
+   </td>
+   <td align="center" style="color:green;">
+    3.227
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.896, K=[5 x 5], IN={1, 96, 27, 27}, OCN=256, G=2, P=[2 x 2], BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    3.638
+   </td>
+   <td align="center" style="color:green;">
+    1.839
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.98
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.934, K=[3 x 3], IN={1, 96, 150, 150}, OCN=96, S=[2 x 2], PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    8.963
+   </td>
+   <td align="center" style="color:green;">
+    4.156
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.16
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.958, K=[3 x 3], IN={1, 192, 38, 38}, OCN=192, PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    6.800
+   </td>
+   <td align="center" style="color:green;">
+    3.407
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=0.958, K=[3 x 3], IN={1, 384, 19, 19}, OCN=384, PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    7.273
+   </td>
+   <td align="center" style="color:green;">
+    3.468
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.10
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=1.006, K=[3 x 3], IN={1, 1024, 10, 10}, OCN=546, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    8.098
+   </td>
+   <td align="center" style="color:green;">
+    5.351
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.51
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=1.022, K=[3 x 3], IN={1, 576, 19, 19}, OCN=273, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    7.664
+   </td>
+   <td align="center" style="color:green;">
+    3.813
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=1.051, K=[3 x 3], IN={1, 160, 38, 50}, OCN=192, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    7.721
+   </td>
+   <td align="center" style="color:green;">
+    3.732
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.07
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=1.245, K=[3 x 3], IN={1, 64, 75, 75}, OCN=192, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    8.808
+   </td>
+   <td align="center" style="color:green;">
+    4.266
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.06
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=1.245, K=[3 x 3], IN={1, 96, 75, 100}, OCN=96, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    10.475
+   </td>
+   <td align="center" style="color:green;">
+    4.824
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.17
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=1.258, K=[3 x 3], IN={1, 1280, 10, 10}, OCN=546, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    11.153
+   </td>
+   <td align="center" style="color:green;">
+    6.618
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.69
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=1.261, K=[3 x 3], IN={1, 192, 38, 50}, OCN=192, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    9.132
+   </td>
+   <td align="center" style="color:green;">
+    4.440
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.06
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=1.659, K=[3 x 3], IN={1, 960, 10, 10}, OCN=960, PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    13.519
+   </td>
+   <td align="center" style="color:green;">
+    9.131
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.48
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=1.660, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, G=128, P=[1 x 1], BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    3.661
+   </td>
+   <td align="center" style="color:green;">
+    1.819
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=1.660, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    12.369
+   </td>
+   <td align="center" style="color:green;">
+    6.185
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=1.704, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, G=256, P=[1 x 1], BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    2.337
+   </td>
+   <td align="center" style="color:green;">
+    1.107
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.11
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=1.704, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    11.678
+   </td>
+   <td align="center" style="color:green;">
+    5.981
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.95
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=1.704, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, G=512, P=[1 x 1], BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    1.312
+   </td>
+   <td align="center" style="color:green;">
+    0.626
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.10
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=1.704, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    13.483
+   </td>
+   <td align="center" style="color:green;">
+    6.309
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.14
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=1.888, K=[3 x 3], IN={1, 1024, 10, 10}, OCN=1024, G=1024, P=[1 x 1], BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    0.937
+   </td>
+   <td align="center" style="color:green;">
+    0.430
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.18
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=1.888, K=[3 x 3], IN={1, 1024, 10, 10}, OCN=1024, PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    16.500
+   </td>
+   <td align="center" style="color:green;">
+    10.459
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.58
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=2.100, K=[3 x 3], IN={1, 144, 75, 75}, OCN=144, PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    15.935
+   </td>
+   <td align="center" style="color:green;">
+    7.876
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.02
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=2.156, K=[3 x 3], IN={1, 576, 19, 19}, OCN=576, PM=SAME, OCV/CPU)
+   </td>
+   <td align="center">
+    17.469
+   </td>
+   <td align="center" style="color:green;">
+    7.920
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.21
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=6.641, K=[3 x 3], IN={1, 64, 150, 200}, OCN=192, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    40.215
+   </td>
+   <td align="center" style="color:green;">
+    23.148
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.74
+   </td>
+  </tr>
+  <tr>
+   <td>
+    conv::Conv::(GFLOPS=10.087, K=[3 x 3], IN={1, 576, 38, 50}, OCN=512, PM=SAME, BIAS, OCV/CPU)
+   </td>
+   <td align="center">
+    70.156
+   </td>
+   <td align="center" style="color:green;">
+    34.717
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    2.02
+   </td>
+  </tr>
+ </tbody>
+</table>
+</div>
+</body>
+</html>
