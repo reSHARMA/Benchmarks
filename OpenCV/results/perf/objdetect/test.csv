@@ -1,0 +1,25 @@
+Test cases	$	ratio (>1 faster)
+"decode::Perf_Objdetect_Not_QRCode::(""chessboard"", 640x480)     "$1.1
+"decode::Perf_Objdetect_Not_QRCode::(""chessboard"", 1280x720)    "$1.09
+"decode::Perf_Objdetect_Not_QRCode::(""chessboard"", 1920x1080)   "$1.06
+"decode::Perf_Objdetect_Not_QRCode::(""chessboard"", 3840x2160)   "$1.06
+"decode::Perf_Objdetect_Not_QRCode::(""random"", 640x480)         "$1.07
+"decode::Perf_Objdetect_Not_QRCode::(""random"", 1280x720)        "$1.06
+"decode::Perf_Objdetect_Not_QRCode::(""random"", 1920x1080)       "$1.02
+"decode::Perf_Objdetect_Not_QRCode::(""random"", 3840x2160)       "$1.03
+"decode::Perf_Objdetect_Not_QRCode::(""zero"", 640x480)           "$1.07
+"decode::Perf_Objdetect_Not_QRCode::(""zero"", 1280x720)          "$1.06
+"decode::Perf_Objdetect_Not_QRCode::(""zero"", 1920x1080)         "$1.02
+"decode::Perf_Objdetect_Not_QRCode::(""zero"", 3840x2160)         "$1.03
+"detect::Perf_Objdetect_Not_QRCode::(""chessboard"", 640x480)     "$1.03
+"detect::Perf_Objdetect_Not_QRCode::(""chessboard"", 1280x720)    "$1.04
+"detect::Perf_Objdetect_Not_QRCode::(""chessboard"", 1920x1080)   "$1.01
+"detect::Perf_Objdetect_Not_QRCode::(""chessboard"", 3840x2160)   "$1.01
+"detect::Perf_Objdetect_Not_QRCode::(""random"", 640x480)         "$1.18
+"detect::Perf_Objdetect_Not_QRCode::(""random"", 1280x720)        "$1.18
+"detect::Perf_Objdetect_Not_QRCode::(""random"", 1920x1080)       "$1.15
+"detect::Perf_Objdetect_Not_QRCode::(""random"", 3840x2160)       "$1.05
+"detect::Perf_Objdetect_Not_QRCode::(""zero"", 640x480)           "$1.16
+"detect::Perf_Objdetect_Not_QRCode::(""zero"", 1280x720)          "$1.15
+"detect::Perf_Objdetect_Not_QRCode::(""zero"", 1920x1080)         "$1.13
+"detect::Perf_Objdetect_Not_QRCode::(""zero"", 3840x2160)         "$1.13

@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="54" failures="30" disabled="0" errors="0" timestamp="2019-02-22T12:41:50" time="36.616" cv_module_name="objdetect" cv_implementation="plain" cv_num_threads="-1" cv_version="4.0.1-dev" cv_version_build="4.0.1-dev" cv_vcs_version="4.0.1-248-g8bde6ae-dirty" cv_build_type="Release" cv_build_type_build="Release" cv_compiler="/home/reshabh/llvm-toolchain-8_8~svn353031/build-llvm/bin/clang++" cv_parallel_framework="pthreads" cv_cpu_features="SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?" name="AllTests">
+  <testsuite name="Perf_Objdetect_QRCode" tests="30" failures="30" disabled="0" errors="0" time="0.001">
+    <testcase name="detect/0" value_param="&quot;version_1_down.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_1_down.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_down.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="detect/1" value_param="&quot;version_1_left.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_1_left.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_left.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="detect/2" value_param="&quot;version_1_right.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_1_right.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_right.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="detect/3" value_param="&quot;version_1_up.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_1_up.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_up.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="detect/4" value_param="&quot;version_1_top.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_1_top.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_top.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="detect/5" value_param="&quot;version_5_down.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_5_down.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_down.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="detect/6" value_param="&quot;version_5_left.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_5_left.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_left.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="detect/7" value_param="&quot;version_5_right.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_5_right.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_right.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="detect/8" value_param="&quot;version_5_up.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_5_up.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_up.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="detect/9" value_param="&quot;version_5_top.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_5_top.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_top.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="detect/10" value_param="&quot;russian.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/russian.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/russian.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="detect/11" value_param="&quot;kanji.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/kanji.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/kanji.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="detect/12" value_param="&quot;link_github_ocv.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/link_github_ocv.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/link_github_ocv.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="detect/13" value_param="&quot;link_ocv.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/link_ocv.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/link_ocv.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="detect/14" value_param="&quot;link_wiki_cv.jpg&quot;" status="run" time="0.001" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/link_wiki_cv.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/link_wiki_cv.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="decode/0" value_param="&quot;version_1_down.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_1_down.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_down.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="decode/1" value_param="&quot;version_1_left.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_1_left.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_left.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="decode/2" value_param="&quot;version_1_right.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_1_right.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_right.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="decode/3" value_param="&quot;version_1_up.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_1_up.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_up.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="decode/4" value_param="&quot;version_1_top.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_1_top.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_top.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="decode/5" value_param="&quot;version_5_down.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_5_down.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_down.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="decode/6" value_param="&quot;version_5_left.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_5_left.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_left.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="decode/7" value_param="&quot;version_5_right.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_5_right.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_right.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="decode/8" value_param="&quot;version_5_up.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_5_up.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_up.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="decode/9" value_param="&quot;version_5_top.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_5_top.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_top.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="decode/10" value_param="&quot;russian.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/russian.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/russian.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="decode/11" value_param="&quot;kanji.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/kanji.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/kanji.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="decode/12" value_param="&quot;link_github_ocv.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/link_github_ocv.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/link_github_ocv.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="decode/13" value_param="&quot;link_ocv.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/link_ocv.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/link_ocv.jpg in function 'findData'
+]]></failure>
+    </testcase>
+    <testcase name="decode/14" value_param="&quot;link_wiki_cv.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/link_wiki_cv.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/link_wiki_cv.jpg in function 'findData'
+]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Perf_Objdetect_Not_QRCode" tests="24" failures="0" disabled="0" errors="0" time="36.615">
+    <testcase name="detect/0" value_param="(&quot;zero&quot;, 640x480)" status="run" time="0.11" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8244076"/>
+<property name="median" value="8311515"/>
+<property name="gmean" value="8388541"/>
+<property name="gstddev" value="0.023698"/>
+<property name="mean" value="8390730"/>
+<property name="stddev" value="202909"/>
+</properties>
+    </testcase>
+    <testcase name="detect/1" value_param="(&quot;zero&quot;, 1280x720)" status="run" time="0.226" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="22287832"/>
+<property name="median" value="22342562"/>
+<property name="gmean" value="22528291"/>
+<property name="gstddev" value="0.018579"/>
+<property name="mean" value="22531824"/>
+<property name="stddev" value="424598"/>
+</properties>
+    </testcase>
+    <testcase name="detect/2" value_param="(&quot;zero&quot;, 1920x1080)" status="run" time="0.514" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="50461715"/>
+<property name="median" value="51474576"/>
+<property name="gmean" value="51398706"/>
+<property name="gstddev" value="0.014221"/>
+<property name="mean" value="51403411"/>
+<property name="stddev" value="737454"/>
+</properties>
+    </testcase>
+    <testcase name="detect/3" value_param="(&quot;zero&quot;, 3840x2160)" status="run" time="2.741" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="201356114"/>
+<property name="median" value="211510648"/>
+<property name="gmean" value="209803295"/>
+<property name="gstddev" value="0.028143"/>
+<property name="mean" value="209879320"/>
+<property name="stddev" value="5889359"/>
+</properties>
+    </testcase>
+    <testcase name="detect/4" value_param="(&quot;random&quot;, 640x480)" status="run" time="0.085" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8252465"/>
+<property name="median" value="8379398"/>
+<property name="gmean" value="8442712"/>
+<property name="gstddev" value="0.024823"/>
+<property name="mean" value="8445081"/>
+<property name="stddev" value="213450"/>
+</properties>
+    </testcase>
+    <testcase name="detect/5" value_param="(&quot;random&quot;, 1280x720)" status="run" time="0.232" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="22815954"/>
+<property name="median" value="22948913"/>
+<property name="gmean" value="23071403"/>
+<property name="gstddev" value="0.012776"/>
+<property name="mean" value="23073105"/>
+<property name="stddev" value="296503"/>
+</properties>
+    </testcase>
+    <testcase name="detect/6" value_param="(&quot;random&quot;, 1920x1080)" status="run" time="0.524" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="51883168"/>
+<property name="median" value="51958175"/>
+<property name="gmean" value="52186638"/>
+<property name="gstddev" value="0.010198"/>
+<property name="mean" value="52189093"/>
+<property name="stddev" value="536317"/>
+</properties>
+    </testcase>
+    <testcase name="detect/7" value_param="(&quot;random&quot;, 3840x2160)" status="run" time="19.451" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="182255852"/>
+<property name="median" value="190590050"/>
+<property name="gmean" value="192197380"/>
+<property name="gstddev" value="0.040367"/>
+<property name="mean" value="192353870"/>
+<property name="stddev" value="7881035"/>
+</properties>
+    </testcase>
+    <testcase name="detect/8" value_param="(&quot;chessboard&quot;, 640x480)" status="run" time="0.161" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="15658362"/>
+<property name="median" value="15835840"/>
+<property name="gmean" value="16014092"/>
+<property name="gstddev" value="0.022084"/>
+<property name="mean" value="16017620"/>
+<property name="stddev" value="355711"/>
+</properties>
+    </testcase>
+    <testcase name="detect/9" value_param="(&quot;chessboard&quot;, 1280x720)" status="run" time="0.282" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="27640231"/>
+<property name="median" value="27853081"/>
+<property name="gmean" value="27929134"/>
+<property name="gstddev" value="0.008689"/>
+<property name="mean" value="27930085"/>
+<property name="stddev" value="243127"/>
+</properties>
+    </testcase>
+    <testcase name="detect/10" value_param="(&quot;chessboard&quot;, 1920x1080)" status="run" time="0.632" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="62091944"/>
+<property name="median" value="62352688"/>
+<property name="gmean" value="62492142"/>
+<property name="gstddev" value="0.006259"/>
+<property name="mean" value="62493246"/>
+<property name="stddev" value="392390"/>
+</properties>
+    </testcase>
+    <testcase name="detect/11" value_param="(&quot;chessboard&quot;, 3840x2160)" status="run" time="2.537" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="248730179"/>
+<property name="median" value="250283002"/>
+<property name="gmean" value="250807913"/>
+<property name="gstddev" value="0.008396"/>
+<property name="mean" value="250815887"/>
+<property name="stddev" value="2112828"/>
+</properties>
+    </testcase>
+    <testcase name="decode/0" value_param="(&quot;zero&quot;, 640x480)" status="run" time="0.124" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="9335057"/>
+<property name="median" value="9399407"/>
+<property name="gmean" value="9505953"/>
+<property name="gstddev" value="0.024164"/>
+<property name="mean" value="9508525"/>
+<property name="stddev" value="233458"/>
+</properties>
+    </testcase>
+    <testcase name="decode/1" value_param="(&quot;zero&quot;, 1280x720)" status="run" time="0.243" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="23930276"/>
+<property name="median" value="24023779"/>
+<property name="gmean" value="24229363"/>
+<property name="gstddev" value="0.014937"/>
+<property name="mean" value="24231811"/>
+<property name="stddev" value="365167"/>
+</properties>
+    </testcase>
+    <testcase name="decode/2" value_param="(&quot;zero&quot;, 1920x1080)" status="run" time="0.498" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="49212781"/>
+<property name="median" value="49620430"/>
+<property name="gmean" value="49813203"/>
+<property name="gstddev" value="0.012776"/>
+<property name="mean" value="49816882"/>
+<property name="stddev" value="641802"/>
+</properties>
+    </testcase>
+    <testcase name="decode/3" value_param="(&quot;zero&quot;, 3840x2160)" status="run" time="1.917" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="187791280"/>
+<property name="median" value="190756370"/>
+<property name="gmean" value="191231458"/>
+<property name="gstddev" value="0.013566"/>
+<property name="mean" value="191247326"/>
+<property name="stddev" value="2601835"/>
+</properties>
+    </testcase>
+    <testcase name="decode/4" value_param="(&quot;random&quot;, 640x480)" status="run" time="0.126" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="9359117"/>
+<property name="median" value="9490840"/>
+<property name="gmean" value="9593932"/>
+<property name="gstddev" value="0.027189"/>
+<property name="mean" value="9597227"/>
+<property name="stddev" value="266174"/>
+</properties>
+    </testcase>
+    <testcase name="decode/5" value_param="(&quot;random&quot;, 1280x720)" status="run" time="0.244" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="24035369"/>
+<property name="median" value="24178294"/>
+<property name="gmean" value="24293700"/>
+<property name="gstddev" value="0.013607"/>
+<property name="mean" value="24295740"/>
+<property name="stddev" value="334356"/>
+</properties>
+    </testcase>
+    <testcase name="decode/6" value_param="(&quot;random&quot;, 1920x1080)" status="run" time="0.498" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="49198896"/>
+<property name="median" value="49528437"/>
+<property name="gmean" value="49685775"/>
+<property name="gstddev" value="0.009820"/>
+<property name="mean" value="49687938"/>
+<property name="stddev" value="490202"/>
+</properties>
+    </testcase>
+    <testcase name="decode/7" value_param="(&quot;random&quot;, 3840x2160)" status="run" time="1.933" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="189139266"/>
+<property name="median" value="191795298"/>
+<property name="gmean" value="192283704"/>
+<property name="gstddev" value="0.014518"/>
+<property name="mean" value="192302033"/>
+<property name="stddev" value="2812558"/>
+</properties>
+    </testcase>
+    <testcase name="decode/8" value_param="(&quot;chessboard&quot;, 640x480)" status="run" time="0.107" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="10204470"/>
+<property name="median" value="10623240"/>
+<property name="gmean" value="10617373"/>
+<property name="gstddev" value="0.029107"/>
+<property name="mean" value="10621418"/>
+<property name="stddev" value="308776"/>
+</properties>
+    </testcase>
+    <testcase name="decode/9" value_param="(&quot;chessboard&quot;, 1280x720)" status="run" time="0.262" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="25188802"/>
+<property name="median" value="25881398"/>
+<property name="gmean" value="25930569"/>
+<property name="gstddev" value="0.025260"/>
+<property name="mean" value="25938087"/>
+<property name="stddev" value="664676"/>
+</properties>
+    </testcase>
+    <testcase name="decode/10" value_param="(&quot;chessboard&quot;, 1920x1080)" status="run" time="0.534" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="51366727"/>
+<property name="median" value="52764480"/>
+<property name="gmean" value="52739983"/>
+<property name="gstddev" value="0.012093"/>
+<property name="mean" value="52743443"/>
+<property name="stddev" value="635082"/>
+</properties>
+    </testcase>
+    <testcase name="decode/11" value_param="(&quot;chessboard&quot;, 3840x2160)" status="run" time="2.633" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="191857276"/>
+<property name="median" value="198034568"/>
+<property name="gmean" value="199187686"/>
+<property name="gstddev" value="0.029113"/>
+<property name="mean" value="199265330"/>
+<property name="stddev" value="5829622"/>
+</properties>
+    </testcase>
+  </testsuite>
+</testsuites>
