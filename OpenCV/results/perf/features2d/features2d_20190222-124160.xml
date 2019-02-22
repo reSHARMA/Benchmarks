@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="113" failures="93" disabled="0" errors="0" timestamp="2019-02-22T12:41:27" time="11.845" cv_module_name="features2d" cv_implementation="plain" cv_num_threads="-1" cv_version="4.0.1-dev" cv_version_build="4.0.1-dev" cv_vcs_version="4.0.1-248-g8bde6ae-dirty" cv_build_type="Release" cv_build_type_build="Release" cv_compiler="/home/reshabh/llvm-toolchain-8_8~svn353031/build-llvm/bin/clang++" cv_parallel_framework="pthreads" cv_cpu_features="SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?" name="AllTests">
+  <testsuite name="feature2d_detect" tests="57" failures="57" disabled="0" errors="0" time="2.23">
+    <testcase name="detect/0" value_param="(FAST_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/1" value_param="(FAST_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/2" value_param="(FAST_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/3" value_param="(FAST_20_TRUE_TYPE5_8, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/4" value_param="(FAST_20_TRUE_TYPE5_8, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/5" value_param="(FAST_20_TRUE_TYPE5_8, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/6" value_param="(FAST_20_TRUE_TYPE7_12, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/7" value_param="(FAST_20_TRUE_TYPE7_12, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/8" value_param="(FAST_20_TRUE_TYPE7_12, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/9" value_param="(FAST_20_TRUE_TYPE9_16, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/10" value_param="(FAST_20_TRUE_TYPE9_16, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/11" value_param="(FAST_20_TRUE_TYPE9_16, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/12" value_param="(FAST_20_FALSE_TYPE5_8, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/13" value_param="(FAST_20_FALSE_TYPE5_8, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/14" value_param="(FAST_20_FALSE_TYPE5_8, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/15" value_param="(FAST_20_FALSE_TYPE7_12, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/16" value_param="(FAST_20_FALSE_TYPE7_12, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/17" value_param="(FAST_20_FALSE_TYPE7_12, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/18" value_param="(FAST_20_FALSE_TYPE9_16, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/19" value_param="(FAST_20_FALSE_TYPE9_16, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/20" value_param="(FAST_20_FALSE_TYPE9_16, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/21" value_param="(AGAST_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/22" value_param="(AGAST_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/23" value_param="(AGAST_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/24" value_param="(AGAST_5_8, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/25" value_param="(AGAST_5_8, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/26" value_param="(AGAST_5_8, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/27" value_param="(AGAST_7_12d, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/28" value_param="(AGAST_7_12d, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/29" value_param="(AGAST_7_12d, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/30" value_param="(AGAST_7_12s, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/31" value_param="(AGAST_7_12s, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/32" value_param="(AGAST_7_12s, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/33" value_param="(AGAST_OAST_9_16, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/34" value_param="(AGAST_OAST_9_16, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/35" value_param="(AGAST_OAST_9_16, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/36" value_param="(MSER_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/37" value_param="(MSER_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/38" value_param="(MSER_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/39" value_param="(ORB_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/40" value_param="(ORB_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/41" value_param="(ORB_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0.001" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/42" value_param="(ORB_1500_13_1, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/43" value_param="(ORB_1500_13_1, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/44" value_param="(ORB_1500_13_1, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/45" value_param="(AKAZE_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/46" value_param="(AKAZE_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/47" value_param="(AKAZE_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/48" value_param="(AKAZE_DESCRIPTOR_KAZE, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/49" value_param="(AKAZE_DESCRIPTOR_KAZE, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/50" value_param="(AKAZE_DESCRIPTOR_KAZE, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/51" value_param="(BRISK_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0.955" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/52" value_param="(BRISK_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0.959" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/53" value_param="(BRISK_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0.314" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/54" value_param="(KAZE_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/55" value_param="(KAZE_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detect/56" value_param="(KAZE_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detect">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="feature2d_extract" tests="18" failures="18" disabled="0" errors="0" time="1.581">
+    <testcase name="extract/0" value_param="(ORB_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_extract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="extract/1" value_param="(ORB_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_extract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="extract/2" value_param="(ORB_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_extract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="extract/3" value_param="(ORB_1500_13_1, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_extract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="extract/4" value_param="(ORB_1500_13_1, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_extract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="extract/5" value_param="(ORB_1500_13_1, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_extract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="extract/6" value_param="(AKAZE_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_extract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="extract/7" value_param="(AKAZE_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_extract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="extract/8" value_param="(AKAZE_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_extract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="extract/9" value_param="(AKAZE_DESCRIPTOR_KAZE, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_extract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="extract/10" value_param="(AKAZE_DESCRIPTOR_KAZE, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_extract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="extract/11" value_param="(AKAZE_DESCRIPTOR_KAZE, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_extract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="extract/12" value_param="(BRISK_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0.955" classname="feature2d_extract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="extract/13" value_param="(BRISK_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0.313" classname="feature2d_extract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="extract/14" value_param="(BRISK_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0.313" classname="feature2d_extract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="extract/15" value_param="(KAZE_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_extract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="extract/16" value_param="(KAZE_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_extract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="extract/17" value_param="(KAZE_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_extract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="feature2d_detectAndExtract" tests="18" failures="18" disabled="0" errors="0" time="0.941">
+    <testcase name="detectAndExtract/0" value_param="(ORB_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detectAndExtract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detectAndExtract/1" value_param="(ORB_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detectAndExtract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detectAndExtract/2" value_param="(ORB_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detectAndExtract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detectAndExtract/3" value_param="(ORB_1500_13_1, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detectAndExtract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detectAndExtract/4" value_param="(ORB_1500_13_1, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detectAndExtract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detectAndExtract/5" value_param="(ORB_1500_13_1, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detectAndExtract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detectAndExtract/6" value_param="(AKAZE_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detectAndExtract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detectAndExtract/7" value_param="(AKAZE_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detectAndExtract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detectAndExtract/8" value_param="(AKAZE_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detectAndExtract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detectAndExtract/9" value_param="(AKAZE_DESCRIPTOR_KAZE, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detectAndExtract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detectAndExtract/10" value_param="(AKAZE_DESCRIPTOR_KAZE, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detectAndExtract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detectAndExtract/11" value_param="(AKAZE_DESCRIPTOR_KAZE, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detectAndExtract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detectAndExtract/12" value_param="(BRISK_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0.313" classname="feature2d_detectAndExtract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detectAndExtract/13" value_param="(BRISK_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0.314" classname="feature2d_detectAndExtract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detectAndExtract/14" value_param="(BRISK_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0.314" classname="feature2d_detectAndExtract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detectAndExtract/15" value_param="(KAZE_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detectAndExtract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detectAndExtract/16" value_param="(KAZE_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detectAndExtract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/a3.png" does not exist.]]></failure>
+    </testcase>
+    <testcase name="detectAndExtract/17" value_param="(KAZE_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detectAndExtract">
+      <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
+Failed
+  Requested file "./stitching/s2.jpg" does not exist.]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Norm_Destination_CrossCheck_batchDistance_8U" tests="8" failures="0" disabled="0" errors="0" time="3.877">
+    <testcase name="batchDistance_8U/0" value_param="(NORM_L1, 32SC1, false)" status="run" time="0.397" classname="Norm_Destination_CrossCheck_batchDistance_8U">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="38990894"/>
+<property name="median" value="39196488"/>
+<property name="gmean" value="39580439"/>
+<property name="gstddev" value="0.023195"/>
+<property name="mean" value="39590137"/>
+<property name="stddev" value="934750"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_8U/1" value_param="(NORM_L1, 32SC1, true)" status="run" time="0.788" classname="Norm_Destination_CrossCheck_batchDistance_8U">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="78375829"/>
+<property name="median" value="78393854"/>
+<property name="gmean" value="78705673"/>
+<property name="gstddev" value="0.007618"/>
+<property name="mean" value="78707737"/>
+<property name="stddev" value="603773"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_8U/2" value_param="(NORM_L1, 32FC1, false)" status="run" time="0.287" classname="Norm_Destination_CrossCheck_batchDistance_8U">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="28418959"/>
+<property name="median" value="28450048"/>
+<property name="gmean" value="28566194"/>
+<property name="gstddev" value="0.012725"/>
+<property name="mean" value="28568298"/>
+<property name="stddev" value="369365"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_8U/3" value_param="(NORM_L1, 32FC1, true)" status="run" time="0.577" classname="Norm_Destination_CrossCheck_batchDistance_8U">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="56731286"/>
+<property name="median" value="57043946"/>
+<property name="gmean" value="57522665"/>
+<property name="gstddev" value="0.021739"/>
+<property name="mean" value="57535080"/>
+<property name="stddev" value="1278538"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_8U/4" value_param="(NORM_L2SQR, 32SC1, false)" status="run" time="0.318" classname="Norm_Destination_CrossCheck_batchDistance_8U">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="31528477"/>
+<property name="median" value="31541806"/>
+<property name="gmean" value="31721865"/>
+<property name="gstddev" value="0.013230"/>
+<property name="mean" value="31724387"/>
+<property name="stddev" value="425720"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_8U/5" value_param="(NORM_L2SQR, 32SC1, true)" status="run" time="0.635" classname="Norm_Destination_CrossCheck_batchDistance_8U">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="63207544"/>
+<property name="median" value="63244285"/>
+<property name="gmean" value="63399065"/>
+<property name="gstddev" value="0.006061"/>
+<property name="mean" value="63400117"/>
+<property name="stddev" value="386688"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_8U/6" value_param="(NORM_L2SQR, 32FC1, false)" status="run" time="0.291" classname="Norm_Destination_CrossCheck_batchDistance_8U">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="28794454"/>
+<property name="median" value="28825769"/>
+<property name="gmean" value="28946927"/>
+<property name="gstddev" value="0.012549"/>
+<property name="mean" value="28949000"/>
+<property name="stddev" value="369016"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_8U/7" value_param="(NORM_L2SQR, 32FC1, true)" status="run" time="0.584" classname="Norm_Destination_CrossCheck_batchDistance_8U">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="57811853"/>
+<property name="median" value="57881725"/>
+<property name="gmean" value="58266805"/>
+<property name="gstddev" value="0.011305"/>
+<property name="mean" value="58270166"/>
+<property name="stddev" value="661923"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="Norm_CrossCheck_batchDistance_Dest_32S" tests="4" failures="0" disabled="0" errors="0" time="1.08">
+    <testcase name="batchDistance_Dest_32S/0" value_param="(NORM_HAMMING, false)" status="run" time="0.119" classname="Norm_CrossCheck_batchDistance_Dest_32S">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="38"/>
+<property name="outliers" value="3"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3035372"/>
+<property name="median" value="3048769"/>
+<property name="gmean" value="3070687"/>
+<property name="gstddev" value="0.021298"/>
+<property name="mean" value="3071378"/>
+<property name="stddev" value="67618"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_Dest_32S/1" value_param="(NORM_HAMMING, true)" status="run" time="0.084" classname="Norm_CrossCheck_batchDistance_Dest_32S">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6264675"/>
+<property name="median" value="6282888"/>
+<property name="gmean" value="6336352"/>
+<property name="gstddev" value="0.018546"/>
+<property name="mean" value="6337361"/>
+<property name="stddev" value="119312"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_Dest_32S/2" value_param="(NORM_HAMMING2, false)" status="run" time="0.291" classname="Norm_CrossCheck_batchDistance_Dest_32S">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="28872581"/>
+<property name="median" value="28889089"/>
+<property name="gmean" value="29025184"/>
+<property name="gstddev" value="0.013074"/>
+<property name="mean" value="29027441"/>
+<property name="stddev" value="385671"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_Dest_32S/3" value_param="(NORM_HAMMING2, true)" status="run" time="0.585" classname="Norm_CrossCheck_batchDistance_Dest_32S">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="57943915"/>
+<property name="median" value="57991250"/>
+<property name="gmean" value="58380707"/>
+<property name="gstddev" value="0.013820"/>
+<property name="mean" value="58385765"/>
+<property name="stddev" value="816564"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="Source_CrossCheck_batchDistance_L2" tests="4" failures="0" disabled="0" errors="0" time="1.181">
+    <testcase name="batchDistance_L2/0" value_param="(8UC1, false)" status="run" time="0.291" classname="Source_CrossCheck_batchDistance_L2">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="28832622"/>
+<property name="median" value="28853358"/>
+<property name="gmean" value="29016075"/>
+<property name="gstddev" value="0.012747"/>
+<property name="mean" value="29018215"/>
+<property name="stddev" value="374640"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_L2/1" value_param="(8UC1, true)" status="run" time="0.581" classname="Source_CrossCheck_batchDistance_L2">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="57765779"/>
+<property name="median" value="57810200"/>
+<property name="gmean" value="57994386"/>
+<property name="gstddev" value="0.008368"/>
+<property name="mean" value="57996224"/>
+<property name="stddev" value="489753"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_L2/2" value_param="(32FC1, false)" status="run" time="0.122" classname="Source_CrossCheck_batchDistance_L2">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="9067812"/>
+<property name="median" value="9077986"/>
+<property name="gmean" value="9195854"/>
+<property name="gstddev" value="0.028841"/>
+<property name="mean" value="9199424"/>
+<property name="stddev" value="272512"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_L2/3" value_param="(32FC1, true)" status="run" time="0.187" classname="Source_CrossCheck_batchDistance_L2">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="18285236"/>
+<property name="median" value="18374380"/>
+<property name="gmean" value="18565560"/>
+<property name="gstddev" value="0.025172"/>
+<property name="mean" value="18570917"/>
+<property name="stddev" value="475747"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="Norm_CrossCheck_batchDistance_32F" tests="4" failures="0" disabled="0" errors="0" time="0.955">
+    <testcase name="batchDistance_32F/0" value_param="(NORM_L1, false)" status="run" time="0.224" classname="Norm_CrossCheck_batchDistance_32F">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="22062374"/>
+<property name="median" value="22068991"/>
+<property name="gmean" value="22267188"/>
+<property name="gstddev" value="0.017714"/>
+<property name="mean" value="22270359"/>
+<property name="stddev" value="399486"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_32F/1" value_param="(NORM_L1, true)" status="run" time="0.449" classname="Norm_CrossCheck_batchDistance_32F">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="44306596"/>
+<property name="median" value="44329822"/>
+<property name="gmean" value="44820414"/>
+<property name="gstddev" value="0.023573"/>
+<property name="mean" value="44831776"/>
+<property name="stddev" value="1078425"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_32F/2" value_param="(NORM_L2SQR, false)" status="run" time="0.1" classname="Norm_CrossCheck_batchDistance_32F">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="11"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8814316"/>
+<property name="median" value="8825176"/>
+<property name="gmean" value="8971038"/>
+<property name="gstddev" value="0.029078"/>
+<property name="mean" value="8974529"/>
+<property name="stddev" value="265812"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_32F/3" value_param="(NORM_L2SQR, true)" status="run" time="0.182" classname="Norm_CrossCheck_batchDistance_32F">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="17764848"/>
+<property name="median" value="17912956"/>
+<property name="gmean" value="18065753"/>
+<property name="gstddev" value="0.019238"/>
+<property name="mean" value="18068782"/>
+<property name="stddev" value="351054"/>
+</properties>
+    </testcase>
+  </testsuite>
+</testsuites>
