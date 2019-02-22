@@ -1,0 +1,1555 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<title>Summary report for 112 tests from 2 test logs</title>
+<style type="text/css">
+html, body {font-family: Lucida Console, Courier New, Courier;font-size: 16px;color:#3e4758;}
+.tbl{background:none repeat scroll 0 0 #FFFFFF;border-collapse:collapse;font-family:"Lucida Sans Unicode","Lucida Grande",Sans-Serif;font-size:14px;margin:20px;text-align:left;width:480px;margin-left: auto;margin-right: auto;white-space:nowrap;}
+.tbl span{display:block;white-space:nowrap;}
+.tbl thead tr:last-child th {padding-bottom:5px;}
+.tbl tbody tr:first-child td {border-top:3px solid #6678B1;}
+.tbl th{border:none;color:#003399;font-size:16px;font-weight:normal;white-space:nowrap;padding:3px 10px;}
+.tbl td{border:none;border-bottom:1px solid #CCCCCC;color:#666699;padding:6px 8px;white-space:nowrap;}
+.tbl tbody tr:hover td{color:#000099;}
+.tbl caption{font:italic 16px "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;padding:0 0 5px;text-align:right;white-space:normal;}
+.firstingroup {border-top:2px solid #6678B1;}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+function abs(val) { return val < 0 ? -val : val }
+$(function(){
+  //generate filter rows
+  $("div.tableFormatter table.tbl").each(function(tblIdx, tbl) {
+    var head = $("thead", tbl)
+    var filters = $("<tr></tr>")
+    var hasAny = false
+    $("tr:first th", head).each(function(colIdx, col) {
+      col = $(col)
+      var cell
+      var id = "t" + tblIdx + "r" + colIdx
+      if (col.hasClass("col_name")){
+        cell = $("<th><input id='" + id + "' name='" + id + "' type='text' style='width:100%' class='filter_col_name' title='Regular expression for name filtering (&quot;resize.*640x480&quot; - resize tests on VGA resolution)'></input></th>")
+        hasAny = true
+      }
+      else if (col.hasClass("col_rel")){
+        cell = $("<th><input id='" + id + "' name='" + id + "' type='text' style='width:100%' class='filter_col_rel' title='Filter out lines with a x-factor of acceleration less than Nx'></input></th>")
+        hasAny = true
+      }
+      else if (col.hasClass("col_cr")){
+        cell = $("<th><input id='" + id + "' name='" + id + "' type='text' style='width:100%' class='filter_col_cr' title='Filter out lines with a percentage of acceleration less than N%'></input></th>")
+        hasAny = true
+      }
+      else
+        cell = $("<th></th>")
+      cell.appendTo(filters)
+    })
+
+   if (hasAny){
+     $(tbl).wrap("<form id='form_t" + tblIdx + "' method='get' action=''></form>")
+     $("<input it='test' type='submit' value='Apply Filters' style='margin-left:10px;'></input>")
+       .appendTo($("th:last", filters.appendTo(head)))
+   }
+  })
+
+  //get filter values
+  var vars = []
+  var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&')
+  for(var i = 0; i < hashes.length; ++i)
+  {
+     hash = hashes[i].split('=')
+     vars.push(decodeURIComponent(hash[0]))
+     vars[decodeURIComponent(hash[0])] = decodeURIComponent(hash[1]);
+  }
+
+  //set filter values
+  for(var i = 0; i < vars.length; ++i)
+     $("#" + vars[i]).val(vars[vars[i]])
+
+  //apply filters
+  $("div.tableFormatter table.tbl").each(function(tblIdx, tbl) {
+      filters = $("input:text", tbl)
+      var predicate = function(row) {return true;}
+      var empty = true
+      $.each($("input:text", tbl), function(i, flt) {
+         flt = $(flt)
+         var val = flt.val()
+         var pred = predicate;
+         if(val) {
+           empty = false
+           var colIdx = parseInt(flt.attr("id").slice(flt.attr("id").indexOf('r') + 1))
+           if(flt.hasClass("filter_col_name")) {
+              var re = new RegExp(val);
+              predicate = function(row) {
+                if (re.exec($(row.get(colIdx)).text()) == null)
+                  return false
+                return pred(row)
+          }
+           } else if(flt.hasClass("filter_col_rel")) {
+              var percent = parseFloat(val)
+              if (percent < 0) {
+                predicate = function(row) {
+                  var val = parseFloat($(row.get(colIdx)).text())
+                  if (!val || val >= 1 || val > 1+percent)
+                    return false
+                  return pred(row)
+            }
+              } else {
+                predicate = function(row) {
+                  var val = parseFloat($(row.get(colIdx)).text())
+                  if (!val || val < percent)
+                    return false
+                  return pred(row)
+            }
+              }
+           } else if(flt.hasClass("filter_col_cr")) {
+              var percent = parseFloat(val)
+              predicate = function(row) {
+                var val = parseFloat($(row.get(colIdx)).text())
+                if (!val || val < percent)
+                  return false
+                return pred(row)
+          }
+           }
+         }
+      });
+      if (!empty){
+         $("tbody tr", tbl).each(function (i, tbl_row) {
+            if(!predicate($("td", tbl_row)))
+               $(tbl_row).remove()
+         })
+         if($("tbody tr", tbl).length == 0) {
+           $("<tr><td colspan='"+$("thead tr:first th", tbl).length+"'>No results mathing your search criteria</td></tr>")
+             .appendTo($("tbody", tbl))
+         }
+      }
+  })
+})
+</script>
+</head>
+<body>
+<div class="tableFormatter">
+<table class="tbl">
+ <caption>Geometric mean (ms)</caption>
+ <thead>
+  <tr>
+   <th align="center" valign="top" class="col_name">
+    Name of Test
+   </th>
+   <th align="center" valign="top">
+    calib3d<br/>20190222-124150
+   </th>
+   <th align="center" valign="top">
+    calib3d<br/>20190222-124160
+   </th>
+   <th align="center" valign="top" class="col_rel">
+    calib3d<br/>20190222-124160<br/>vs<br/>calib3d<br/>20190222-124150<br/>(x-factor)
+   </th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr class=" firstingroup">
+   <td>
+    EstimateAffine2D::EstimateAffine::(100, 0.9, LMEDS, 0)
+   </td>
+   <td align="center">
+    0.009
+   </td>
+   <td align="center">
+    0.009
+   </td>
+   <td align="center">
+    1.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100, 0.9, LMEDS, 10)
+   </td>
+   <td align="center">
+    0.034
+   </td>
+   <td align="center">
+    0.034
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100, 0.9, RANSAC, 0)
+   </td>
+   <td align="center">
+    0.016
+   </td>
+   <td align="center">
+    0.016
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100, 0.9, RANSAC, 10)
+   </td>
+   <td align="center">
+    0.037
+   </td>
+   <td align="center">
+    0.037
+   </td>
+   <td align="center">
+    1.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100, 0.95, LMEDS, 0)
+   </td>
+   <td align="center">
+    0.011
+   </td>
+   <td align="center">
+    0.011
+   </td>
+   <td align="center">
+    1.02
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100, 0.95, LMEDS, 10)
+   </td>
+   <td align="center">
+    0.025
+   </td>
+   <td align="center">
+    0.025
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100, 0.95, RANSAC, 0)
+   </td>
+   <td align="center">
+    0.020
+   </td>
+   <td align="center">
+    0.020
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100, 0.95, RANSAC, 10)
+   </td>
+   <td align="center">
+    0.042
+   </td>
+   <td align="center">
+    0.041
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100, 0.99, LMEDS, 0)
+   </td>
+   <td align="center">
+    0.017
+   </td>
+   <td align="center">
+    0.016
+   </td>
+   <td align="center">
+    1.03
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100, 0.99, LMEDS, 10)
+   </td>
+   <td align="center">
+    0.033
+   </td>
+   <td align="center" style="color:red;">
+    0.041
+   </td>
+   <td align="center" style="color:red;font-weight: bold;">
+    0.79
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100, 0.99, RANSAC, 0)
+   </td>
+   <td align="center">
+    0.030
+   </td>
+   <td align="center">
+    0.030
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100, 0.99, RANSAC, 10)
+   </td>
+   <td align="center">
+    0.051
+   </td>
+   <td align="center">
+    0.050
+   </td>
+   <td align="center">
+    1.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(5000, 0.9, LMEDS, 0)
+   </td>
+   <td align="center">
+    0.429
+   </td>
+   <td align="center" style="color:green;">
+    0.395
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.09
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(5000, 0.9, LMEDS, 10)
+   </td>
+   <td align="center">
+    1.327
+   </td>
+   <td align="center">
+    1.321
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(5000, 0.9, RANSAC, 0)
+   </td>
+   <td align="center">
+    0.154
+   </td>
+   <td align="center" style="color:green;">
+    0.139
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.11
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(5000, 0.9, RANSAC, 10)
+   </td>
+   <td align="center">
+    0.681
+   </td>
+   <td align="center">
+    0.651
+   </td>
+   <td align="center">
+    1.05
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(5000, 0.95, LMEDS, 0)
+   </td>
+   <td align="center">
+    0.529
+   </td>
+   <td align="center" style="color:green;">
+    0.485
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.09
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(5000, 0.95, LMEDS, 10)
+   </td>
+   <td align="center">
+    1.431
+   </td>
+   <td align="center">
+    1.430
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(5000, 0.95, RANSAC, 0)
+   </td>
+   <td align="center">
+    0.195
+   </td>
+   <td align="center" style="color:green;">
+    0.177
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.10
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(5000, 0.95, RANSAC, 10)
+   </td>
+   <td align="center">
+    0.722
+   </td>
+   <td align="center">
+    0.692
+   </td>
+   <td align="center">
+    1.04
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(5000, 0.99, LMEDS, 0)
+   </td>
+   <td align="center">
+    0.846
+   </td>
+   <td align="center" style="color:green;">
+    0.777
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.09
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(5000, 0.99, LMEDS, 10)
+   </td>
+   <td align="center">
+    1.320
+   </td>
+   <td align="center">
+    1.320
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(5000, 0.99, RANSAC, 0)
+   </td>
+   <td align="center">
+    0.297
+   </td>
+   <td align="center" style="color:green;">
+    0.271
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.10
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(5000, 0.99, RANSAC, 10)
+   </td>
+   <td align="center">
+    0.835
+   </td>
+   <td align="center">
+    0.798
+   </td>
+   <td align="center">
+    1.05
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100000, 0.9, LMEDS, 0)
+   </td>
+   <td align="center">
+    9.803
+   </td>
+   <td align="center" style="color:green;">
+    9.070
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.08
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100000, 0.9, LMEDS, 10)
+   </td>
+   <td align="center">
+    63.712
+   </td>
+   <td align="center" style="color:green;">
+    57.755
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.10
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100000, 0.9, RANSAC, 0)
+   </td>
+   <td align="center">
+    2.863
+   </td>
+   <td align="center" style="color:green;">
+    2.680
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.07
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100000, 0.9, RANSAC, 10)
+   </td>
+   <td align="center">
+    17.389
+   </td>
+   <td align="center" style="color:green;">
+    16.103
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.08
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100000, 0.95, LMEDS, 0)
+   </td>
+   <td align="center">
+    12.069
+   </td>
+   <td align="center" style="color:green;">
+    11.199
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.08
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100000, 0.95, LMEDS, 10)
+   </td>
+   <td align="center">
+    66.291
+   </td>
+   <td align="center" style="color:green;">
+    59.959
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.11
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100000, 0.95, RANSAC, 0)
+   </td>
+   <td align="center">
+    3.705
+   </td>
+   <td align="center" style="color:green;">
+    3.463
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.07
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100000, 0.95, RANSAC, 10)
+   </td>
+   <td align="center">
+    18.198
+   </td>
+   <td align="center" style="color:green;">
+    16.847
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.08
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100000, 0.99, LMEDS, 0)
+   </td>
+   <td align="center">
+    18.205
+   </td>
+   <td align="center" style="color:green;">
+    16.786
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.08
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100000, 0.99, LMEDS, 10)
+   </td>
+   <td align="center">
+    32.593
+   </td>
+   <td align="center" style="color:green;">
+    30.320
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.07
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100000, 0.99, RANSAC, 0)
+   </td>
+   <td align="center">
+    5.730
+   </td>
+   <td align="center" style="color:green;">
+    5.338
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.07
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffine2D::EstimateAffine::(100000, 0.99, RANSAC, 10)
+   </td>
+   <td align="center">
+    20.157
+   </td>
+   <td align="center" style="color:green;">
+    18.674
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.08
+   </td>
+  </tr>
+  <tr class=" firstingroup">
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100, 0.9, LMEDS, 0)
+   </td>
+   <td align="center">
+    0.005
+   </td>
+   <td align="center">
+    0.006
+   </td>
+   <td align="center">
+    0.99
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100, 0.9, LMEDS, 10)
+   </td>
+   <td align="center">
+    0.024
+   </td>
+   <td align="center">
+    0.024
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100, 0.9, RANSAC, 0)
+   </td>
+   <td align="center">
+    0.007
+   </td>
+   <td align="center">
+    0.007
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100, 0.9, RANSAC, 10)
+   </td>
+   <td align="center">
+    0.024
+   </td>
+   <td align="center">
+    0.023
+   </td>
+   <td align="center">
+    1.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100, 0.95, LMEDS, 0)
+   </td>
+   <td align="center">
+    0.007
+   </td>
+   <td align="center">
+    0.007
+   </td>
+   <td align="center">
+    0.99
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100, 0.95, LMEDS, 10)
+   </td>
+   <td align="center">
+    0.026
+   </td>
+   <td align="center">
+    0.026
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100, 0.95, RANSAC, 0)
+   </td>
+   <td align="center">
+    0.009
+   </td>
+   <td align="center">
+    0.009
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100, 0.95, RANSAC, 10)
+   </td>
+   <td align="center">
+    0.025
+   </td>
+   <td align="center">
+    0.025
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100, 0.99, LMEDS, 0)
+   </td>
+   <td align="center">
+    0.009
+   </td>
+   <td align="center">
+    0.009
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100, 0.99, LMEDS, 10)
+   </td>
+   <td align="center">
+    0.020
+   </td>
+   <td align="center">
+    0.020
+   </td>
+   <td align="center">
+    0.99
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100, 0.99, RANSAC, 0)
+   </td>
+   <td align="center">
+    0.012
+   </td>
+   <td align="center">
+    0.012
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100, 0.99, RANSAC, 10)
+   </td>
+   <td align="center">
+    0.028
+   </td>
+   <td align="center">
+    0.028
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(5000, 0.9, LMEDS, 0)
+   </td>
+   <td align="center">
+    0.170
+   </td>
+   <td align="center">
+    0.171
+   </td>
+   <td align="center">
+    0.99
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(5000, 0.9, LMEDS, 10)
+   </td>
+   <td align="center">
+    0.632
+   </td>
+   <td align="center">
+    0.633
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(5000, 0.9, RANSAC, 0)
+   </td>
+   <td align="center">
+    0.061
+   </td>
+   <td align="center">
+    0.061
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(5000, 0.9, RANSAC, 10)
+   </td>
+   <td align="center">
+    0.345
+   </td>
+   <td align="center">
+    0.340
+   </td>
+   <td align="center">
+    1.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(5000, 0.95, LMEDS, 0)
+   </td>
+   <td align="center">
+    0.223
+   </td>
+   <td align="center">
+    0.224
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(5000, 0.95, LMEDS, 10)
+   </td>
+   <td align="center">
+    0.687
+   </td>
+   <td align="center">
+    0.688
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(5000, 0.95, RANSAC, 0)
+   </td>
+   <td align="center">
+    0.078
+   </td>
+   <td align="center">
+    0.078
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(5000, 0.95, RANSAC, 10)
+   </td>
+   <td align="center">
+    0.362
+   </td>
+   <td align="center">
+    0.359
+   </td>
+   <td align="center">
+    1.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(5000, 0.99, LMEDS, 0)
+   </td>
+   <td align="center">
+    0.399
+   </td>
+   <td align="center">
+    0.400
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(5000, 0.99, LMEDS, 10)
+   </td>
+   <td align="center">
+    0.661
+   </td>
+   <td align="center">
+    0.656
+   </td>
+   <td align="center">
+    1.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(5000, 0.99, RANSAC, 0)
+   </td>
+   <td align="center">
+    0.104
+   </td>
+   <td align="center">
+    0.104
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(5000, 0.99, RANSAC, 10)
+   </td>
+   <td align="center">
+    0.401
+   </td>
+   <td align="center">
+    0.396
+   </td>
+   <td align="center">
+    1.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100000, 0.9, LMEDS, 0)
+   </td>
+   <td align="center">
+    3.858
+   </td>
+   <td align="center">
+    3.890
+   </td>
+   <td align="center">
+    0.99
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100000, 0.9, LMEDS, 10)
+   </td>
+   <td align="center">
+    15.535
+   </td>
+   <td align="center">
+    15.436
+   </td>
+   <td align="center">
+    1.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100000, 0.9, RANSAC, 0)
+   </td>
+   <td align="center">
+    1.029
+   </td>
+   <td align="center">
+    1.020
+   </td>
+   <td align="center">
+    1.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100000, 0.9, RANSAC, 10)
+   </td>
+   <td align="center">
+    6.143
+   </td>
+   <td align="center">
+    6.316
+   </td>
+   <td align="center">
+    0.97
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100000, 0.95, LMEDS, 0)
+   </td>
+   <td align="center">
+    5.271
+   </td>
+   <td align="center">
+    5.307
+   </td>
+   <td align="center">
+    0.99
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100000, 0.95, LMEDS, 10)
+   </td>
+   <td align="center">
+    16.926
+   </td>
+   <td align="center">
+    16.893
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100000, 0.95, RANSAC, 0)
+   </td>
+   <td align="center">
+    1.341
+   </td>
+   <td align="center">
+    1.315
+   </td>
+   <td align="center">
+    1.02
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100000, 0.95, RANSAC, 10)
+   </td>
+   <td align="center">
+    6.487
+   </td>
+   <td align="center">
+    6.713
+   </td>
+   <td align="center">
+    0.97
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100000, 0.99, LMEDS, 0)
+   </td>
+   <td align="center">
+    8.283
+   </td>
+   <td align="center">
+    8.269
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100000, 0.99, LMEDS, 10)
+   </td>
+   <td align="center">
+    20.223
+   </td>
+   <td align="center">
+    20.037
+   </td>
+   <td align="center">
+    1.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100000, 0.99, RANSAC, 0)
+   </td>
+   <td align="center">
+    2.139
+   </td>
+   <td align="center" style="color:green;">
+    1.998
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.07
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EstimateAffinePartial2D::EstimateAffine::(100000, 0.99, RANSAC, 10)
+   </td>
+   <td align="center">
+    7.414
+   </td>
+   <td align="center">
+    7.363
+   </td>
+   <td align="center">
+    1.01
+   </td>
+  </tr>
+  <tr class=" firstingroup">
+   <td>
+    SGBM::TestStereoCorresp::(640x480, 128, StereoSGBM::MODE_HH4)
+   </td>
+   <td align="center">
+    87.709
+   </td>
+   <td align="center" style="color:green;">
+    71.291
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.23
+   </td>
+  </tr>
+  <tr>
+   <td>
+    SGBM::TestStereoCorresp::(640x480, 128, StereoSGBM::MODE_SGBM)
+   </td>
+   <td align="center">
+    160.040
+   </td>
+   <td align="center" style="color:green;">
+    114.710
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.40
+   </td>
+  </tr>
+  <tr>
+   <td>
+    SGBM::TestStereoCorresp::(640x480, 128, StereoSGBM::MODE_SGBM_3WAY)
+   </td>
+   <td align="center">
+    45.388
+   </td>
+   <td align="center" style="color:green;">
+    25.573
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.77
+   </td>
+  </tr>
+  <tr>
+   <td>
+    SGBM::TestStereoCorresp::(640x480, 256, StereoSGBM::MODE_HH4)
+   </td>
+   <td align="center">
+    153.518
+   </td>
+   <td align="center" style="color:green;">
+    106.030
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.45
+   </td>
+  </tr>
+  <tr>
+   <td>
+    SGBM::TestStereoCorresp::(640x480, 256, StereoSGBM::MODE_SGBM)
+   </td>
+   <td align="center">
+    158.054
+   </td>
+   <td align="center">
+    154.043
+   </td>
+   <td align="center">
+    1.03
+   </td>
+  </tr>
+  <tr>
+   <td>
+    SGBM::TestStereoCorresp::(640x480, 256, StereoSGBM::MODE_SGBM_3WAY)
+   </td>
+   <td align="center">
+    53.557
+   </td>
+   <td align="center" style="color:green;">
+    35.640
+   </td>
+   <td align="center" style="color:green;font-weight: bold;">
+    1.50
+   </td>
+  </tr>
+  <tr>
+   <td>
+    SGBM::TestStereoCorresp::(1280x720, 128, StereoSGBM::MODE_HH4)
+   </td>
+   <td align="center">
+    290.196
+   </td>
+   <td align="center" style="color:red;">
+    346.326
+   </td>
+   <td align="center" style="color:red;font-weight: bold;">
+    0.84
+   </td>
+  </tr>
+  <tr>
+   <td>
+    SGBM::TestStereoCorresp::(1280x720, 128, StereoSGBM::MODE_SGBM)
+   </td>
+   <td align="center">
+    439.804
+   </td>
+   <td align="center" style="color:red;">
+    581.099
+   </td>
+   <td align="center" style="color:red;font-weight: bold;">
+    0.76
+   </td>
+  </tr>
+  <tr>
+   <td>
+    SGBM::TestStereoCorresp::(1280x720, 128, StereoSGBM::MODE_SGBM_3WAY)
+   </td>
+   <td align="center">
+    133.832
+   </td>
+   <td align="center" style="color:red;">
+    162.049
+   </td>
+   <td align="center" style="color:red;font-weight: bold;">
+    0.83
+   </td>
+  </tr>
+  <tr>
+   <td>
+    SGBM::TestStereoCorresp::(1280x720, 256, StereoSGBM::MODE_HH4)
+   </td>
+   <td align="center">
+    491.744
+   </td>
+   <td align="center" style="color:red;">
+    621.841
+   </td>
+   <td align="center" style="color:red;font-weight: bold;">
+    0.79
+   </td>
+  </tr>
+  <tr>
+   <td>
+    SGBM::TestStereoCorresp::(1280x720, 256, StereoSGBM::MODE_SGBM)
+   </td>
+   <td align="center">
+    851.470
+   </td>
+   <td align="center" style="color:red;">
+    1039.904
+   </td>
+   <td align="center" style="color:red;font-weight: bold;">
+    0.82
+   </td>
+  </tr>
+  <tr>
+   <td>
+    SGBM::TestStereoCorresp::(1280x720, 256, StereoSGBM::MODE_SGBM_3WAY)
+   </td>
+   <td align="center">
+    280.831
+   </td>
+   <td align="center" style="color:red;">
+    368.613
+   </td>
+   <td align="center" style="color:red;font-weight: bold;">
+    0.76
+   </td>
+  </tr>
+  <tr class=" firstingroup">
+   <td>
+    solvePnP::PointsNum_Algo::(5, SOLVEPNP_DLS)
+   </td>
+   <td align="center">
+    0.049
+   </td>
+   <td align="center">
+    0.049
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    solvePnP::PointsNum_Algo::(5, SOLVEPNP_EPNP)
+   </td>
+   <td align="center">
+    0.050
+   </td>
+   <td align="center">
+    0.049
+   </td>
+   <td align="center">
+    1.02
+   </td>
+  </tr>
+  <tr>
+   <td>
+    solvePnP::PointsNum_Algo::(5, SOLVEPNP_ITERATIVE)
+   </td>
+   <td align="center">
+    0.475
+   </td>
+   <td align="center">
+    0.476
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    solvePnP::PointsNum_Algo::(5, SOLVEPNP_UPNP)
+   </td>
+   <td align="center">
+    0.050
+   </td>
+   <td align="center">
+    0.049
+   </td>
+   <td align="center">
+    1.02
+   </td>
+  </tr>
+  <tr>
+   <td>
+    solvePnP::PointsNum_Algo::(27, SOLVEPNP_DLS)
+   </td>
+   <td align="center">
+    0.055
+   </td>
+   <td align="center">
+    0.054
+   </td>
+   <td align="center">
+    1.02
+   </td>
+  </tr>
+  <tr>
+   <td>
+    solvePnP::PointsNum_Algo::(27, SOLVEPNP_EPNP)
+   </td>
+   <td align="center">
+    0.054
+   </td>
+   <td align="center">
+    0.054
+   </td>
+   <td align="center">
+    1.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    solvePnP::PointsNum_Algo::(27, SOLVEPNP_ITERATIVE)
+   </td>
+   <td align="center">
+    0.090
+   </td>
+   <td align="center">
+    0.091
+   </td>
+   <td align="center">
+    0.99
+   </td>
+  </tr>
+  <tr>
+   <td>
+    solvePnP::PointsNum_Algo::(27, SOLVEPNP_UPNP)
+   </td>
+   <td align="center">
+    0.054
+   </td>
+   <td align="center">
+    0.054
+   </td>
+   <td align="center">
+    1.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    solvePnP::PointsNum_Algo::(91, SOLVEPNP_DLS)
+   </td>
+   <td align="center">
+    0.070
+   </td>
+   <td align="center">
+    0.069
+   </td>
+   <td align="center">
+    1.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    solvePnP::PointsNum_Algo::(91, SOLVEPNP_EPNP)
+   </td>
+   <td align="center">
+    0.070
+   </td>
+   <td align="center">
+    0.069
+   </td>
+   <td align="center">
+    1.02
+   </td>
+  </tr>
+  <tr>
+   <td>
+    solvePnP::PointsNum_Algo::(91, SOLVEPNP_ITERATIVE)
+   </td>
+   <td align="center">
+    0.270
+   </td>
+   <td align="center">
+    0.271
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    solvePnP::PointsNum_Algo::(91, SOLVEPNP_UPNP)
+   </td>
+   <td align="center">
+    0.070
+   </td>
+   <td align="center">
+    0.069
+   </td>
+   <td align="center">
+    1.01
+   </td>
+  </tr>
+  <tr class=" firstingroup">
+   <td>
+    solvePnPSmallPoints::PointsNum_Algo::(5, SOLVEPNP_DLS)
+   </td>
+   <td align="center">
+    0.050
+   </td>
+   <td align="center">
+    0.049
+   </td>
+   <td align="center">
+    1.02
+   </td>
+  </tr>
+  <tr>
+   <td>
+    solvePnPSmallPoints::PointsNum_Algo::(5, SOLVEPNP_EPNP)
+   </td>
+   <td align="center">
+    0.050
+   </td>
+   <td align="center">
+    0.049
+   </td>
+   <td align="center">
+    1.01
+   </td>
+  </tr>
+  <tr>
+   <td>
+    solvePnPSmallPoints::PointsNum_Algo::(5, SOLVEPNP_P3P)
+   </td>
+   <td align="center">
+    0.006
+   </td>
+   <td align="center">
+    0.006
+   </td>
+   <td align="center">
+    1.00
+   </td>
+  </tr>
+  <tr>
+   <td>
+    solvePnPSmallPoints::PointsNum_Algo::(5, SOLVEPNP_UPNP)
+   </td>
+   <td align="center">
+    0.050
+   </td>
+   <td align="center">
+    0.049
+   </td>
+   <td align="center">
+    1.01
+   </td>
+  </tr>
+ </tbody>
+</table>
+</div>
+</body>
+</html>
