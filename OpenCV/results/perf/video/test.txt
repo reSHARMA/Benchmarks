@@ -1,18 +1,17 @@
-Test case $ ratio (>1 faster)
-perf::DenseOpticalFlow_DIS::("PRESET_FAST", 640x480)              $        1.14      
-perf::DenseOpticalFlow_DIS::("PRESET_FAST", 1280x720)             $        1.23      
-perf::DenseOpticalFlow_DIS::("PRESET_FAST", 1920x1080)            $        1.23      
-perf::DenseOpticalFlow_DIS::("PRESET_MEDIUM", 640x480)            $        1.25      
-perf::DenseOpticalFlow_DIS::("PRESET_MEDIUM", 1280x720)           $        1.25      
-perf::DenseOpticalFlow_DIS::("PRESET_MEDIUM", 1920x1080)          $        1.22      
-perf::DenseOpticalFlow_DIS::("PRESET_ULTRAFAST", 640x480)         $        1.14      
-perf::DenseOpticalFlow_DIS::("PRESET_ULTRAFAST", 1280x720)        $        1.17      
-perf::DenseOpticalFlow_DIS::("PRESET_ULTRAFAST", 1920x1080)       $        1.23      
-perf::DenseOpticalFlow_VariationalRefinement::(320x240, 5, 5)     $        1.32      
-perf::DenseOpticalFlow_VariationalRefinement::(320x240, 5, 10)    $        1.42      
-perf::DenseOpticalFlow_VariationalRefinement::(320x240, 10, 5)    $        1.43      
-perf::DenseOpticalFlow_VariationalRefinement::(320x240, 10, 10)   $        1.53      
-perf::DenseOpticalFlow_VariationalRefinement::(640x480, 5, 5)     $        1.07      
-perf::DenseOpticalFlow_VariationalRefinement::(640x480, 5, 10)    $        1.12      
-perf::DenseOpticalFlow_VariationalRefinement::(640x480, 10, 5)    $        1.19      
-perf::DenseOpticalFlow_VariationalRefinement::(640x480, 10, 10)   $        1.12      
+perf::DenseOpticalFlow_DIS::("PRESET_FAST", 640x480)             $    1.01      
+perf::DenseOpticalFlow_DIS::("PRESET_FAST", 1280x720)            $    0.98      
+perf::DenseOpticalFlow_DIS::("PRESET_FAST", 1920x1080)           $    1.01      
+perf::DenseOpticalFlow_DIS::("PRESET_MEDIUM", 640x480)           $    1.00      
+perf::DenseOpticalFlow_DIS::("PRESET_MEDIUM", 1280x720)          $    0.98      
+perf::DenseOpticalFlow_DIS::("PRESET_MEDIUM", 1920x1080)         $    0.98      
+perf::DenseOpticalFlow_DIS::("PRESET_ULTRAFAST", 640x480)        $    1.04      
+perf::DenseOpticalFlow_DIS::("PRESET_ULTRAFAST", 1280x720)       $    0.99      
+perf::DenseOpticalFlow_DIS::("PRESET_ULTRAFAST", 1920x1080)      $    0.99      
+perf::DenseOpticalFlow_VariationalRefinement::(320x240, 5, 5)    $    1.09      
+perf::DenseOpticalFlow_VariationalRefinement::(320x240, 5, 10)   $    1.04      
+perf::DenseOpticalFlow_VariationalRefinement::(320x240, 10, 5)   $    1.00      
+perf::DenseOpticalFlow_VariationalRefinement::(320x240, 10, 10)  $    0.99      
+perf::DenseOpticalFlow_VariationalRefinement::(640x480, 5, 5)    $    1.03      
+perf::DenseOpticalFlow_VariationalRefinement::(640x480, 5, 10)   $    1.05      
+perf::DenseOpticalFlow_VariationalRefinement::(640x480, 10, 5)   $    1.05      
+perf::DenseOpticalFlow_VariationalRefinement::(640x480, 10, 10)  $    1.06      

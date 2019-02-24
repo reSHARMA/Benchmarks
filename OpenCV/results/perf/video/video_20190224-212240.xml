@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="209" failures="192" disabled="0" errors="0" timestamp="2019-02-22T12:59:45" time="9.028" cv_module_name="video" cv_implementation="plain" cv_num_threads="-1" cv_version="4.0.1-dev" cv_version_build="4.0.1-dev" cv_vcs_version="4.0.1-248-g8bde6ae-dirty" cv_build_type="Release" cv_build_type_build="Release" cv_compiler="/home/reshabh/llvm-toolchain-8_8~svn353031/build-llvm/bin/clang++" cv_parallel_framework="pthreads" cv_cpu_features="SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?" name="AllTests">
-  <testsuite name="MOG2_Apply_Mog2" tests="4" failures="4" disabled="0" errors="0" time="0.001">
-    <testcase name="Mog2/0" value_param="(&quot;gpu/video/768x576.avi&quot;, 1)" status="run" time="0.001" classname="MOG2_Apply_Mog2">
+<testsuites tests="209" failures="192" disabled="0" errors="0" timestamp="2019-02-24T21:29:42" time="7.636" cv_module_name="video" cv_implementation="plain" cv_num_threads="-1" cv_version="4.0.1-dev" cv_version_build="4.0.1-dev" cv_vcs_version="4.0.1-248-g8bde6ae-dirty" cv_build_type="Release" cv_build_type_build="Release" cv_compiler="/home/reshabh/llvm-toolchain-8_8~svn353031/build-llvm/bin/clang++" cv_parallel_framework="pthreads" cv_cpu_features="SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?" name="AllTests">
+  <testsuite name="MOG2_Apply_Mog2" tests="4" failures="4" disabled="0" errors="0" time="0">
+    <testcase name="Mog2/0" value_param="(&quot;gpu/video/768x576.avi&quot;, 1)" status="run" time="0" classname="MOG2_Apply_Mog2">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./gpu/video/768x576.avi&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./gpu/video/768x576.avi" does not exist.]]></failure>
@@ -56,7 +56,7 @@ Failed
   Requested file "./cv/shared/fruits_ecc.png" does not exist.]]></failure>
     </testcase>
   </testsuite>
-  <testsuite name="KNN_Apply_KNN" tests="4" failures="4" disabled="0" errors="0" time="0">
+  <testsuite name="KNN_Apply_KNN" tests="4" failures="4" disabled="0" errors="0" time="0.001">
     <testcase name="KNN/0" value_param="(&quot;gpu/video/768x576.avi&quot;, 1)" status="run" time="0" classname="KNN_Apply_KNN">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./gpu/video/768x576.avi&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
@@ -67,7 +67,7 @@ Failed
 Failed
   Requested file "./gpu/video/768x576.avi" does not exist.]]></failure>
     </testcase>
-    <testcase name="KNN/2" value_param="(&quot;gpu/video/1920x1080.avi&quot;, 1)" status="run" time="0" classname="KNN_Apply_KNN">
+    <testcase name="KNN/2" value_param="(&quot;gpu/video/1920x1080.avi&quot;, 1)" status="run" time="0.001" classname="KNN_Apply_KNN">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./gpu/video/1920x1080.avi&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./gpu/video/1920x1080.avi" does not exist.]]></failure>
@@ -90,8 +90,8 @@ Failed
   Requested file "./gpu/video/1920x1080.avi" does not exist.]]></failure>
     </testcase>
   </testsuite>
-  <testsuite name="DenseOpticalFlow_VariationalRefinement_perf" tests="8" failures="0" disabled="0" errors="0" time="4.264">
-    <testcase name="perf/0" value_param="(320x240, 5, 5)" status="run" time="0.084" classname="DenseOpticalFlow_VariationalRefinement_perf">
+  <testsuite name="DenseOpticalFlow_VariationalRefinement_perf" tests="8" failures="0" disabled="0" errors="0" time="3.792">
+    <testcase name="perf/0" value_param="(320x240, 5, 5)" status="run" time="0.066" classname="DenseOpticalFlow_VariationalRefinement_perf">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -99,15 +99,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="7965371"/>
-<property name="median" value="8037550"/>
-<property name="gmean" value="8288737"/>
-<property name="gstddev" value="0.069908"/>
-<property name="mean" value="8307868"/>
-<property name="stddev" value="623390"/>
+<property name="min" value="5614766"/>
+<property name="median" value="6203930"/>
+<property name="gmean" value="6527815"/>
+<property name="gstddev" value="0.150874"/>
+<property name="mean" value="6596415"/>
+<property name="stddev" value="1025379"/>
 </properties>
     </testcase>
-    <testcase name="perf/1" value_param="(320x240, 5, 10)" status="run" time="0.139" classname="DenseOpticalFlow_VariationalRefinement_perf">
+    <testcase name="perf/1" value_param="(320x240, 5, 10)" status="run" time="0.098" classname="DenseOpticalFlow_VariationalRefinement_perf">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -115,15 +115,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="13807549"/>
-<property name="median" value="13836878"/>
-<property name="gmean" value="13876235"/>
-<property name="gstddev" value="0.007015"/>
-<property name="mean" value="13876543"/>
-<property name="stddev" value="97904"/>
+<property name="min" value="8909530"/>
+<property name="median" value="9066007"/>
+<property name="gmean" value="9643571"/>
+<property name="gstddev" value="0.150508"/>
+<property name="mean" value="9752303"/>
+<property name="stddev" value="1692744"/>
 </properties>
     </testcase>
-    <testcase name="perf/2" value_param="(320x240, 10, 5)" status="run" time="0.106" classname="DenseOpticalFlow_VariationalRefinement_perf">
+    <testcase name="perf/2" value_param="(320x240, 10, 5)" status="run" time="0.074" classname="DenseOpticalFlow_VariationalRefinement_perf">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -131,15 +131,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="10299095"/>
-<property name="median" value="10386374"/>
-<property name="gmean" value="10501189"/>
-<property name="gstddev" value="0.038863"/>
-<property name="mean" value="10508558"/>
-<property name="stddev" value="428193"/>
+<property name="min" value="7010029"/>
+<property name="median" value="7108912"/>
+<property name="gmean" value="7329504"/>
+<property name="gstddev" value="0.077010"/>
+<property name="mean" value="7349923"/>
+<property name="stddev" value="602417"/>
 </properties>
     </testcase>
-    <testcase name="perf/3" value_param="(320x240, 10, 10)" status="run" time="0.186" classname="DenseOpticalFlow_VariationalRefinement_perf">
+    <testcase name="perf/3" value_param="(320x240, 10, 10)" status="run" time="0.122" classname="DenseOpticalFlow_VariationalRefinement_perf">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -147,15 +147,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="18407534"/>
-<property name="median" value="18443693"/>
-<property name="gmean" value="18508384"/>
-<property name="gstddev" value="0.008179"/>
-<property name="mean" value="18508944"/>
-<property name="stddev" value="152432"/>
+<property name="min" value="11706562"/>
+<property name="median" value="11826090"/>
+<property name="gmean" value="12052940"/>
+<property name="gstddev" value="0.042887"/>
+<property name="mean" value="12063103"/>
+<property name="stddev" value="531640"/>
 </properties>
     </testcase>
-    <testcase name="perf/4" value_param="(640x480, 5, 5)" status="run" time="0.593" classname="DenseOpticalFlow_VariationalRefinement_perf">
+    <testcase name="perf/4" value_param="(640x480, 5, 5)" status="run" time="0.535" classname="DenseOpticalFlow_VariationalRefinement_perf">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -163,15 +163,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="56566218"/>
-<property name="median" value="59943206"/>
-<property name="gmean" value="59129760"/>
-<property name="gstddev" value="0.031917"/>
-<property name="mean" value="59156752"/>
-<property name="stddev" value="1875655"/>
+<property name="min" value="50511194"/>
+<property name="median" value="54399112"/>
+<property name="gmean" value="53379930"/>
+<property name="gstddev" value="0.037631"/>
+<property name="mean" value="53413776"/>
+<property name="stddev" value="1994071"/>
 </properties>
     </testcase>
-    <testcase name="perf/5" value_param="(640x480, 5, 10)" status="run" time="1.038" classname="DenseOpticalFlow_VariationalRefinement_perf">
+    <testcase name="perf/5" value_param="(640x480, 5, 10)" status="run" time="0.972" classname="DenseOpticalFlow_VariationalRefinement_perf">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -179,15 +179,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="99377667"/>
-<property name="median" value="103283843"/>
-<property name="gmean" value="103540977"/>
-<property name="gstddev" value="0.037037"/>
-<property name="mean" value="103604997"/>
-<property name="stddev" value="3844892"/>
+<property name="min" value="89148916"/>
+<property name="median" value="97854562"/>
+<property name="gmean" value="96927321"/>
+<property name="gstddev" value="0.039881"/>
+<property name="mean" value="96995889"/>
+<property name="stddev" value="3800085"/>
 </properties>
     </testcase>
-    <testcase name="perf/6" value_param="(640x480, 10, 5)" status="run" time="0.752" classname="DenseOpticalFlow_VariationalRefinement_perf">
+    <testcase name="perf/6" value_param="(640x480, 10, 5)" status="run" time="0.669" classname="DenseOpticalFlow_VariationalRefinement_perf">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -195,15 +195,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="69366993"/>
-<property name="median" value="75812186"/>
-<property name="gmean" value="74896212"/>
-<property name="gstddev" value="0.050365"/>
-<property name="mean" value="74981845"/>
-<property name="stddev" value="3783473"/>
+<property name="min" value="61840147"/>
+<property name="median" value="66876130"/>
+<property name="gmean" value="66578994"/>
+<property name="gstddev" value="0.066565"/>
+<property name="mean" value="66712304"/>
+<property name="stddev" value="4462073"/>
 </properties>
     </testcase>
-    <testcase name="perf/7" value_param="(640x480, 10, 10)" status="run" time="1.366" classname="DenseOpticalFlow_VariationalRefinement_perf">
+    <testcase name="perf/7" value_param="(640x480, 10, 10)" status="run" time="1.256" classname="DenseOpticalFlow_VariationalRefinement_perf">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -211,12 +211,12 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="126004801"/>
-<property name="median" value="140918072"/>
-<property name="gmean" value="136223130"/>
-<property name="gstddev" value="0.058371"/>
-<property name="mean" value="136430700"/>
-<property name="stddev" value="7879790"/>
+<property name="min" value="111723041"/>
+<property name="median" value="128211330"/>
+<property name="gmean" value="125159148"/>
+<property name="gstddev" value="0.068058"/>
+<property name="mean" value="125416158"/>
+<property name="stddev" value="8334905"/>
 </properties>
     </testcase>
   </testsuite>
@@ -246,7 +246,7 @@ Failed
 Failed
   Requested file "./cv/optflow/frames/VGA_01.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="OpticalFlowPyrLK_full/5" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 3, (9, 9), 11)" status="run" time="0" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+    <testcase name="OpticalFlowPyrLK_full/5" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 3, (9, 9), 11)" status="run" time="0.001" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/optflow/frames/VGA_01.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./cv/optflow/frames/VGA_01.png" does not exist.]]></failure>
@@ -286,7 +286,7 @@ Failed
 Failed
   Requested file "./cv/optflow/frames/VGA_02.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="OpticalFlowPyrLK_full/13" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 1, (9, 9), 11)" status="run" time="0.001" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+    <testcase name="OpticalFlowPyrLK_full/13" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 1, (9, 9), 11)" status="run" time="0" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/optflow/frames/VGA_02.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./cv/optflow/frames/VGA_02.png" does not exist.]]></failure>
@@ -391,7 +391,7 @@ Failed
 Failed
   Requested file "./cv/optflow/frames/720p_01.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="OpticalFlowPyrLK_full/34" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 4, (15, 15), 7)" status="run" time="0" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+    <testcase name="OpticalFlowPyrLK_full/34" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 4, (15, 15), 7)" status="run" time="0.001" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/optflow/frames/720p_01.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./cv/optflow/frames/720p_01.png" does not exist.]]></failure>
@@ -426,7 +426,7 @@ Failed
 Failed
   Requested file "./cv/optflow/frames/720p_02.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="OpticalFlowPyrLK_full/41" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 3, (9, 9), 11)" status="run" time="0.001" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+    <testcase name="OpticalFlowPyrLK_full/41" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 3, (9, 9), 11)" status="run" time="0" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/optflow/frames/720p_02.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./cv/optflow/frames/720p_02.png" does not exist.]]></failure>
@@ -462,7 +462,7 @@ Failed
   Requested file "./cv/optflow/frames/720p_02.png" does not exist.]]></failure>
     </testcase>
   </testsuite>
-  <testsuite name="Path_Idx_NPoints_WSize_OpticalFlowPyrLK_ovx" tests="16" failures="16" disabled="0" errors="0" time="0">
+  <testsuite name="Path_Idx_NPoints_WSize_OpticalFlowPyrLK_ovx" tests="16" failures="16" disabled="0" errors="0" time="0.001">
     <testcase name="OpticalFlowPyrLK_ovx/0" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, (9, 9), 7)" status="run" time="0" classname="Path_Idx_NPoints_WSize_OpticalFlowPyrLK_ovx">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/optflow/frames/VGA_01.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
@@ -533,7 +533,7 @@ Failed
 Failed
   Requested file "./cv/optflow/frames/720p_02.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="OpticalFlowPyrLK_ovx/14" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, (15, 15), 7)" status="run" time="0" classname="Path_Idx_NPoints_WSize_OpticalFlowPyrLK_ovx">
+    <testcase name="OpticalFlowPyrLK_ovx/14" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, (15, 15), 7)" status="run" time="0.001" classname="Path_Idx_NPoints_WSize_OpticalFlowPyrLK_ovx">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/optflow/frames/720p_02.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./cv/optflow/frames/720p_02.png" does not exist.]]></failure>
@@ -544,7 +544,7 @@ Failed
   Requested file "./cv/optflow/frames/720p_02.png" does not exist.]]></failure>
     </testcase>
   </testsuite>
-  <testsuite name="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self" tests="96" failures="96" disabled="0" errors="0" time="0.014">
+  <testsuite name="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self" tests="96" failures="96" disabled="0" errors="0" time="0.015">
     <testcase name="OpticalFlowPyrLK_self/0" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 1, (9, 9), 7, false)" status="run" time="0" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/optflow/frames/VGA_01.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
@@ -565,7 +565,7 @@ Failed
 Failed
   Requested file "./cv/optflow/frames/VGA_01.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="OpticalFlowPyrLK_self/4" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 1, (15, 15), 7, false)" status="run" time="0.001" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+    <testcase name="OpticalFlowPyrLK_self/4" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 1, (15, 15), 7, false)" status="run" time="0" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/optflow/frames/VGA_01.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./cv/optflow/frames/VGA_01.png" does not exist.]]></failure>
@@ -675,7 +675,7 @@ Failed
 Failed
   Requested file "./cv/optflow/frames/VGA_02.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="OpticalFlowPyrLK_self/26" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 1, (9, 9), 11, false)" status="run" time="0" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+    <testcase name="OpticalFlowPyrLK_self/26" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 1, (9, 9), 11, false)" status="run" time="0.001" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/optflow/frames/VGA_02.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./cv/optflow/frames/VGA_02.png" does not exist.]]></failure>
@@ -695,7 +695,7 @@ Failed
 Failed
   Requested file "./cv/optflow/frames/VGA_02.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="OpticalFlowPyrLK_self/30" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 1, (15, 15), 11, false)" status="run" time="0.001" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+    <testcase name="OpticalFlowPyrLK_self/30" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 1, (15, 15), 11, false)" status="run" time="0" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/optflow/frames/VGA_02.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./cv/optflow/frames/VGA_02.png" does not exist.]]></failure>
@@ -815,7 +815,7 @@ Failed
 Failed
   Requested file "./cv/optflow/frames/720p_01.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="OpticalFlowPyrLK_self/54" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 1, (15, 15), 11, false)" status="run" time="0" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+    <testcase name="OpticalFlowPyrLK_self/54" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 1, (15, 15), 11, false)" status="run" time="0.001" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/optflow/frames/720p_01.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./cv/optflow/frames/720p_01.png" does not exist.]]></failure>
@@ -825,7 +825,7 @@ Failed
 Failed
   Requested file "./cv/optflow/frames/720p_01.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="OpticalFlowPyrLK_self/56" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 3, (9, 9), 7, false)" status="run" time="0.001" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+    <testcase name="OpticalFlowPyrLK_self/56" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 3, (9, 9), 7, false)" status="run" time="0" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/optflow/frames/720p_01.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./cv/optflow/frames/720p_01.png" does not exist.]]></failure>
@@ -870,7 +870,7 @@ Failed
 Failed
   Requested file "./cv/optflow/frames/720p_01.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="OpticalFlowPyrLK_self/65" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 4, (9, 9), 7, true)" status="run" time="0" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+    <testcase name="OpticalFlowPyrLK_self/65" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 4, (9, 9), 7, true)" status="run" time="0.006" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/optflow/frames/720p_01.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./cv/optflow/frames/720p_01.png" does not exist.]]></failure>
@@ -910,7 +910,7 @@ Failed
 Failed
   Requested file "./cv/optflow/frames/720p_02.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="OpticalFlowPyrLK_self/73" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 1, (9, 9), 7, true)" status="run" time="0.005" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+    <testcase name="OpticalFlowPyrLK_self/73" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 1, (9, 9), 7, true)" status="run" time="0" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/optflow/frames/720p_02.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./cv/optflow/frames/720p_02.png" does not exist.]]></failure>
@@ -960,7 +960,7 @@ Failed
 Failed
   Requested file "./cv/optflow/frames/720p_02.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="OpticalFlowPyrLK_self/83" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 3, (9, 9), 11, true)" status="run" time="0" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+    <testcase name="OpticalFlowPyrLK_self/83" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 3, (9, 9), 11, true)" status="run" time="0.001" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/optflow/frames/720p_02.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./cv/optflow/frames/720p_02.png" does not exist.]]></failure>
@@ -1067,7 +1067,7 @@ Failed
 Failed
   Requested file "./cv/optflow/frames/720p_01.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="OpticalFlowPyrLK_pyr/8" value_param="(&quot;cv/optflow/frames/720p_01.png&quot;, 11, false, BORDER_DEFAULT, false)" status="run" time="0.001" classname="Path_Win_Deriv_Border_Reuse_OpticalFlowPyrLK_pyr">
+    <testcase name="OpticalFlowPyrLK_pyr/8" value_param="(&quot;cv/optflow/frames/720p_01.png&quot;, 11, false, BORDER_DEFAULT, false)" status="run" time="0" classname="Path_Win_Deriv_Border_Reuse_OpticalFlowPyrLK_pyr">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/optflow/frames/720p_01.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./cv/optflow/frames/720p_01.png" does not exist.]]></failure>
@@ -1108,8 +1108,8 @@ Failed
   Requested file "./cv/optflow/frames/720p_01.png" does not exist.]]></failure>
     </testcase>
   </testsuite>
-  <testsuite name="DenseOpticalFlow_DIS_perf" tests="9" failures="0" disabled="0" errors="0" time="4.746">
-    <testcase name="perf/0" value_param="(&quot;PRESET_ULTRAFAST&quot;, 640x480)" status="run" time="0.035" classname="DenseOpticalFlow_DIS_perf">
+  <testsuite name="DenseOpticalFlow_DIS_perf" tests="9" failures="0" disabled="0" errors="0" time="3.824">
+    <testcase name="perf/0" value_param="(&quot;PRESET_ULTRAFAST&quot;, 640x480)" status="run" time="0.029" classname="DenseOpticalFlow_DIS_perf">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -1117,15 +1117,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="2494754"/>
-<property name="median" value="3073898"/>
-<property name="gmean" value="3324823"/>
-<property name="gstddev" value="0.175108"/>
-<property name="mean" value="3371355"/>
-<property name="stddev" value="598058"/>
+<property name="min" value="1955253"/>
+<property name="median" value="2763368"/>
+<property name="gmean" value="2745301"/>
+<property name="gstddev" value="0.167380"/>
+<property name="mean" value="2778970"/>
+<property name="stddev" value="443537"/>
 </properties>
     </testcase>
-    <testcase name="perf/1" value_param="(&quot;PRESET_ULTRAFAST&quot;, 1280x720)" status="run" time="0.113" classname="DenseOpticalFlow_DIS_perf">
+    <testcase name="perf/1" value_param="(&quot;PRESET_ULTRAFAST&quot;, 1280x720)" status="run" time="0.093" classname="DenseOpticalFlow_DIS_perf">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -1133,15 +1133,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="8715134"/>
-<property name="median" value="10729396"/>
-<property name="gmean" value="10737524"/>
-<property name="gstddev" value="0.084004"/>
-<property name="mean" value="10770460"/>
-<property name="stddev" value="858794"/>
+<property name="min" value="6898032"/>
+<property name="median" value="8858387"/>
+<property name="gmean" value="8855896"/>
+<property name="gstddev" value="0.119070"/>
+<property name="mean" value="8912844"/>
+<property name="stddev" value="1076508"/>
 </properties>
     </testcase>
-    <testcase name="perf/2" value_param="(&quot;PRESET_ULTRAFAST&quot;, 1920x1080)" status="run" time="0.247" classname="DenseOpticalFlow_DIS_perf">
+    <testcase name="perf/2" value_param="(&quot;PRESET_ULTRAFAST&quot;, 1920x1080)" status="run" time="0.203" classname="DenseOpticalFlow_DIS_perf">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -1149,15 +1149,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="18374872"/>
-<property name="median" value="23445950"/>
-<property name="gmean" value="23343345"/>
-<property name="gstddev" value="0.092320"/>
-<property name="mean" value="23428458"/>
-<property name="stddev" value="2002334"/>
+<property name="min" value="14502037"/>
+<property name="median" value="18918432"/>
+<property name="gmean" value="18782473"/>
+<property name="gstddev" value="0.107592"/>
+<property name="mean" value="18877541"/>
+<property name="stddev" value="1948444"/>
 </properties>
     </testcase>
-    <testcase name="perf/3" value_param="(&quot;PRESET_FAST&quot;, 640x480)" status="run" time="0.063" classname="DenseOpticalFlow_DIS_perf">
+    <testcase name="perf/3" value_param="(&quot;PRESET_FAST&quot;, 640x480)" status="run" time="0.052" classname="DenseOpticalFlow_DIS_perf">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -1165,15 +1165,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="6071442"/>
-<property name="median" value="6130466"/>
-<property name="gmean" value="6145451"/>
-<property name="gstddev" value="0.008865"/>
-<property name="mean" value="6145669"/>
-<property name="stddev" value="54581"/>
+<property name="min" value="4700323"/>
+<property name="median" value="4882118"/>
+<property name="gmean" value="5039576"/>
+<property name="gstddev" value="0.066472"/>
+<property name="mean" value="5049882"/>
+<property name="stddev" value="349717"/>
 </properties>
     </testcase>
-    <testcase name="perf/4" value_param="(&quot;PRESET_FAST&quot;, 1280x720)" status="run" time="0.196" classname="DenseOpticalFlow_DIS_perf">
+    <testcase name="perf/4" value_param="(&quot;PRESET_FAST&quot;, 1280x720)" status="run" time="0.157" classname="DenseOpticalFlow_DIS_perf">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -1181,15 +1181,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="18371951"/>
-<property name="median" value="19084262"/>
-<property name="gmean" value="19079269"/>
-<property name="gstddev" value="0.017097"/>
-<property name="mean" value="19081770"/>
-<property name="stddev" value="324556"/>
+<property name="min" value="15097517"/>
+<property name="median" value="15233215"/>
+<property name="gmean" value="15243748"/>
+<property name="gstddev" value="0.006387"/>
+<property name="mean" value="15244028"/>
+<property name="stddev" value="97462"/>
 </properties>
     </testcase>
-    <testcase name="perf/5" value_param="(&quot;PRESET_FAST&quot;, 1920x1080)" status="run" time="0.439" classname="DenseOpticalFlow_DIS_perf">
+    <testcase name="perf/5" value_param="(&quot;PRESET_FAST&quot;, 1920x1080)" status="run" time="0.356" classname="DenseOpticalFlow_DIS_perf">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -1197,15 +1197,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="40012979"/>
-<property name="median" value="42482377"/>
-<property name="gmean" value="42575085"/>
-<property name="gstddev" value="0.031001"/>
-<property name="mean" value="42593474"/>
-<property name="stddev" value="1317765"/>
+<property name="min" value="32684852"/>
+<property name="median" value="33994477"/>
+<property name="gmean" value="34387242"/>
+<property name="gstddev" value="0.036391"/>
+<property name="mean" value="34407966"/>
+<property name="stddev" value="1272922"/>
 </properties>
     </testcase>
-    <testcase name="perf/6" value_param="(&quot;PRESET_MEDIUM&quot;, 640x480)" status="run" time="0.248" classname="DenseOpticalFlow_DIS_perf">
+    <testcase name="perf/6" value_param="(&quot;PRESET_MEDIUM&quot;, 640x480)" status="run" time="0.176" classname="DenseOpticalFlow_DIS_perf">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -1213,15 +1213,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="23881807"/>
-<property name="median" value="23967841"/>
-<property name="gmean" value="24655105"/>
-<property name="gstddev" value="0.067150"/>
-<property name="mean" value="24707618"/>
-<property name="stddev" value="1781379"/>
+<property name="min" value="17055667"/>
+<property name="median" value="17189110"/>
+<property name="gmean" value="17433205"/>
+<property name="gstddev" value="0.031379"/>
+<property name="mean" value="17441094"/>
+<property name="stddev" value="564727"/>
 </properties>
     </testcase>
-    <testcase name="perf/7" value_param="(&quot;PRESET_MEDIUM&quot;, 1280x720)" status="run" time="0.944" classname="DenseOpticalFlow_DIS_perf">
+    <testcase name="perf/7" value_param="(&quot;PRESET_MEDIUM&quot;, 1280x720)" status="run" time="0.742" classname="DenseOpticalFlow_DIS_perf">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -1229,15 +1229,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="89414490"/>
-<property name="median" value="94512430"/>
-<property name="gmean" value="93931657"/>
-<property name="gstddev" value="0.022560"/>
-<property name="mean" value="93952990"/>
-<property name="stddev" value="2092769"/>
+<property name="min" value="68924227"/>
+<property name="median" value="74015836"/>
+<property name="gmean" value="73818236"/>
+<property name="gstddev" value="0.031653"/>
+<property name="mean" value="73851317"/>
+<property name="stddev" value="2316421"/>
 </properties>
     </testcase>
-    <testcase name="perf/8" value_param="(&quot;PRESET_MEDIUM&quot;, 1920x1080)" status="run" time="2.461" classname="DenseOpticalFlow_DIS_perf">
+    <testcase name="perf/8" value_param="(&quot;PRESET_MEDIUM&quot;, 1920x1080)" status="run" time="2.016" classname="DenseOpticalFlow_DIS_perf">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -1245,12 +1245,12 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="235528878"/>
-<property name="median" value="245380476"/>
-<property name="gmean" value="244866608"/>
-<property name="gstddev" value="0.020060"/>
-<property name="mean" value="244910969"/>
-<property name="stddev" value="4916209"/>
+<property name="min" value="196589516"/>
+<property name="median" value="200807242"/>
+<property name="gmean" value="200543341"/>
+<property name="gstddev" value="0.012983"/>
+<property name="mean" value="200558558"/>
+<property name="stddev" value="2605481"/>
 </properties>
     </testcase>
   </testsuite>

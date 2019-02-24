@@ -1,100 +1,100 @@
-EstimateAffine2D::EstimateAffine::(100, 0.9, LMEDS, 0)                 $1.01
-EstimateAffine2D::EstimateAffine::(100, 0.9, LMEDS, 10)                $1
-EstimateAffine2D::EstimateAffine::(100, 0.9, RANSAC, 0)                $1
-EstimateAffine2D::EstimateAffine::(100, 0.9, RANSAC, 10)               $1.01
-EstimateAffine2D::EstimateAffine::(100, 0.95, LMEDS, 0)                $1.02
-EstimateAffine2D::EstimateAffine::(100, 0.95, LMEDS, 10)               $1
-EstimateAffine2D::EstimateAffine::(100, 0.95, RANSAC, 0)               $1
-EstimateAffine2D::EstimateAffine::(100, 0.95, RANSAC, 10)              $1
-EstimateAffine2D::EstimateAffine::(100, 0.99, LMEDS, 0)                $1.03
-EstimateAffine2D::EstimateAffine::(100, 0.99, LMEDS, 10)               $0.79
-EstimateAffine2D::EstimateAffine::(100, 0.99, RANSAC, 0)               $1
-EstimateAffine2D::EstimateAffine::(100, 0.99, RANSAC, 10)              $1.01
-EstimateAffine2D::EstimateAffine::(5000, 0.9, LMEDS, 0)                $1.09
-EstimateAffine2D::EstimateAffine::(5000, 0.9, LMEDS, 10)               $1
-EstimateAffine2D::EstimateAffine::(5000, 0.9, RANSAC, 0)               $1.11
-EstimateAffine2D::EstimateAffine::(5000, 0.9, RANSAC, 10)              $1.05
-EstimateAffine2D::EstimateAffine::(5000, 0.95, LMEDS, 0)               $1.09
-EstimateAffine2D::EstimateAffine::(5000, 0.95, LMEDS, 10)              $1
-EstimateAffine2D::EstimateAffine::(5000, 0.95, RANSAC, 0)              $1.1
-EstimateAffine2D::EstimateAffine::(5000, 0.95, RANSAC, 10)             $1.04
-EstimateAffine2D::EstimateAffine::(5000, 0.99, LMEDS, 0)               $1.09
-EstimateAffine2D::EstimateAffine::(5000, 0.99, LMEDS, 10)              $1
-EstimateAffine2D::EstimateAffine::(5000, 0.99, RANSAC, 0)              $1.1
-EstimateAffine2D::EstimateAffine::(5000, 0.99, RANSAC, 10)             $1.05
-EstimateAffine2D::EstimateAffine::(100000, 0.9, LMEDS, 0)              $1.08
-EstimateAffine2D::EstimateAffine::(100000, 0.9, LMEDS, 10)             $1.1
-EstimateAffine2D::EstimateAffine::(100000, 0.9, RANSAC, 0)             $1.07
-EstimateAffine2D::EstimateAffine::(100000, 0.9, RANSAC, 10)            $1.08
-EstimateAffine2D::EstimateAffine::(100000, 0.95, LMEDS, 0)             $1.08
-EstimateAffine2D::EstimateAffine::(100000, 0.95, LMEDS, 10)            $1.11
-EstimateAffine2D::EstimateAffine::(100000, 0.95, RANSAC, 0)            $1.07
-EstimateAffine2D::EstimateAffine::(100000, 0.95, RANSAC, 10)           $1.08
-EstimateAffine2D::EstimateAffine::(100000, 0.99, LMEDS, 0)             $1.08
-EstimateAffine2D::EstimateAffine::(100000, 0.99, LMEDS, 10)            $1.07
-EstimateAffine2D::EstimateAffine::(100000, 0.99, RANSAC, 0)            $1.07
-EstimateAffine2D::EstimateAffine::(100000, 0.99, RANSAC, 10)           $1.08
-EstimateAffinePartial2D::EstimateAffine::(100, 0.9, LMEDS, 0)          $0.99
-EstimateAffinePartial2D::EstimateAffine::(100, 0.9, LMEDS, 10)         $1
-EstimateAffinePartial2D::EstimateAffine::(100, 0.9, RANSAC, 0)         $1
-EstimateAffinePartial2D::EstimateAffine::(100, 0.9, RANSAC, 10)        $1.01
-EstimateAffinePartial2D::EstimateAffine::(100, 0.95, LMEDS, 0)         $0.99
-EstimateAffinePartial2D::EstimateAffine::(100, 0.95, LMEDS, 10)        $1
-EstimateAffinePartial2D::EstimateAffine::(100, 0.95, RANSAC, 0)        $1
-EstimateAffinePartial2D::EstimateAffine::(100, 0.95, RANSAC, 10)       $1
-EstimateAffinePartial2D::EstimateAffine::(100, 0.99, LMEDS, 0)         $1
-EstimateAffinePartial2D::EstimateAffine::(100, 0.99, LMEDS, 10)        $0.99
-EstimateAffinePartial2D::EstimateAffine::(100, 0.99, RANSAC, 0)        $1
-EstimateAffinePartial2D::EstimateAffine::(100, 0.99, RANSAC, 10)       $1
-EstimateAffinePartial2D::EstimateAffine::(5000, 0.9, LMEDS, 0)         $0.99
-EstimateAffinePartial2D::EstimateAffine::(5000, 0.9, LMEDS, 10)        $1
-EstimateAffinePartial2D::EstimateAffine::(5000, 0.9, RANSAC, 0)        $1
-EstimateAffinePartial2D::EstimateAffine::(5000, 0.9, RANSAC, 10)       $1.01
-EstimateAffinePartial2D::EstimateAffine::(5000, 0.95, LMEDS, 0)        $1
-EstimateAffinePartial2D::EstimateAffine::(5000, 0.95, LMEDS, 10)       $1
-EstimateAffinePartial2D::EstimateAffine::(5000, 0.95, RANSAC, 0)       $1
-EstimateAffinePartial2D::EstimateAffine::(5000, 0.95, RANSAC, 10)      $1.01
-EstimateAffinePartial2D::EstimateAffine::(5000, 0.99, LMEDS, 0)        $1
-EstimateAffinePartial2D::EstimateAffine::(5000, 0.99, LMEDS, 10)       $1.01
-EstimateAffinePartial2D::EstimateAffine::(5000, 0.99, RANSAC, 0)       $1
-EstimateAffinePartial2D::EstimateAffine::(5000, 0.99, RANSAC, 10)      $1.01
-EstimateAffinePartial2D::EstimateAffine::(100000, 0.9, LMEDS, 0)       $0.99
-EstimateAffinePartial2D::EstimateAffine::(100000, 0.9, LMEDS, 10)      $1.01
-EstimateAffinePartial2D::EstimateAffine::(100000, 0.9, RANSAC, 0)      $1.01
-EstimateAffinePartial2D::EstimateAffine::(100000, 0.9, RANSAC, 10)     $0.97
-EstimateAffinePartial2D::EstimateAffine::(100000, 0.95, LMEDS, 0)      $0.99
-EstimateAffinePartial2D::EstimateAffine::(100000, 0.95, LMEDS, 10)     $1
-EstimateAffinePartial2D::EstimateAffine::(100000, 0.95, RANSAC, 0)     $1.02
-EstimateAffinePartial2D::EstimateAffine::(100000, 0.95, RANSAC, 10)    $0.97
-EstimateAffinePartial2D::EstimateAffine::(100000, 0.99, LMEDS, 0)      $1
-EstimateAffinePartial2D::EstimateAffine::(100000, 0.99, LMEDS, 10)     $1.01
-EstimateAffinePartial2D::EstimateAffine::(100000, 0.99, RANSAC, 0)     $1.07
-EstimateAffinePartial2D::EstimateAffine::(100000, 0.99, RANSAC, 10)    $1.01
-SGBM::TestStereoCorresp::(640x480, 128, StereoSGBM::MODE_HH4)          $1.23
-SGBM::TestStereoCorresp::(640x480, 128, StereoSGBM::MODE_SGBM)         $1.4
-SGBM::TestStereoCorresp::(640x480, 128, StereoSGBM::MODE_SGBM_3WAY)    $1.77
-SGBM::TestStereoCorresp::(640x480, 256, StereoSGBM::MODE_HH4)          $1.45
-SGBM::TestStereoCorresp::(640x480, 256, StereoSGBM::MODE_SGBM)         $1.03
-SGBM::TestStereoCorresp::(640x480, 256, StereoSGBM::MODE_SGBM_3WAY)    $1.5
-SGBM::TestStereoCorresp::(1280x720, 128, StereoSGBM::MODE_HH4)         $0.84
-SGBM::TestStereoCorresp::(1280x720, 128, StereoSGBM::MODE_SGBM)        $0.76
-SGBM::TestStereoCorresp::(1280x720, 128, StereoSGBM::MODE_SGBM_3WAY)   $0.83
-SGBM::TestStereoCorresp::(1280x720, 256, StereoSGBM::MODE_HH4)         $0.79
-SGBM::TestStereoCorresp::(1280x720, 256, StereoSGBM::MODE_SGBM)        $0.82
-SGBM::TestStereoCorresp::(1280x720, 256, StereoSGBM::MODE_SGBM_3WAY)   $0.76
-solvePnP::PointsNum_Algo::(5, SOLVEPNP_DLS)                            $1
-solvePnP::PointsNum_Algo::(5, SOLVEPNP_EPNP)                           $1.02
-solvePnP::PointsNum_Algo::(5, SOLVEPNP_ITERATIVE)                      $1
-solvePnP::PointsNum_Algo::(5, SOLVEPNP_UPNP)                           $1.02
-solvePnP::PointsNum_Algo::(27, SOLVEPNP_DLS)                           $1.02
-solvePnP::PointsNum_Algo::(27, SOLVEPNP_EPNP)                          $1.01
-solvePnP::PointsNum_Algo::(27, SOLVEPNP_ITERATIVE)                     $0.99
-solvePnP::PointsNum_Algo::(27, SOLVEPNP_UPNP)                          $1.01
-solvePnP::PointsNum_Algo::(91, SOLVEPNP_DLS)                           $1.01
-solvePnP::PointsNum_Algo::(91, SOLVEPNP_EPNP)                          $1.02
-solvePnP::PointsNum_Algo::(91, SOLVEPNP_ITERATIVE)                     $1
-solvePnP::PointsNum_Algo::(91, SOLVEPNP_UPNP)                          $1.01
-solvePnPSmallPoints::PointsNum_Algo::(5, SOLVEPNP_DLS)                 $1.02
-solvePnPSmallPoints::PointsNum_Algo::(5, SOLVEPNP_EPNP)                $1.01
-solvePnPSmallPoints::PointsNum_Algo::(5, SOLVEPNP_P3P)                 $1
-solvePnPSmallPoints::PointsNum_Algo::(5, SOLVEPNP_UPNP)                $1.01
+EstimateAffine2D::EstimateAffine::(100, 0.9, LMEDS, 0)               $1.02
+EstimateAffine2D::EstimateAffine::(100, 0.9, LMEDS, 10)              $0.99
+EstimateAffine2D::EstimateAffine::(100, 0.9, RANSAC, 0)              $1.02
+EstimateAffine2D::EstimateAffine::(100, 0.9, RANSAC, 10)             $1
+EstimateAffine2D::EstimateAffine::(100, 0.95, LMEDS, 0)              $1.02
+EstimateAffine2D::EstimateAffine::(100, 0.95, LMEDS, 10)             $1.02
+EstimateAffine2D::EstimateAffine::(100, 0.95, RANSAC, 0)             $1
+EstimateAffine2D::EstimateAffine::(100, 0.95, RANSAC, 10)            $1
+EstimateAffine2D::EstimateAffine::(100, 0.99, LMEDS, 0)              $1.04
+EstimateAffine2D::EstimateAffine::(100, 0.99, LMEDS, 10)             $1.03
+EstimateAffine2D::EstimateAffine::(100, 0.99, RANSAC, 0)             $1
+EstimateAffine2D::EstimateAffine::(100, 0.99, RANSAC, 10)            $1.01
+EstimateAffine2D::EstimateAffine::(5000, 0.9, LMEDS, 0)              $1
+EstimateAffine2D::EstimateAffine::(5000, 0.9, LMEDS, 10)             $1.05
+EstimateAffine2D::EstimateAffine::(5000, 0.9, RANSAC, 0)             $1.01
+EstimateAffine2D::EstimateAffine::(5000, 0.9, RANSAC, 10)            $0.97
+EstimateAffine2D::EstimateAffine::(5000, 0.95, LMEDS, 0)             $1
+EstimateAffine2D::EstimateAffine::(5000, 0.95, LMEDS, 10)            $1.04
+EstimateAffine2D::EstimateAffine::(5000, 0.95, RANSAC, 0)            $1.01
+EstimateAffine2D::EstimateAffine::(5000, 0.95, RANSAC, 10)           $0.97
+EstimateAffine2D::EstimateAffine::(5000, 0.99, LMEDS, 0)             $1
+EstimateAffine2D::EstimateAffine::(5000, 0.99, LMEDS, 10)            $1.03
+EstimateAffine2D::EstimateAffine::(5000, 0.99, RANSAC, 0)            $1.01
+EstimateAffine2D::EstimateAffine::(5000, 0.99, RANSAC, 10)           $0.97
+EstimateAffine2D::EstimateAffine::(100000, 0.9, LMEDS, 0)            $1
+EstimateAffine2D::EstimateAffine::(100000, 0.9, LMEDS, 10)           $0.99
+EstimateAffine2D::EstimateAffine::(100000, 0.9, RANSAC, 0)           $1
+EstimateAffine2D::EstimateAffine::(100000, 0.9, RANSAC, 10)          $0.99
+EstimateAffine2D::EstimateAffine::(100000, 0.95, LMEDS, 0)           $1
+EstimateAffine2D::EstimateAffine::(100000, 0.95, LMEDS, 10)          $0.99
+EstimateAffine2D::EstimateAffine::(100000, 0.95, RANSAC, 0)          $0.99
+EstimateAffine2D::EstimateAffine::(100000, 0.95, RANSAC, 10)         $0.98
+EstimateAffine2D::EstimateAffine::(100000, 0.99, LMEDS, 0)           $1
+EstimateAffine2D::EstimateAffine::(100000, 0.99, LMEDS, 10)          $0.99
+EstimateAffine2D::EstimateAffine::(100000, 0.99, RANSAC, 0)          $1
+EstimateAffine2D::EstimateAffine::(100000, 0.99, RANSAC, 10)         $0.99
+EstimateAffinePartial2D::EstimateAffine::(100, 0.9, LMEDS, 0)        $0.99
+EstimateAffinePartial2D::EstimateAffine::(100, 0.9, LMEDS, 10)       $1.01
+EstimateAffinePartial2D::EstimateAffine::(100, 0.9, RANSAC, 0)       $1
+EstimateAffinePartial2D::EstimateAffine::(100, 0.9, RANSAC, 10)      $1.01
+EstimateAffinePartial2D::EstimateAffine::(100, 0.95, LMEDS, 0)       $1
+EstimateAffinePartial2D::EstimateAffine::(100, 0.95, LMEDS, 10)      $1.01
+EstimateAffinePartial2D::EstimateAffine::(100, 0.95, RANSAC, 0)      $1
+EstimateAffinePartial2D::EstimateAffine::(100, 0.95, RANSAC, 10)     $1.01
+EstimateAffinePartial2D::EstimateAffine::(100, 0.99, LMEDS, 0)       $1.01
+EstimateAffinePartial2D::EstimateAffine::(100, 0.99, LMEDS, 10)      $1.01
+EstimateAffinePartial2D::EstimateAffine::(100, 0.99, RANSAC, 0)      $1.01
+EstimateAffinePartial2D::EstimateAffine::(100, 0.99, RANSAC, 10)     $1.01
+EstimateAffinePartial2D::EstimateAffine::(5000, 0.9, LMEDS, 0)       $1.01
+EstimateAffinePartial2D::EstimateAffine::(5000, 0.9, LMEDS, 10)      $1
+EstimateAffinePartial2D::EstimateAffine::(5000, 0.9, RANSAC, 0)      $1
+EstimateAffinePartial2D::EstimateAffine::(5000, 0.9, RANSAC, 10)     $1
+EstimateAffinePartial2D::EstimateAffine::(5000, 0.95, LMEDS, 0)      $1
+EstimateAffinePartial2D::EstimateAffine::(5000, 0.95, LMEDS, 10)     $0.99
+EstimateAffinePartial2D::EstimateAffine::(5000, 0.95, RANSAC, 0)     $1
+EstimateAffinePartial2D::EstimateAffine::(5000, 0.95, RANSAC, 10)    $0.99
+EstimateAffinePartial2D::EstimateAffine::(5000, 0.99, LMEDS, 0)      $1.01
+EstimateAffinePartial2D::EstimateAffine::(5000, 0.99, LMEDS, 10)     $0.99
+EstimateAffinePartial2D::EstimateAffine::(5000, 0.99, RANSAC, 0)     $1
+EstimateAffinePartial2D::EstimateAffine::(5000, 0.99, RANSAC, 10)    $0.99
+EstimateAffinePartial2D::EstimateAffine::(100000, 0.9, LMEDS, 0)     $1
+EstimateAffinePartial2D::EstimateAffine::(100000, 0.9, LMEDS, 10)    $0.98
+EstimateAffinePartial2D::EstimateAffine::(100000, 0.9, RANSAC, 0)    $0.99
+EstimateAffinePartial2D::EstimateAffine::(100000, 0.9, RANSAC, 10)   $0.98
+EstimateAffinePartial2D::EstimateAffine::(100000, 0.95, LMEDS, 0)    $1
+EstimateAffinePartial2D::EstimateAffine::(100000, 0.95, LMEDS, 10)   $0.99
+EstimateAffinePartial2D::EstimateAffine::(100000, 0.95, RANSAC, 0)   $1
+EstimateAffinePartial2D::EstimateAffine::(100000, 0.95, RANSAC, 10)  $0.98
+EstimateAffinePartial2D::EstimateAffine::(100000, 0.99, LMEDS, 0)    $1
+EstimateAffinePartial2D::EstimateAffine::(100000, 0.99, LMEDS, 10)   $0.99
+EstimateAffinePartial2D::EstimateAffine::(100000, 0.99, RANSAC, 0)   $0.99
+EstimateAffinePartial2D::EstimateAffine::(100000, 0.99, RANSAC, 10)  $0.97
+SGBM::TestStereoCorresp::(640x480, 128, StereoSGBM::MODE_HH4)        $1.05
+SGBM::TestStereoCorresp::(640x480, 128, StereoSGBM::MODE_SGBM)       $1
+SGBM::TestStereoCorresp::(640x480, 128, StereoSGBM::MODE_SGBM_3WAY)  $1
+SGBM::TestStereoCorresp::(640x480, 256, StereoSGBM::MODE_HH4)        $1.02
+SGBM::TestStereoCorresp::(640x480, 256, StereoSGBM::MODE_SGBM)       $0.99
+SGBM::TestStereoCorresp::(640x480, 256, StereoSGBM::MODE_SGBM_3WAY)  $1
+SGBM::TestStereoCorresp::(1280x720, 128, StereoSGBM::MODE_HH4)       $1
+SGBM::TestStereoCorresp::(1280x720, 128, StereoSGBM::MODE_SGBM)      $0.96
+SGBM::TestStereoCorresp::(1280x720, 128, StereoSGBM::MODE_SGBM_3WAY) $0.98
+SGBM::TestStereoCorresp::(1280x720, 256, StereoSGBM::MODE_HH4)       $1.02
+SGBM::TestStereoCorresp::(1280x720, 256, StereoSGBM::MODE_SGBM)      $0.99
+SGBM::TestStereoCorresp::(1280x720, 256, StereoSGBM::MODE_SGBM_3WAY) $1
+solvePnP::PointsNum_Algo::(5, SOLVEPNP_DLS)                          $1.01
+solvePnP::PointsNum_Algo::(5, SOLVEPNP_EPNP)                         $1
+solvePnP::PointsNum_Algo::(5, SOLVEPNP_ITERATIVE)                    $1
+solvePnP::PointsNum_Algo::(5, SOLVEPNP_UPNP)                         $0.99
+solvePnP::PointsNum_Algo::(27, SOLVEPNP_DLS)                         $1
+solvePnP::PointsNum_Algo::(27, SOLVEPNP_EPNP)                        $0.99
+solvePnP::PointsNum_Algo::(27, SOLVEPNP_ITERATIVE)                   $1
+solvePnP::PointsNum_Algo::(27, SOLVEPNP_UPNP)                        $0.99
+solvePnP::PointsNum_Algo::(91, SOLVEPNP_DLS)                         $1
+solvePnP::PointsNum_Algo::(91, SOLVEPNP_EPNP)                        $0.98
+solvePnP::PointsNum_Algo::(91, SOLVEPNP_ITERATIVE)                   $0.99
+solvePnP::PointsNum_Algo::(91, SOLVEPNP_UPNP)                        $0.99
+solvePnPSmallPoints::PointsNum_Algo::(5, SOLVEPNP_DLS)               $1
+solvePnPSmallPoints::PointsNum_Algo::(5, SOLVEPNP_EPNP)              $1
+solvePnPSmallPoints::PointsNum_Algo::(5, SOLVEPNP_P3P)               $1.02
+solvePnPSmallPoints::PointsNum_Algo::(5, SOLVEPNP_UPNP)              $1

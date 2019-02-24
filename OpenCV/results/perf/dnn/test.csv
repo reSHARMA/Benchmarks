@@ -1,101 +1,100 @@
-Test case$Ratio(>1 faster)
-conv::Conv::(GFLOPS=0.014, K=[3 x 3], IN={1, 128, 14, 14}, OCN=32, P=[1 x 1], OCV/CPU)                       $1.49
-conv::Conv::(GFLOPS=0.017, K=[1 x 1], IN={1, 32, 32, 64}, OCN=128, OCV/CPU)                                  $1.96
-conv::Conv::(GFLOPS=0.017, K=[1 x 1], IN={1, 128, 32, 64}, OCN=32, OCV/CPU)                                  $1.95
-conv::Conv::(GFLOPS=0.038, K=[3 x 3], IN={1, 16, 64, 128}, OCN=16, P=[1 x 1], BIAS, OCV/CPU)                 $1.95
-conv::Conv::(GFLOPS=0.040, K=[1 x 1], IN={1, 576, 19, 19}, OCN=96, PM=SAME, BIAS, OCV/CPU)                   $1.73
-conv::Conv::(GFLOPS=0.053, K=[1 x 1], IN={1, 576, 19, 19}, OCN=128, PM=SAME, BIAS, OCV/CPU)                  $1.8
-conv::Conv::(GFLOPS=0.058, K=[3 x 3], IN={1, 128, 28, 28}, OCN=32, P=[1 x 1], OCV/CPU)                       $1.88
-conv::Conv::(GFLOPS=0.080, K=[3 x 3], IN={1, 96, 19, 19}, OCN=128, PM=SAME, BIAS, OCV/CPU)                   $1.84
-conv::Conv::(GFLOPS=0.103, K=[1 x 1], IN={1, 128, 28, 28}, OCN=512, OCV/CPU)                                 $1.92
-conv::Conv::(GFLOPS=0.103, K=[1 x 1], IN={1, 256, 14, 14}, OCN=1024, OCV/CPU)                                $1.54
-conv::Conv::(GFLOPS=0.103, K=[1 x 1], IN={1, 512, 7, 7}, OCN=2048, OCV/CPU)                                  $2.09
-conv::Conv::(GFLOPS=0.103, K=[1 x 1], IN={1, 512, 28, 28}, OCN=128, OCV/CPU)                                 $1.96
-conv::Conv::(GFLOPS=0.103, K=[1 x 1], IN={1, 1024, 14, 14}, OCN=256, OCV/CPU)                                $1.46
-conv::Conv::(GFLOPS=0.104, K=[1 x 1], IN={1, 64, 56, 56}, OCN=256, OCV/CPU)                                  $2.01
-conv::Conv::(GFLOPS=0.111, K=[3 x 3], IN={1, 192, 10, 10}, OCN=320, PM=SAME, BIAS, OCV/CPU)                  $1.22
-conv::Conv::(GFLOPS=0.126, K=[3 x 3], IN={1, 512, 5, 5}, OCN=546, PM=SAME, BIAS, OCV/CPU)                    $2.51
-conv::Conv::(GFLOPS=0.133, K=[3 x 3], IN={1, 128, 19, 19}, OCN=160, PM=SAME, BIAS, OCV/CPU)                  $1.9
-conv::Conv::(GFLOPS=0.160, K=[3 x 3], IN={1, 64, 38, 38}, OCN=96, PM=SAME, BIAS, OCV/CPU)                    $1.98
-conv::Conv::(GFLOPS=0.185, K=[1 x 1], IN={1, 192, 75, 100}, OCN=64, PM=SAME, BIAS, OCV/CPU)                  $2.3
-conv::Conv::(GFLOPS=0.189, K=[1 x 1], IN={1, 512, 19, 19}, OCN=512, BIAS, OCV/CPU)                           $1.9
-conv::Conv::(GFLOPS=0.189, K=[1 x 1], IN={1, 512, 19, 19}, OCN=512, PM=SAME, OCV/CPU)                        $1.85
-conv::Conv::(GFLOPS=0.210, K=[1 x 1], IN={1, 576, 38, 50}, OCN=96, PM=SAME, BIAS, OCV/CPU)                   $2.53
-conv::Conv::(GFLOPS=0.213, K=[3 x 3], IN={1, 128, 19, 19}, OCN=256, D=[2 x 2], P=[2 x 2], OCV/CPU)           $1.9
-conv::Conv::(GFLOPS=0.213, K=[3 x 3], IN={1, 128, 38, 38}, OCN=256, S=[2 x 2], P=[1 x 1], OCV/CPU)           $1.89
-conv::Conv::(GFLOPS=0.231, K=[3 x 3], IN={1, 64, 56, 56}, OCN=64, P=[1 x 1], OCV/CPU)                        $2
-conv::Conv::(GFLOPS=0.231, K=[3 x 3], IN={1, 128, 28, 28}, OCN=128, P=[1 x 1], OCV/CPU)                      $1.94
-conv::Conv::(GFLOPS=0.231, K=[3 x 3], IN={1, 128, 56, 56}, OCN=32, P=[1 x 1], OCV/CPU)                       $2.01
-conv::Conv::(GFLOPS=0.231, K=[3 x 3], IN={1, 256, 14, 14}, OCN=256, P=[1 x 1], OCV/CPU)                      $1.53
-conv::Conv::(GFLOPS=0.231, K=[3 x 3], IN={1, 512, 7, 7}, OCN=512, P=[1 x 1], OCV/CPU)                        $2.1
-conv::Conv::(GFLOPS=0.237, K=[7 x 7], IN={1, 3, 224, 224}, OCN=64, S=[2 x 2], P=[3 x 3], BIAS, OCV/CPU)      $2.09
-conv::Conv::(GFLOPS=0.237, K=[7 x 7], IN={1, 3, 224, 224}, OCN=64, S=[2 x 2], P=[3 x 3], OCV/CPU)            $2.03
-conv::Conv::(GFLOPS=0.237, K=[7 x 7], IN={1, 3, 224, 224}, OCN=64, S=[2 x 2], PM=SAME, BIAS, OCV/CPU)        $2.02
-conv::Conv::(GFLOPS=0.240, K=[3 x 3], IN={1, 96, 38, 38}, OCN=96, PM=SAME, BIAS, OCV/CPU)                    $1.94
-conv::Conv::(GFLOPS=0.240, K=[3 x 3], IN={1, 192, 19, 19}, OCN=192, PM=SAME, BIAS, OCV/CPU)                  $1.89
-conv::Conv::(GFLOPS=0.240, K=[3 x 3], IN={1, 192, 38, 38}, OCN=192, S=[2 x 2], PM=SAME, OCV/CPU)             $1.93
-conv::Conv::(GFLOPS=0.246, K=[1 x 1], IN={1, 256, 75, 100}, OCN=64, PM=SAME, BIAS, OCV/CPU)                  $2.12
-conv::Conv::(GFLOPS=0.248, K=[1 x 1], IN={1, 64, 150, 200}, OCN=64, PM=SAME, BIAS, OCV/CPU)                  $1.8
-conv::Conv::(GFLOPS=0.280, K=[1 x 1], IN={1, 576, 38, 50}, OCN=128, PM=SAME, BIAS, OCV/CPU)                  $2.21
-conv::Conv::(GFLOPS=0.299, K=[3 x 3], IN={1, 256, 13, 13}, OCN=384, P=[1 x 1], BIAS, OCV/CPU)                $1.81
-conv::Conv::(GFLOPS=0.299, K=[3 x 3], IN={1, 384, 13, 13}, OCN=256, G=2, P=[1 x 1], BIAS, OCV/CPU)           $2.01
-conv::Conv::(GFLOPS=0.308, K=[1 x 1], IN={1, 320, 75, 100}, OCN=64, PM=SAME, BIAS, OCV/CPU)                  $2.07
-conv::Conv::(GFLOPS=0.315, K=[3 x 3], IN={1, 96, 75, 100}, OCN=96, S=[2 x 2], PM=SAME, BIAS, OCV/CPU)        $2.58
-conv::Conv::(GFLOPS=0.319, K=[3 x 3], IN={1, 192, 19, 19}, OCN=256, PM=SAME, BIAS, OCV/CPU)                  $2.24
-conv::Conv::(GFLOPS=0.347, K=[3 x 3], IN={1, 128, 28, 28}, OCN=192, P=[1 x 1], BIAS, OCV/CPU)                $2.11
-conv::Conv::(GFLOPS=0.347, K=[3 x 3], IN={1, 128, 28, 28}, OCN=192, PM=SAME, BIAS, OCV/CPU)                  $1.97
-conv::Conv::(GFLOPS=0.351, K=[1 x 1], IN={1, 576, 38, 50}, OCN=160, PM=SAME, BIAS, OCV/CPU)                  $2.13
-conv::Conv::(GFLOPS=0.376, K=[1 x 1], IN={1, 24, 300, 400}, OCN=64, PM=VALID, BIAS, OCV/CPU)                 $1.6
-conv::Conv::(GFLOPS=0.415, K=[3 x 3], IN={1, 32, 150, 150}, OCN=32, G=32, P=[1 x 1], BIAS, OCV/CPU)          $2.01
-conv::Conv::(GFLOPS=0.415, K=[3 x 3], IN={1, 32, 150, 150}, OCN=32, PM=SAME, OCV/CPU)                        $2.1
-conv::Conv::(GFLOPS=0.415, K=[3 x 3], IN={1, 64, 150, 150}, OCN=64, G=64, S=[2 x 2], P=[1 x 1], BIAS, OCV/CP)$1.99
-conv::Conv::(GFLOPS=0.415, K=[3 x 3], IN={1, 64, 150, 150}, OCN=64, S=[2 x 2], PM=SAME, OCV/CPU)             $2.17
-conv::Conv::(GFLOPS=0.420, K=[3 x 3], IN={1, 96, 38, 50}, OCN=128, PM=SAME, BIAS, OCV/CPU)                   $2.09
-conv::Conv::(GFLOPS=0.421, K=[1 x 1], IN={1, 576, 38, 50}, OCN=192, PM=SAME, BIAS, OCV/CPU)                  $2.09
-conv::Conv::(GFLOPS=0.426, K=[3 x 3], IN={1, 128, 38, 38}, OCN=128, P=[1 x 1], OCV/CPU)                      $1.95
-conv::Conv::(GFLOPS=0.426, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, G=128, S=[2 x 2], P=[1 x 1], BIAS, OCV/CU$2.51
-conv::Conv::(GFLOPS=0.426, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, S=[2 x 2], PM=SAME, OCV/CPU)             $2.01
-conv::Conv::(GFLOPS=0.426, K=[3 x 3], IN={1, 256, 19, 19}, OCN=256, P=[1 x 1], OCV/CPU)                      $1.95
-conv::Conv::(GFLOPS=0.426, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, G=256, S=[2 x 2], P=[1 x 1], BIAS, OCV/CU$2.01
-conv::Conv::(GFLOPS=0.426, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, S=[2 x 2], PM=SAME, OCV/CPU)             $1.99
-conv::Conv::(GFLOPS=0.449, K=[3 x 3], IN={1, 384, 13, 13}, OCN=384, G=2, P=[1 x 1], BIAS, OCV/CPU)           $2.43
-conv::Conv::(GFLOPS=0.472, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, G=512, S=[2 x 2], P=[1 x 1], BIAS, OCV/CU$2.01
-conv::Conv::(GFLOPS=0.472, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, S=[2 x 2], PM=SAME, OCV/CPU)             $1.5
-conv::Conv::(GFLOPS=0.491, K=[1 x 1], IN={1, 576, 38, 50}, OCN=224, PM=SAME, BIAS, OCV/CPU)                  $2.28
-conv::Conv::(GFLOPS=0.539, K=[3 x 3], IN={1, 144, 75, 75}, OCN=144, S=[2 x 2], PM=SAME, OCV/CPU)             $2.06
-conv::Conv::(GFLOPS=0.553, K=[3 x 3], IN={1, 64, 75, 100}, OCN=64, PM=SAME, BIAS, OCV/CPU)                   $2.1
-conv::Conv::(GFLOPS=0.561, K=[3 x 3], IN={1, 128, 38, 50}, OCN=128, PM=SAME, BIAS, OCV/CPU)                  $2.03
-conv::Conv::(GFLOPS=0.597, K=[3 x 3], IN={1, 576, 19, 19}, OCN=576, S=[2 x 2], PM=SAME, OCV/CPU)             $1.45
-conv::Conv::(GFLOPS=0.615, K=[1 x 1], IN={1, 320, 75, 100}, OCN=128, PM=SAME, BIAS, OCV/CPU)                 $2.11
-conv::Conv::(GFLOPS=0.694, K=[3 x 3], IN={1, 64, 56, 56}, OCN=192, P=[1 x 1], BIAS, OCV/CPU)                 $2.04
-conv::Conv::(GFLOPS=0.694, K=[3 x 3], IN={1, 64, 56, 56}, OCN=192, PM=SAME, BIAS, OCV/CPU)                   $2.03
-conv::Conv::(GFLOPS=0.701, K=[3 x 3], IN={1, 128, 38, 50}, OCN=160, PM=SAME, BIAS, OCV/CPU)                  $2.11
-conv::Conv::(GFLOPS=0.701, K=[3 x 3], IN={1, 128, 75, 100}, OCN=160, S=[2 x 2], PM=SAME, BIAS, OCV/CPU)      $2.07
-conv::Conv::(GFLOPS=0.830, K=[3 x 3], IN={1, 64, 75, 100}, OCN=96, PM=SAME, BIAS, OCV/CPU)                   $2.19
-conv::Conv::(GFLOPS=0.841, K=[3 x 3], IN={1, 128, 38, 50}, OCN=192, PM=SAME, BIAS, OCV/CPU)                  $2.04
-conv::Conv::(GFLOPS=0.850, K=[7 x 7], IN={1, 3, 600, 800}, OCN=24, S=[2 x 2], PM=SAME, OCV/CPU)              $1.96
-conv::Conv::(GFLOPS=0.876, K=[3 x 3], IN={1, 160, 38, 50}, OCN=160, PM=SAME, BIAS, OCV/CPU)                  $2
-conv::Conv::(GFLOPS=0.896, K=[5 x 5], IN={1, 96, 27, 27}, OCN=256, G=2, P=[2 x 2], BIAS, OCV/CPU)            $1.98
-conv::Conv::(GFLOPS=0.934, K=[3 x 3], IN={1, 96, 150, 150}, OCN=96, S=[2 x 2], PM=SAME, OCV/CPU)             $2.16
-conv::Conv::(GFLOPS=0.958, K=[3 x 3], IN={1, 192, 38, 38}, OCN=192, PM=SAME, OCV/CPU)                        $2
-conv::Conv::(GFLOPS=0.958, K=[3 x 3], IN={1, 384, 19, 19}, OCN=384, PM=SAME, OCV/CPU)                        $2.1
-conv::Conv::(GFLOPS=1.006, K=[3 x 3], IN={1, 1024, 10, 10}, OCN=546, PM=SAME, BIAS, OCV/CPU)                 $1.51
-conv::Conv::(GFLOPS=1.022, K=[3 x 3], IN={1, 576, 19, 19}, OCN=273, PM=SAME, BIAS, OCV/CPU)                  $2.01
-conv::Conv::(GFLOPS=1.051, K=[3 x 3], IN={1, 160, 38, 50}, OCN=192, PM=SAME, BIAS, OCV/CPU)                  $2.07
-conv::Conv::(GFLOPS=1.245, K=[3 x 3], IN={1, 64, 75, 75}, OCN=192, PM=SAME, BIAS, OCV/CPU)                   $2.06
-conv::Conv::(GFLOPS=1.245, K=[3 x 3], IN={1, 96, 75, 100}, OCN=96, PM=SAME, BIAS, OCV/CPU)                   $2.17
-conv::Conv::(GFLOPS=1.258, K=[3 x 3], IN={1, 1280, 10, 10}, OCN=546, PM=SAME, BIAS, OCV/CPU)                 $1.69
-conv::Conv::(GFLOPS=1.261, K=[3 x 3], IN={1, 192, 38, 50}, OCN=192, PM=SAME, BIAS, OCV/CPU)                  $2.06
-conv::Conv::(GFLOPS=1.659, K=[3 x 3], IN={1, 960, 10, 10}, OCN=960, PM=SAME, OCV/CPU)                        $1.48
-conv::Conv::(GFLOPS=1.660, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, G=128, P=[1 x 1], BIAS, OCV/CPU)         $2.01
-conv::Conv::(GFLOPS=1.660, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, PM=SAME, OCV/CPU)                        $2
-conv::Conv::(GFLOPS=1.704, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, G=256, P=[1 x 1], BIAS, OCV/CPU)         $2.11
-conv::Conv::(GFLOPS=1.704, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, PM=SAME, OCV/CPU)                        $1.95
-conv::Conv::(GFLOPS=1.704, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, G=512, P=[1 x 1], BIAS, OCV/CPU)         $2.1
-conv::Conv::(GFLOPS=1.704, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, PM=SAME, OCV/CPU)                        $2.14
-conv::Conv::(GFLOPS=1.888, K=[3 x 3], IN={1, 1024, 10, 10}, OCN=1024, G=1024, P=[1 x 1], BIAS, OCV/CPU)      $2.18
-conv::Conv::(GFLOPS=1.888, K=[3 x 3], IN={1, 1024, 10, 10}, OCN=1024, PM=SAME, OCV/CPU)                      $1.58
-conv::Conv::(GFLOPS=2.100, K=[3 x 3], IN={1, 144, 75, 75}, OCN=144, PM=SAME, OCV/CPU)                        $2.02
-conv::Conv::(GFLOPS=2.156, K=[3 x 3], IN={1, 576, 19, 19}, OCN=576, PM=SAME, OCV/CPU)                        $2.21
-conv::Conv::(GFLOPS=6.641, K=[3 x 3], IN={1, 64, 150, 200}, OCN=192, PM=SAME, BIAS, OCV/CPU)                 $1.74
-conv::Conv::(GFLOPS=10.087, K=[3 x 3], IN={1, 576, 38, 50}, OCN=512, PM=SAME, BIAS, OCV/CPU)                 $2.02
+conv::Conv::(GFLOPS=0.014, K=[3 x 3], IN={1, 128, 14, 14}, OCN=32, P=[1 x 1], OCV/CPU)                 $1
+conv::Conv::(GFLOPS=0.017, K=[1 x 1], IN={1, 32, 32, 64}, OCN=128, OCV/CPU)                            $1
+conv::Conv::(GFLOPS=0.017, K=[1 x 1], IN={1, 128, 32, 64}, OCN=32, OCV/CPU)                            $1.01
+conv::Conv::(GFLOPS=0.038, K=[3 x 3], IN={1, 16, 64, 128}, OCN=16, P=[1 x 1], BIAS, OCV/CPU)           $0.95
+conv::Conv::(GFLOPS=0.040, K=[1 x 1], IN={1, 576, 19, 19}, OCN=96, PM=SAME, BIAS, OCV/CPU)             $1
+conv::Conv::(GFLOPS=0.053, K=[1 x 1], IN={1, 576, 19, 19}, OCN=128, PM=SAME, BIAS, OCV/CPU)            $1.28
+conv::Conv::(GFLOPS=0.058, K=[3 x 3], IN={1, 128, 28, 28}, OCN=32, P=[1 x 1], OCV/CPU)                 $1
+conv::Conv::(GFLOPS=0.080, K=[3 x 3], IN={1, 96, 19, 19}, OCN=128, PM=SAME, BIAS, OCV/CPU)             $1.29
+conv::Conv::(GFLOPS=0.103, K=[1 x 1], IN={1, 128, 28, 28}, OCN=512, OCV/CPU)                           $1.16
+conv::Conv::(GFLOPS=0.103, K=[1 x 1], IN={1, 256, 14, 14}, OCN=1024, OCV/CPU)                          $1.04
+conv::Conv::(GFLOPS=0.103, K=[1 x 1], IN={1, 512, 7, 7}, OCN=2048, OCV/CPU)                            $1.14
+conv::Conv::(GFLOPS=0.103, K=[1 x 1], IN={1, 512, 28, 28}, OCN=128, OCV/CPU)                           $1.18
+conv::Conv::(GFLOPS=0.103, K=[1 x 1], IN={1, 1024, 14, 14}, OCN=256, OCV/CPU)                          $1.05
+conv::Conv::(GFLOPS=0.104, K=[1 x 1], IN={1, 64, 56, 56}, OCN=256, OCV/CPU)                            $1.18
+conv::Conv::(GFLOPS=0.111, K=[3 x 3], IN={1, 192, 10, 10}, OCN=320, PM=SAME, BIAS, OCV/CPU)            $1.01
+conv::Conv::(GFLOPS=0.126, K=[3 x 3], IN={1, 512, 5, 5}, OCN=546, PM=SAME, BIAS, OCV/CPU)              $1.21
+conv::Conv::(GFLOPS=0.133, K=[3 x 3], IN={1, 128, 19, 19}, OCN=160, PM=SAME, BIAS, OCV/CPU)            $1.06
+conv::Conv::(GFLOPS=0.160, K=[3 x 3], IN={1, 64, 38, 38}, OCN=96, PM=SAME, BIAS, OCV/CPU)              $0.99
+conv::Conv::(GFLOPS=0.185, K=[1 x 1], IN={1, 192, 75, 100}, OCN=64, PM=SAME, BIAS, OCV/CPU)            $1.18
+conv::Conv::(GFLOPS=0.189, K=[1 x 1], IN={1, 512, 19, 19}, OCN=512, BIAS, OCV/CPU)                     $1
+conv::Conv::(GFLOPS=0.189, K=[1 x 1], IN={1, 512, 19, 19}, OCN=512, PM=SAME, OCV/CPU)                  $1.01
+conv::Conv::(GFLOPS=0.210, K=[1 x 1], IN={1, 576, 38, 50}, OCN=96, PM=SAME, BIAS, OCV/CPU)             $0.97
+conv::Conv::(GFLOPS=0.213, K=[3 x 3], IN={1, 128, 19, 19}, OCN=256, D=[2 x 2], P=[2 x 2], OCV/CPU)     $0.99
+conv::Conv::(GFLOPS=0.213, K=[3 x 3], IN={1, 128, 38, 38}, OCN=256, S=[2 x 2], P=[1 x 1], OCV/CPU)     $1.08
+conv::Conv::(GFLOPS=0.231, K=[3 x 3], IN={1, 64, 56, 56}, OCN=64, P=[1 x 1], OCV/CPU)                  $1.07
+conv::Conv::(GFLOPS=0.231, K=[3 x 3], IN={1, 128, 28, 28}, OCN=128, P=[1 x 1], OCV/CPU)                $1
+conv::Conv::(GFLOPS=0.231, K=[3 x 3], IN={1, 128, 56, 56}, OCN=32, P=[1 x 1], OCV/CPU)                 $1
+conv::Conv::(GFLOPS=0.231, K=[3 x 3], IN={1, 256, 14, 14}, OCN=256, P=[1 x 1], OCV/CPU)                $0.99
+conv::Conv::(GFLOPS=0.231, K=[3 x 3], IN={1, 512, 7, 7}, OCN=512, P=[1 x 1], OCV/CPU)                  $1.18
+conv::Conv::(GFLOPS=0.237, K=[7 x 7], IN={1, 3, 224, 224}, OCN=64, S=[2 x 2], P=[3 x 3], BIAS, OCV/CPU)$1.07
+conv::Conv::(GFLOPS=0.237, K=[7 x 7], IN={1, 3, 224, 224}, OCN=64, S=[2 x 2], P=[3 x 3], OCV/CPU)      $1.13
+conv::Conv::(GFLOPS=0.237, K=[7 x 7], IN={1, 3, 224, 224}, OCN=64, S=[2 x 2], PM=SAME, BIAS, OCV/CPU)  $1.07
+conv::Conv::(GFLOPS=0.240, K=[3 x 3], IN={1, 96, 38, 38}, OCN=96, PM=SAME, BIAS, OCV/CPU)              $1.01
+conv::Conv::(GFLOPS=0.240, K=[3 x 3], IN={1, 192, 19, 19}, OCN=192, PM=SAME, BIAS, OCV/CPU)            $1.08
+conv::Conv::(GFLOPS=0.240, K=[3 x 3], IN={1, 192, 38, 38}, OCN=192, S=[2 x 2], PM=SAME, OCV/CPU)       $1.06
+conv::Conv::(GFLOPS=0.246, K=[1 x 1], IN={1, 256, 75, 100}, OCN=64, PM=SAME, BIAS, OCV/CPU)            $0.99
+conv::Conv::(GFLOPS=0.248, K=[1 x 1], IN={1, 64, 150, 200}, OCN=64, PM=SAME, BIAS, OCV/CPU)            $1.31
+conv::Conv::(GFLOPS=0.280, K=[1 x 1], IN={1, 576, 38, 50}, OCN=128, PM=SAME, BIAS, OCV/CPU)            $0.98
+conv::Conv::(GFLOPS=0.299, K=[3 x 3], IN={1, 256, 13, 13}, OCN=384, P=[1 x 1], BIAS, OCV/CPU)          $1.04
+conv::Conv::(GFLOPS=0.299, K=[3 x 3], IN={1, 384, 13, 13}, OCN=256, G=2, P=[1 x 1], BIAS, OCV/CPU)     $1.05
+conv::Conv::(GFLOPS=0.308, K=[1 x 1], IN={1, 320, 75, 100}, OCN=64, PM=SAME, BIAS, OCV/CPU)            $1.14
+conv::Conv::(GFLOPS=0.315, K=[3 x 3], IN={1, 96, 75, 100}, OCN=96, S=[2 x 2], PM=SAME, BIAS, OCV/CPU)  $1.04
+conv::Conv::(GFLOPS=0.319, K=[3 x 3], IN={1, 192, 19, 19}, OCN=256, PM=SAME, BIAS, OCV/CPU)            $1.1
+conv::Conv::(GFLOPS=0.347, K=[3 x 3], IN={1, 128, 28, 28}, OCN=192, P=[1 x 1], BIAS, OCV/CPU)          $1.11
+conv::Conv::(GFLOPS=0.347, K=[3 x 3], IN={1, 128, 28, 28}, OCN=192, PM=SAME, BIAS, OCV/CPU)            $1.05
+conv::Conv::(GFLOPS=0.351, K=[1 x 1], IN={1, 576, 38, 50}, OCN=160, PM=SAME, BIAS, OCV/CPU)            $0.99
+conv::Conv::(GFLOPS=0.376, K=[1 x 1], IN={1, 24, 300, 400}, OCN=64, PM=VALID, BIAS, OCV/CPU)           $1.27
+conv::Conv::(GFLOPS=0.415, K=[3 x 3], IN={1, 32, 150, 150}, OCN=32, G=32, P=[1 x 1], BIAS, OCV/CPU)    $1.08
+conv::Conv::(GFLOPS=0.415, K=[3 x 3], IN={1, 32, 150, 150}, OCN=32, PM=SAME, OCV/CPU)                  $0.99
+conv::Conv::(GFLOPS=0.415, K=[3 x 3], IN={1, 64, 150, 150}, OCN=64, G=64, S=[2 x 2], P=[1 x 1], BIAS, O$1.1
+conv::Conv::(GFLOPS=0.415, K=[3 x 3], IN={1, 64, 150, 150}, OCN=64, S=[2 x 2], PM=SAME, OCV/CPU)       $1.12
+conv::Conv::(GFLOPS=0.420, K=[3 x 3], IN={1, 96, 38, 50}, OCN=128, PM=SAME, BIAS, OCV/CPU)             $1
+conv::Conv::(GFLOPS=0.421, K=[1 x 1], IN={1, 576, 38, 50}, OCN=192, PM=SAME, BIAS, OCV/CPU)            $1.12
+conv::Conv::(GFLOPS=0.426, K=[3 x 3], IN={1, 128, 38, 38}, OCN=128, P=[1 x 1], OCV/CPU)                $1.04
+conv::Conv::(GFLOPS=0.426, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, G=128, S=[2 x 2], P=[1 x 1], BIAS, $1.16
+conv::Conv::(GFLOPS=0.426, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, S=[2 x 2], PM=SAME, OCV/CPU)       $1.06
+conv::Conv::(GFLOPS=0.426, K=[3 x 3], IN={1, 256, 19, 19}, OCN=256, P=[1 x 1], OCV/CPU)                $1.02
+conv::Conv::(GFLOPS=0.426, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, G=256, S=[2 x 2], P=[1 x 1], BIAS, $1.18
+conv::Conv::(GFLOPS=0.426, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, S=[2 x 2], PM=SAME, OCV/CPU)       $1.07
+conv::Conv::(GFLOPS=0.449, K=[3 x 3], IN={1, 384, 13, 13}, OCN=384, G=2, P=[1 x 1], BIAS, OCV/CPU)     $1.06
+conv::Conv::(GFLOPS=0.472, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, G=512, S=[2 x 2], P=[1 x 1], BIAS, $1.13
+conv::Conv::(GFLOPS=0.472, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, S=[2 x 2], PM=SAME, OCV/CPU)       $1.13
+conv::Conv::(GFLOPS=0.491, K=[1 x 1], IN={1, 576, 38, 50}, OCN=224, PM=SAME, BIAS, OCV/CPU)            $1.15
+conv::Conv::(GFLOPS=0.539, K=[3 x 3], IN={1, 144, 75, 75}, OCN=144, S=[2 x 2], PM=SAME, OCV/CPU)       $1.06
+conv::Conv::(GFLOPS=0.553, K=[3 x 3], IN={1, 64, 75, 100}, OCN=64, PM=SAME, BIAS, OCV/CPU)             $1.06
+conv::Conv::(GFLOPS=0.561, K=[3 x 3], IN={1, 128, 38, 50}, OCN=128, PM=SAME, BIAS, OCV/CPU)            $0.99
+conv::Conv::(GFLOPS=0.597, K=[3 x 3], IN={1, 576, 19, 19}, OCN=576, S=[2 x 2], PM=SAME, OCV/CPU)       $1.11
+conv::Conv::(GFLOPS=0.615, K=[1 x 1], IN={1, 320, 75, 100}, OCN=128, PM=SAME, BIAS, OCV/CPU)           $1.19
+conv::Conv::(GFLOPS=0.694, K=[3 x 3], IN={1, 64, 56, 56}, OCN=192, P=[1 x 1], BIAS, OCV/CPU)           $1.05
+conv::Conv::(GFLOPS=0.694, K=[3 x 3], IN={1, 64, 56, 56}, OCN=192, PM=SAME, BIAS, OCV/CPU)             $1.07
+conv::Conv::(GFLOPS=0.701, K=[3 x 3], IN={1, 128, 38, 50}, OCN=160, PM=SAME, BIAS, OCV/CPU)            $1.01
+conv::Conv::(GFLOPS=0.701, K=[3 x 3], IN={1, 128, 75, 100}, OCN=160, S=[2 x 2], PM=SAME, BIAS, OCV/CPU)$0.99
+conv::Conv::(GFLOPS=0.830, K=[3 x 3], IN={1, 64, 75, 100}, OCN=96, PM=SAME, BIAS, OCV/CPU)             $0.99
+conv::Conv::(GFLOPS=0.841, K=[3 x 3], IN={1, 128, 38, 50}, OCN=192, PM=SAME, BIAS, OCV/CPU)            $0.99
+conv::Conv::(GFLOPS=0.850, K=[7 x 7], IN={1, 3, 600, 800}, OCN=24, S=[2 x 2], PM=SAME, OCV/CPU)        $0.99
+conv::Conv::(GFLOPS=0.876, K=[3 x 3], IN={1, 160, 38, 50}, OCN=160, PM=SAME, BIAS, OCV/CPU)            $1.01
+conv::Conv::(GFLOPS=0.896, K=[5 x 5], IN={1, 96, 27, 27}, OCN=256, G=2, P=[2 x 2], BIAS, OCV/CPU)      $0.99
+conv::Conv::(GFLOPS=0.934, K=[3 x 3], IN={1, 96, 150, 150}, OCN=96, S=[2 x 2], PM=SAME, OCV/CPU)       $1.02
+conv::Conv::(GFLOPS=0.958, K=[3 x 3], IN={1, 192, 38, 38}, OCN=192, PM=SAME, OCV/CPU)                  $1
+conv::Conv::(GFLOPS=0.958, K=[3 x 3], IN={1, 384, 19, 19}, OCN=384, PM=SAME, OCV/CPU)                  $1.01
+conv::Conv::(GFLOPS=1.006, K=[3 x 3], IN={1, 1024, 10, 10}, OCN=546, PM=SAME, BIAS, OCV/CPU)           $1
+conv::Conv::(GFLOPS=1.022, K=[3 x 3], IN={1, 576, 19, 19}, OCN=273, PM=SAME, BIAS, OCV/CPU)            $1
+conv::Conv::(GFLOPS=1.051, K=[3 x 3], IN={1, 160, 38, 50}, OCN=192, PM=SAME, BIAS, OCV/CPU)            $1
+conv::Conv::(GFLOPS=1.245, K=[3 x 3], IN={1, 64, 75, 75}, OCN=192, PM=SAME, BIAS, OCV/CPU)             $0.99
+conv::Conv::(GFLOPS=1.245, K=[3 x 3], IN={1, 96, 75, 100}, OCN=96, PM=SAME, BIAS, OCV/CPU)             $1
+conv::Conv::(GFLOPS=1.258, K=[3 x 3], IN={1, 1280, 10, 10}, OCN=546, PM=SAME, BIAS, OCV/CPU)           $1.01
+conv::Conv::(GFLOPS=1.261, K=[3 x 3], IN={1, 192, 38, 50}, OCN=192, PM=SAME, BIAS, OCV/CPU)            $0.99
+conv::Conv::(GFLOPS=1.659, K=[3 x 3], IN={1, 960, 10, 10}, OCN=960, PM=SAME, OCV/CPU)                  $1.03
+conv::Conv::(GFLOPS=1.660, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, G=128, P=[1 x 1], BIAS, OCV/CPU)   $1.09
+conv::Conv::(GFLOPS=1.660, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, PM=SAME, OCV/CPU)                  $0.99
+conv::Conv::(GFLOPS=1.704, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, G=256, P=[1 x 1], BIAS, OCV/CPU)   $1.01
+conv::Conv::(GFLOPS=1.704, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, PM=SAME, OCV/CPU)                  $1.31
+conv::Conv::(GFLOPS=1.704, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, G=512, P=[1 x 1], BIAS, OCV/CPU)   $0.99
+conv::Conv::(GFLOPS=1.704, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, PM=SAME, OCV/CPU)                  $1.01
+conv::Conv::(GFLOPS=1.888, K=[3 x 3], IN={1, 1024, 10, 10}, OCN=1024, G=1024, P=[1 x 1], BIAS, OCV/CPU)$1.92
+conv::Conv::(GFLOPS=1.888, K=[3 x 3], IN={1, 1024, 10, 10}, OCN=1024, PM=SAME, OCV/CPU)                $1.03
+conv::Conv::(GFLOPS=2.100, K=[3 x 3], IN={1, 144, 75, 75}, OCN=144, PM=SAME, OCV/CPU)                  $0.99
+conv::Conv::(GFLOPS=2.156, K=[3 x 3], IN={1, 576, 19, 19}, OCN=576, PM=SAME, OCV/CPU)                  $1.01
+conv::Conv::(GFLOPS=6.641, K=[3 x 3], IN={1, 64, 150, 200}, OCN=192, PM=SAME, BIAS, OCV/CPU)           $0.98
+conv::Conv::(GFLOPS=10.087, K=[3 x 3], IN={1, 576, 38, 50}, OCN=512, PM=SAME, BIAS, OCV/CPU)           $1

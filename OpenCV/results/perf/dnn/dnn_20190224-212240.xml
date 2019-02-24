@@ -1,0 +1,1712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="121" failures="0" disabled="0" errors="0" timestamp="2019-02-24T21:22:40" time="15.299" cv_module_name="dnn" cv_implementation="plain" cv_num_threads="-1" cv_version="4.0.1-dev" cv_version_build="4.0.1-dev" cv_vcs_version="4.0.1-248-g8bde6ae-dirty" cv_build_type="Release" cv_build_type_build="Release" cv_compiler="/home/reshabh/llvm-toolchain-8_8~svn353031/build-llvm/bin/clang++" cv_parallel_framework="pthreads" cv_cpu_features="SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?" name="AllTests">
+  <testsuite name="DNNTestNetwork" tests="21" failures="0" disabled="0" errors="0" time="0.012">
+    <testcase name="AlexNet/0" value_param="OCV/CPU" status="run" time="0.001" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="GoogLeNet/0" value_param="OCV/CPU" status="run" time="0" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="ResNet_50/0" value_param="OCV/CPU" status="run" time="0" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="SqueezeNet_v1_1/0" value_param="OCV/CPU" status="run" time="0.001" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="Inception_5h/0" value_param="OCV/CPU" status="run" time="0" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="ENet/0" value_param="OCV/CPU" status="run" time="0.001" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="SSD/0" value_param="OCV/CPU" status="run" time="0" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="OpenFace/0" value_param="OCV/CPU" status="run" time="0" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="MobileNet_SSD_Caffe/0" value_param="OCV/CPU" status="run" time="0.001" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="MobileNet_SSD_v1_TensorFlow/0" value_param="OCV/CPU" status="run" time="0" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="MobileNet_SSD_v2_TensorFlow/0" value_param="OCV/CPU" status="run" time="0.001" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="DenseNet_121/0" value_param="OCV/CPU" status="run" time="0" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="OpenPose_pose_coco/0" value_param="OCV/CPU" status="run" time="0.001" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="OpenPose_pose_mpi/0" value_param="OCV/CPU" status="run" time="0" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="OpenPose_pose_mpi_faster_4_stages/0" value_param="OCV/CPU" status="run" time="0.001" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="opencv_face_detector/0" value_param="OCV/CPU" status="run" time="0" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="Inception_v2_SSD_TensorFlow/0" value_param="OCV/CPU" status="run" time="0.001" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="YOLOv3/0" value_param="OCV/CPU" status="run" time="0" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="EAST_text_detection/0" value_param="OCV/CPU" status="run" time="0" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="FastNeuralStyle_eccv16/0" value_param="OCV/CPU" status="run" time="0.001" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="Inception_v2_Faster_RCNN/0" value_param="OCV/CPU" status="run" time="0.003" classname="DNNTestNetwork">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="Conv" tests="100" failures="0" disabled="0" errors="0" time="15.287">
+    <testcase name="conv/0" value_param="(GFLOPS=10.087, K=[3 x 3], IN={1, 576, 38, 50}, OCN=512, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.631" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="16"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="35484866"/>
+<property name="median" value="35532269"/>
+<property name="gmean" value="35829230"/>
+<property name="gstddev" value="0.028383"/>
+<property name="mean" value="35843132"/>
+<property name="stddev" value="1066379"/>
+</properties>
+    </testcase>
+    <testcase name="conv/1" value_param="(GFLOPS=1.704, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, G=512, P=[1 x 1], BIAS, OCV/CPU)" status="run" time="0.01" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="618811"/>
+<property name="median" value="620556"/>
+<property name="gmean" value="622235"/>
+<property name="gstddev" value="0.006527"/>
+<property name="mean" value="622248"/>
+<property name="stddev" value="4083"/>
+</properties>
+    </testcase>
+    <testcase name="conv/2" value_param="(GFLOPS=1.704, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, PM=SAME, OCV/CPU)" status="run" time="0.343" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6305028"/>
+<property name="median" value="6334722"/>
+<property name="gmean" value="6379165"/>
+<property name="gstddev" value="0.017466"/>
+<property name="mean" value="6380138"/>
+<property name="stddev" value="115108"/>
+</properties>
+    </testcase>
+    <testcase name="conv/3" value_param="(GFLOPS=6.641, K=[3 x 3], IN={1, 64, 150, 200}, OCN=192, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.336" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="22713604"/>
+<property name="median" value="22854248"/>
+<property name="gmean" value="22919345"/>
+<property name="gstddev" value="0.010139"/>
+<property name="mean" value="22920433"/>
+<property name="stddev" value="234982"/>
+</properties>
+    </testcase>
+    <testcase name="conv/4" value_param="(GFLOPS=1.659, K=[3 x 3], IN={1, 960, 10, 10}, OCN=960, PM=SAME, OCV/CPU)" status="run" time="0.154" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="9109905"/>
+<property name="median" value="9137924"/>
+<property name="gmean" value="9264647"/>
+<property name="gstddev" value="0.027164"/>
+<property name="mean" value="9267822"/>
+<property name="stddev" value="256816"/>
+</properties>
+    </testcase>
+    <testcase name="conv/5" value_param="(GFLOPS=2.156, K=[3 x 3], IN={1, 576, 19, 19}, OCN=576, PM=SAME, OCV/CPU)" status="run" time="0.125" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="7998129"/>
+<property name="median" value="8027250"/>
+<property name="gmean" value="8058191"/>
+<property name="gstddev" value="0.011149"/>
+<property name="mean" value="8058654"/>
+<property name="stddev" value="91071"/>
+</properties>
+    </testcase>
+    <testcase name="conv/6" value_param="(GFLOPS=0.958, K=[3 x 3], IN={1, 384, 19, 19}, OCN=384, PM=SAME, OCV/CPU)" status="run" time="0.099" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="25"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3481011"/>
+<property name="median" value="3494905"/>
+<property name="gmean" value="3542773"/>
+<property name="gstddev" value="0.027639"/>
+<property name="mean" value="3544094"/>
+<property name="stddev" value="101014"/>
+</properties>
+    </testcase>
+    <testcase name="conv/7" value_param="(GFLOPS=0.830, K=[3 x 3], IN={1, 64, 75, 100}, OCN=96, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.169" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3091258"/>
+<property name="median" value="3102691"/>
+<property name="gmean" value="3125838"/>
+<property name="gstddev" value="0.015110"/>
+<property name="mean" value="3126190"/>
+<property name="stddev" value="47988"/>
+</properties>
+    </testcase>
+    <testcase name="conv/8" value_param="(GFLOPS=1.245, K=[3 x 3], IN={1, 96, 75, 100}, OCN=96, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.307" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="60"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="4791386"/>
+<property name="median" value="4853078"/>
+<property name="gmean" value="4884893"/>
+<property name="gstddev" value="0.028139"/>
+<property name="mean" value="4886872"/>
+<property name="stddev" value="146346"/>
+</properties>
+    </testcase>
+    <testcase name="conv/9" value_param="(GFLOPS=2.100, K=[3 x 3], IN={1, 144, 75, 75}, OCN=144, PM=SAME, OCV/CPU)" status="run" time="0.524" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="63"/>
+<property name="outliers" value="5"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="7768706"/>
+<property name="median" value="7831173"/>
+<property name="gmean" value="7894892"/>
+<property name="gstddev" value="0.025837"/>
+<property name="mean" value="7897562"/>
+<property name="stddev" value="213671"/>
+</properties>
+    </testcase>
+    <testcase name="conv/10" value_param="(GFLOPS=1.022, K=[3 x 3], IN={1, 576, 19, 19}, OCN=273, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.159" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="38"/>
+<property name="outliers" value="3"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3800314"/>
+<property name="median" value="3825727"/>
+<property name="gmean" value="3850486"/>
+<property name="gstddev" value="0.014877"/>
+<property name="mean" value="3850903"/>
+<property name="stddev" value="57941"/>
+</properties>
+    </testcase>
+    <testcase name="conv/11" value_param="(GFLOPS=0.958, K=[3 x 3], IN={1, 192, 38, 38}, OCN=192, PM=SAME, OCV/CPU)" status="run" time="0.181" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3395136"/>
+<property name="median" value="3400903"/>
+<property name="gmean" value="3424695"/>
+<property name="gstddev" value="0.011630"/>
+<property name="mean" value="3424923"/>
+<property name="stddev" value="40172"/>
+</properties>
+    </testcase>
+    <testcase name="conv/12" value_param="(GFLOPS=1.888, K=[3 x 3], IN={1, 1024, 10, 10}, OCN=1024, PM=SAME, OCV/CPU)" status="run" time="0.147" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="10514073"/>
+<property name="median" value="10541957"/>
+<property name="gmean" value="10672961"/>
+<property name="gstddev" value="0.027905"/>
+<property name="mean" value="10676766"/>
+<property name="stddev" value="305748"/>
+</properties>
+    </testcase>
+    <testcase name="conv/13" value_param="(GFLOPS=1.888, K=[3 x 3], IN={1, 1024, 10, 10}, OCN=1024, G=1024, P=[1 x 1], BIAS, OCV/CPU)" status="run" time="0.013" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="835495"/>
+<property name="median" value="839214"/>
+<property name="gmean" value="847899"/>
+<property name="gstddev" value="0.024879"/>
+<property name="mean" value="848144"/>
+<property name="stddev" value="21583"/>
+</properties>
+    </testcase>
+    <testcase name="conv/14" value_param="(GFLOPS=1.704, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, G=256, P=[1 x 1], BIAS, OCV/CPU)" status="run" time="0.115" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="96"/>
+<property name="outliers" value="7"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1076987"/>
+<property name="median" value="1107255"/>
+<property name="gmean" value="1112261"/>
+<property name="gstddev" value="0.029187"/>
+<property name="mean" value="1112737"/>
+<property name="stddev" value="33211"/>
+</properties>
+    </testcase>
+    <testcase name="conv/15" value_param="(GFLOPS=1.704, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, PM=SAME, OCV/CPU)" status="run" time="0.893" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5971559"/>
+<property name="median" value="6284515"/>
+<property name="gmean" value="7951010"/>
+<property name="gstddev" value="0.308559"/>
+<property name="mean" value="8343363"/>
+<property name="stddev" value="2648553"/>
+</properties>
+    </testcase>
+    <testcase name="conv/16" value_param="(GFLOPS=1.660, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, G=128, P=[1 x 1], BIAS, OCV/CPU)" status="run" time="0.222" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1796528"/>
+<property name="median" value="1883106"/>
+<property name="gmean" value="2016315"/>
+<property name="gstddev" value="0.168990"/>
+<property name="mean" value="2047974"/>
+<property name="stddev" value="401054"/>
+</properties>
+    </testcase>
+    <testcase name="conv/17" value_param="(GFLOPS=1.660, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, PM=SAME, OCV/CPU)" status="run" time="0.329" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6152797"/>
+<property name="median" value="6201188"/>
+<property name="gmean" value="6216068"/>
+<property name="gstddev" value="0.012501"/>
+<property name="mean" value="6216547"/>
+<property name="stddev" value="78807"/>
+</properties>
+    </testcase>
+    <testcase name="conv/18" value_param="(GFLOPS=0.280, K=[1 x 1], IN={1, 576, 38, 50}, OCN=128, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.104" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="63"/>
+<property name="outliers" value="5"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1492780"/>
+<property name="median" value="1523920"/>
+<property name="gmean" value="1539021"/>
+<property name="gstddev" value="0.029022"/>
+<property name="mean" value="1539666"/>
+<property name="stddev" value="45516"/>
+</properties>
+    </testcase>
+    <testcase name="conv/19" value_param="(GFLOPS=0.701, K=[3 x 3], IN={1, 128, 38, 50}, OCN=160, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.105" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="38"/>
+<property name="outliers" value="3"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2505743"/>
+<property name="median" value="2517358"/>
+<property name="gmean" value="2538493"/>
+<property name="gstddev" value="0.017721"/>
+<property name="mean" value="2538885"/>
+<property name="stddev" value="45699"/>
+</properties>
+    </testcase>
+    <testcase name="conv/20" value_param="(GFLOPS=0.231, K=[3 x 3], IN={1, 128, 56, 56}, OCN=32, P=[1 x 1], OCV/CPU)" status="run" time="0.02" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1267474"/>
+<property name="median" value="1270480"/>
+<property name="gmean" value="1284116"/>
+<property name="gstddev" value="0.020547"/>
+<property name="mean" value="1284367"/>
+<property name="stddev" value="26709"/>
+</properties>
+    </testcase>
+    <testcase name="conv/21" value_param="(GFLOPS=0.231, K=[3 x 3], IN={1, 256, 14, 14}, OCN=256, P=[1 x 1], OCV/CPU)" status="run" time="0.027" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="25"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="927255"/>
+<property name="median" value="931058"/>
+<property name="gmean" value="937352"/>
+<property name="gstddev" value="0.015220"/>
+<property name="mean" value="937457"/>
+<property name="stddev" value="14507"/>
+</properties>
+    </testcase>
+    <testcase name="conv/22" value_param="(GFLOPS=0.210, K=[1 x 1], IN={1, 576, 38, 50}, OCN=96, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.127" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1145730"/>
+<property name="median" value="1170569"/>
+<property name="gmean" value="1185570"/>
+<property name="gstddev" value="0.032090"/>
+<property name="mean" value="1186182"/>
+<property name="stddev" value="38787"/>
+</properties>
+    </testcase>
+    <testcase name="conv/23" value_param="(GFLOPS=0.420, K=[3 x 3], IN={1, 96, 38, 50}, OCN=128, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.065" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="38"/>
+<property name="outliers" value="3"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1578219"/>
+<property name="median" value="1591804"/>
+<property name="gmean" value="1600411"/>
+<property name="gstddev" value="0.018651"/>
+<property name="mean" value="1600687"/>
+<property name="stddev" value="30743"/>
+</properties>
+    </testcase>
+    <testcase name="conv/24" value_param="(GFLOPS=1.261, K=[3 x 3], IN={1, 192, 38, 50}, OCN=192, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.12" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="25"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="4412763"/>
+<property name="median" value="4432224"/>
+<property name="gmean" value="4472847"/>
+<property name="gstddev" value="0.026285"/>
+<property name="mean" value="4474371"/>
+<property name="stddev" value="123067"/>
+</properties>
+    </testcase>
+    <testcase name="conv/25" value_param="(GFLOPS=1.258, K=[3 x 3], IN={1, 1280, 10, 10}, OCN=546, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.107" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6650272"/>
+<property name="median" value="6680860"/>
+<property name="gmean" value="6717990"/>
+<property name="gstddev" value="0.016935"/>
+<property name="mean" value="6718886"/>
+<property name="stddev" value="116295"/>
+</properties>
+    </testcase>
+    <testcase name="conv/26" value_param="(GFLOPS=1.245, K=[3 x 3], IN={1, 64, 75, 75}, OCN=192, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.065" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="4248545"/>
+<property name="median" value="4275406"/>
+<property name="gmean" value="4309403"/>
+<property name="gstddev" value="0.015624"/>
+<property name="mean" value="4309888"/>
+<property name="stddev" value="67915"/>
+</properties>
+    </testcase>
+    <testcase name="conv/27" value_param="(GFLOPS=0.561, K=[3 x 3], IN={1, 128, 38, 50}, OCN=128, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.058" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="25"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2064593"/>
+<property name="median" value="2077360"/>
+<property name="gmean" value="2089338"/>
+<property name="gstddev" value="0.016147"/>
+<property name="mean" value="2089601"/>
+<property name="stddev" value="34297"/>
+</properties>
+    </testcase>
+    <testcase name="conv/28" value_param="(GFLOPS=1.051, K=[3 x 3], IN={1, 160, 38, 50}, OCN=192, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.102" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="25"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3724760"/>
+<property name="median" value="3748175"/>
+<property name="gmean" value="3760539"/>
+<property name="gstddev" value="0.006572"/>
+<property name="mean" value="3760617"/>
+<property name="stddev" value="24773"/>
+</properties>
+    </testcase>
+    <testcase name="conv/29" value_param="(GFLOPS=1.006, K=[3 x 3], IN={1, 1024, 10, 10}, OCN=546, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.151" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="25"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5303168"/>
+<property name="median" value="5317731"/>
+<property name="gmean" value="5349829"/>
+<property name="gstddev" value="0.024776"/>
+<property name="mean" value="5351457"/>
+<property name="stddev" value="139901"/>
+</properties>
+    </testcase>
+    <testcase name="conv/30" value_param="(GFLOPS=0.246, K=[1 x 1], IN={1, 256, 75, 100}, OCN=64, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.145" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="75"/>
+<property name="outliers" value="6"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1729092"/>
+<property name="median" value="1764013"/>
+<property name="gmean" value="1779579"/>
+<property name="gstddev" value="0.027102"/>
+<property name="mean" value="1780230"/>
+<property name="stddev" value="49081"/>
+</properties>
+    </testcase>
+    <testcase name="conv/31" value_param="(GFLOPS=0.189, K=[1 x 1], IN={1, 512, 19, 19}, OCN=512, BIAS, OCV/CPU)" status="run" time="0.025" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="20"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1065269"/>
+<property name="median" value="1070992"/>
+<property name="gmean" value="1084151"/>
+<property name="gstddev" value="0.028852"/>
+<property name="mean" value="1084587"/>
+<property name="stddev" value="32252"/>
+</properties>
+    </testcase>
+    <testcase name="conv/32" value_param="(GFLOPS=0.189, K=[1 x 1], IN={1, 512, 19, 19}, OCN=512, PM=SAME, OCV/CPU)" status="run" time="0.017" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1071543"/>
+<property name="median" value="1077111"/>
+<property name="gmean" value="1089111"/>
+<property name="gstddev" value="0.024533"/>
+<property name="mean" value="1089416"/>
+<property name="stddev" value="27304"/>
+</properties>
+    </testcase>
+    <testcase name="conv/33" value_param="(GFLOPS=0.934, K=[3 x 3], IN={1, 96, 150, 150}, OCN=96, S=[2 x 2], PM=SAME, OCV/CPU)" status="run" time="0.071" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="4443521"/>
+<property name="median" value="4516484"/>
+<property name="gmean" value="4536904"/>
+<property name="gstddev" value="0.027237"/>
+<property name="mean" value="4538476"/>
+<property name="stddev" value="127253"/>
+</properties>
+    </testcase>
+    <testcase name="conv/34" value_param="(GFLOPS=0.231, K=[3 x 3], IN={1, 128, 28, 28}, OCN=128, P=[1 x 1], OCV/CPU)" status="run" time="0.057" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="58"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="874040"/>
+<property name="median" value="880836"/>
+<property name="gmean" value="890533"/>
+<property name="gstddev" value="0.028752"/>
+<property name="mean" value="890903"/>
+<property name="stddev" value="26536"/>
+</properties>
+    </testcase>
+    <testcase name="conv/35" value_param="(GFLOPS=0.896, K=[5 x 5], IN={1, 96, 27, 27}, OCN=256, G=2, P=[2 x 2], BIAS, OCV/CPU)" status="run" time="0.03" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1833918"/>
+<property name="median" value="1852605"/>
+<property name="gmean" value="1864166"/>
+<property name="gstddev" value="0.017940"/>
+<property name="mean" value="1864444"/>
+<property name="stddev" value="33897"/>
+</properties>
+    </testcase>
+    <testcase name="conv/36" value_param="(GFLOPS=0.876, K=[3 x 3], IN={1, 160, 38, 50}, OCN=160, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.09" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="25"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3218808"/>
+<property name="median" value="3241191"/>
+<property name="gmean" value="3258892"/>
+<property name="gstddev" value="0.012660"/>
+<property name="mean" value="3259144"/>
+<property name="stddev" value="41741"/>
+</properties>
+    </testcase>
+    <testcase name="conv/37" value_param="(GFLOPS=0.850, K=[7 x 7], IN={1, 3, 600, 800}, OCN=24, S=[2 x 2], PM=SAME, OCV/CPU)" status="run" time="0.141" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="25"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5083755"/>
+<property name="median" value="5177806"/>
+<property name="gmean" value="5175031"/>
+<property name="gstddev" value="0.010481"/>
+<property name="mean" value="5175303"/>
+<property name="stddev" value="54269"/>
+</properties>
+    </testcase>
+    <testcase name="conv/38" value_param="(GFLOPS=0.841, K=[3 x 3], IN={1, 128, 38, 50}, OCN=192, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.081" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="25"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2928922"/>
+<property name="median" value="2944856"/>
+<property name="gmean" value="2965239"/>
+<property name="gstddev" value="0.016313"/>
+<property name="mean" value="2965620"/>
+<property name="stddev" value="49081"/>
+</properties>
+    </testcase>
+    <testcase name="conv/39" value_param="(GFLOPS=0.415, K=[3 x 3], IN={1, 32, 150, 150}, OCN=32, PM=SAME, OCV/CPU)" status="run" time="0.091" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="38"/>
+<property name="outliers" value="3"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2159318"/>
+<property name="median" value="2198071"/>
+<property name="gmean" value="2217200"/>
+<property name="gstddev" value="0.028293"/>
+<property name="mean" value="2218083"/>
+<property name="stddev" value="65005"/>
+</properties>
+    </testcase>
+    <testcase name="conv/40" value_param="(GFLOPS=0.351, K=[1 x 1], IN={1, 576, 38, 50}, OCN=160, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.08" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="38"/>
+<property name="outliers" value="3"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1849792"/>
+<property name="median" value="1900594"/>
+<property name="gmean" value="1907663"/>
+<property name="gstddev" value="0.024931"/>
+<property name="mean" value="1908242"/>
+<property name="stddev" value="47978"/>
+</properties>
+    </testcase>
+    <testcase name="conv/41" value_param="(GFLOPS=0.701, K=[3 x 3], IN={1, 128, 75, 100}, OCN=160, S=[2 x 2], PM=SAME, BIAS, OCV/CPU)" status="run" time="0.112" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="38"/>
+<property name="outliers" value="3"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2673136"/>
+<property name="median" value="2686487"/>
+<property name="gmean" value="2718187"/>
+<property name="gstddev" value="0.024589"/>
+<property name="mean" value="2719001"/>
+<property name="stddev" value="68790"/>
+</properties>
+    </testcase>
+    <testcase name="conv/42" value_param="(GFLOPS=0.694, K=[3 x 3], IN={1, 64, 56, 56}, OCN=192, P=[1 x 1], BIAS, OCV/CPU)" status="run" time="0.276" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2369795"/>
+<property name="median" value="2407698"/>
+<property name="gmean" value="2513760"/>
+<property name="gstddev" value="0.106484"/>
+<property name="mean" value="2529201"/>
+<property name="stddev" value="307811"/>
+</properties>
+    </testcase>
+    <testcase name="conv/43" value_param="(GFLOPS=0.694, K=[3 x 3], IN={1, 64, 56, 56}, OCN=192, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.272" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2367362"/>
+<property name="median" value="2432468"/>
+<property name="gmean" value="2582862"/>
+<property name="gstddev" value="0.118582"/>
+<property name="mean" value="2601848"/>
+<property name="stddev" value="333374"/>
+</properties>
+    </testcase>
+    <testcase name="conv/44" value_param="(GFLOPS=0.231, K=[3 x 3], IN={1, 64, 56, 56}, OCN=64, P=[1 x 1], OCV/CPU)" status="run" time="0.12" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1002821"/>
+<property name="median" value="1011003"/>
+<property name="gmean" value="1086474"/>
+<property name="gstddev" value="0.167058"/>
+<property name="mean" value="1103584"/>
+<property name="stddev" value="221965"/>
+</properties>
+    </testcase>
+    <testcase name="conv/45" value_param="(GFLOPS=0.058, K=[3 x 3], IN={1, 128, 28, 28}, OCN=32, P=[1 x 1], OCV/CPU)" status="run" time="0.039" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="331231"/>
+<property name="median" value="336398"/>
+<property name="gmean" value="340075"/>
+<property name="gstddev" value="0.054338"/>
+<property name="mean" value="340627"/>
+<property name="stddev" value="21647"/>
+</properties>
+    </testcase>
+    <testcase name="conv/46" value_param="(GFLOPS=0.231, K=[3 x 3], IN={1, 512, 7, 7}, OCN=512, P=[1 x 1], OCV/CPU)" status="run" time="0.184" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1461011"/>
+<property name="median" value="1565106"/>
+<property name="gmean" value="1648061"/>
+<property name="gstddev" value="0.145418"/>
+<property name="mean" value="1666821"/>
+<property name="stddev" value="273933"/>
+</properties>
+    </testcase>
+    <testcase name="conv/47" value_param="(GFLOPS=0.160, K=[3 x 3], IN={1, 64, 38, 38}, OCN=96, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.01" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="620017"/>
+<property name="median" value="622394"/>
+<property name="gmean" value="626507"/>
+<property name="gstddev" value="0.013041"/>
+<property name="mean" value="626557"/>
+<property name="stddev" value="8266"/>
+</properties>
+    </testcase>
+    <testcase name="conv/48" value_param="(GFLOPS=0.103, K=[1 x 1], IN={1, 256, 14, 14}, OCN=1024, OCV/CPU)" status="run" time="0.071" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="602499"/>
+<property name="median" value="612942"/>
+<property name="gmean" value="626880"/>
+<property name="gstddev" value="0.065919"/>
+<property name="mean" value="628338"/>
+<property name="stddev" value="46597"/>
+</properties>
+    </testcase>
+    <testcase name="conv/49" value_param="(GFLOPS=0.615, K=[1 x 1], IN={1, 320, 75, 100}, OCN=128, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.481" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3752146"/>
+<property name="median" value="4390754"/>
+<property name="gmean" value="4524738"/>
+<property name="gstddev" value="0.123621"/>
+<property name="mean" value="4559840"/>
+<property name="stddev" value="583732"/>
+</properties>
+    </testcase>
+    <testcase name="conv/50" value_param="(GFLOPS=0.597, K=[3 x 3], IN={1, 576, 19, 19}, OCN=576, S=[2 x 2], PM=SAME, OCV/CPU)" status="run" time="0.371" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3076827"/>
+<property name="median" value="3406220"/>
+<property name="gmean" value="3500455"/>
+<property name="gstddev" value="0.099868"/>
+<property name="mean" value="3517909"/>
+<property name="stddev" value="355693"/>
+</properties>
+    </testcase>
+    <testcase name="conv/51" value_param="(GFLOPS=0.185, K=[1 x 1], IN={1, 192, 75, 100}, OCN=64, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.17" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1277259"/>
+<property name="median" value="1433055"/>
+<property name="gmean" value="1511626"/>
+<property name="gstddev" value="0.165765"/>
+<property name="mean" value="1533574"/>
+<property name="stddev" value="278705"/>
+</properties>
+    </testcase>
+    <testcase name="conv/52" value_param="(GFLOPS=0.553, K=[3 x 3], IN={1, 64, 75, 100}, OCN=64, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.266" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2314386"/>
+<property name="median" value="2359256"/>
+<property name="gmean" value="2487210"/>
+<property name="gstddev" value="0.115885"/>
+<property name="mean" value="2504991"/>
+<property name="stddev" value="322362"/>
+</properties>
+    </testcase>
+    <testcase name="conv/53" value_param="(GFLOPS=0.539, K=[3 x 3], IN={1, 144, 75, 75}, OCN=144, S=[2 x 2], PM=SAME, OCV/CPU)" status="run" time="0.247" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2078786"/>
+<property name="median" value="2146139"/>
+<property name="gmean" value="2276677"/>
+<property name="gstddev" value="0.120085"/>
+<property name="mean" value="2294070"/>
+<property name="stddev" value="304059"/>
+</properties>
+    </testcase>
+    <testcase name="conv/54" value_param="(GFLOPS=0.103, K=[1 x 1], IN={1, 1024, 14, 14}, OCN=256, OCV/CPU)" status="run" time="0.079" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="655850"/>
+<property name="median" value="679152"/>
+<property name="gmean" value="706626"/>
+<property name="gstddev" value="0.117027"/>
+<property name="mean" value="712003"/>
+<property name="stddev" value="98796"/>
+</properties>
+    </testcase>
+    <testcase name="conv/55" value_param="(GFLOPS=0.491, K=[1 x 1], IN={1, 576, 38, 50}, OCN=224, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.326" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2562337"/>
+<property name="median" value="2717918"/>
+<property name="gmean" value="2951719"/>
+<property name="gstddev" value="0.178595"/>
+<property name="mean" value="3002812"/>
+<property name="stddev" value="610680"/>
+</properties>
+    </testcase>
+    <testcase name="conv/56" value_param="(GFLOPS=0.240, K=[3 x 3], IN={1, 96, 38, 38}, OCN=96, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.107" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="952261"/>
+<property name="median" value="961143"/>
+<property name="gmean" value="982758"/>
+<property name="gstddev" value="0.077490"/>
+<property name="mean" value="986033"/>
+<property name="stddev" value="90684"/>
+</properties>
+    </testcase>
+    <testcase name="conv/57" value_param="(GFLOPS=0.237, K=[7 x 7], IN={1, 3, 224, 224}, OCN=64, S=[2 x 2], P=[3 x 3], BIAS, OCV/CPU)" status="run" time="0.13" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1067966"/>
+<property name="median" value="1124446"/>
+<property name="gmean" value="1177043"/>
+<property name="gstddev" value="0.155806"/>
+<property name="mean" value="1193493"/>
+<property name="stddev" value="231672"/>
+</properties>
+    </testcase>
+    <testcase name="conv/58" value_param="(GFLOPS=0.472, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, G=512, S=[2 x 2], P=[1 x 1], BIAS, OCV/CPU)" status="run" time="0.004" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="239599"/>
+<property name="median" value="242366"/>
+<property name="gmean" value="244208"/>
+<property name="gstddev" value="0.022269"/>
+<property name="mean" value="244263"/>
+<property name="stddev" value="5511"/>
+</properties>
+    </testcase>
+    <testcase name="conv/59" value_param="(GFLOPS=0.472, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, S=[2 x 2], PM=SAME, OCV/CPU)" status="run" time="0.301" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2456698"/>
+<property name="median" value="2749792"/>
+<property name="gmean" value="2799540"/>
+<property name="gstddev" value="0.125231"/>
+<property name="mean" value="2821481"/>
+<property name="stddev" value="356649"/>
+</properties>
+    </testcase>
+    <testcase name="conv/60" value_param="(GFLOPS=0.449, K=[3 x 3], IN={1, 384, 13, 13}, OCN=384, G=2, P=[1 x 1], BIAS, OCV/CPU)" status="run" time="0.104" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="872347"/>
+<property name="median" value="883635"/>
+<property name="gmean" value="934486"/>
+<property name="gstddev" value="0.136795"/>
+<property name="mean" value="944338"/>
+<property name="stddev" value="155922"/>
+</properties>
+    </testcase>
+    <testcase name="conv/61" value_param="(GFLOPS=0.426, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, G=128, S=[2 x 2], P=[1 x 1], BIAS, OCV/CPU)" status="run" time="0.075" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="543125"/>
+<property name="median" value="554683"/>
+<property name="gmean" value="646382"/>
+<property name="gstddev" value="0.264019"/>
+<property name="mean" value="671763"/>
+<property name="stddev" value="208520"/>
+</properties>
+    </testcase>
+    <testcase name="conv/62" value_param="(GFLOPS=0.426, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, S=[2 x 2], PM=SAME, OCV/CPU)" status="run" time="0.191" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1659230"/>
+<property name="median" value="1718621"/>
+<property name="gmean" value="1777798"/>
+<property name="gstddev" value="0.101034"/>
+<property name="mean" value="1787453"/>
+<property name="stddev" value="200837"/>
+</properties>
+    </testcase>
+    <testcase name="conv/63" value_param="(GFLOPS=0.426, K=[3 x 3], IN={1, 128, 38, 38}, OCN=128, P=[1 x 1], OCV/CPU)" status="run" time="0.181" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1607202"/>
+<property name="median" value="1624812"/>
+<property name="gmean" value="1690085"/>
+<property name="gstddev" value="0.101296"/>
+<property name="mean" value="1699516"/>
+<property name="stddev" value="197697"/>
+</properties>
+    </testcase>
+    <testcase name="conv/64" value_param="(GFLOPS=0.426, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, G=256, S=[2 x 2], P=[1 x 1], BIAS, OCV/CPU)" status="run" time="0.043" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="300405"/>
+<property name="median" value="302666"/>
+<property name="gmean" value="359382"/>
+<property name="gstddev" value="0.284791"/>
+<property name="mean" value="375616"/>
+<property name="stddev" value="122877"/>
+</properties>
+    </testcase>
+    <testcase name="conv/65" value_param="(GFLOPS=0.426, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, S=[2 x 2], PM=SAME, OCV/CPU)" status="run" time="0.185" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1594140"/>
+<property name="median" value="1654560"/>
+<property name="gmean" value="1706567"/>
+<property name="gstddev" value="0.095334"/>
+<property name="mean" value="1714846"/>
+<property name="stddev" value="182996"/>
+</properties>
+    </testcase>
+    <testcase name="conv/66" value_param="(GFLOPS=0.426, K=[3 x 3], IN={1, 256, 19, 19}, OCN=256, P=[1 x 1], OCV/CPU)" status="run" time="0.172" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1562369"/>
+<property name="median" value="1576656"/>
+<property name="gmean" value="1609265"/>
+<property name="gstddev" value="0.069237"/>
+<property name="mean" value="1613512"/>
+<property name="stddev" value="131082"/>
+</properties>
+    </testcase>
+    <testcase name="conv/67" value_param="(GFLOPS=0.421, K=[1 x 1], IN={1, 576, 38, 50}, OCN=192, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.273" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2208011"/>
+<property name="median" value="2363109"/>
+<property name="gmean" value="2490484"/>
+<property name="gstddev" value="0.135150"/>
+<property name="mean" value="2514476"/>
+<property name="stddev" value="371490"/>
+</properties>
+    </testcase>
+    <testcase name="conv/68" value_param="(GFLOPS=0.415, K=[3 x 3], IN={1, 32, 150, 150}, OCN=32, G=32, P=[1 x 1], BIAS, OCV/CPU)" status="run" time="0.204" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1695602"/>
+<property name="median" value="1756472"/>
+<property name="gmean" value="1864666"/>
+<property name="gstddev" value="0.131062"/>
+<property name="mean" value="1881823"/>
+<property name="stddev" value="276167"/>
+</properties>
+    </testcase>
+    <testcase name="conv/69" value_param="(GFLOPS=0.415, K=[3 x 3], IN={1, 64, 150, 150}, OCN=64, G=64, S=[2 x 2], P=[1 x 1], BIAS, OCV/CPU)" status="run" time="0.116" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="912915"/>
+<property name="median" value="956584"/>
+<property name="gmean" value="1015837"/>
+<property name="gstddev" value="0.158935"/>
+<property name="mean" value="1030343"/>
+<property name="stddev" value="198822"/>
+</properties>
+    </testcase>
+    <testcase name="conv/70" value_param="(GFLOPS=0.415, K=[3 x 3], IN={1, 64, 150, 150}, OCN=64, S=[2 x 2], PM=SAME, OCV/CPU)" status="run" time="0.258" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2053501"/>
+<property name="median" value="2246240"/>
+<property name="gmean" value="2377089"/>
+<property name="gstddev" value="0.144292"/>
+<property name="mean" value="2402814"/>
+<property name="stddev" value="370957"/>
+</properties>
+    </testcase>
+    <testcase name="conv/71" value_param="(GFLOPS=0.104, K=[1 x 1], IN={1, 64, 56, 56}, OCN=256, OCV/CPU)" status="run" time="0.066" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="475680"/>
+<property name="median" value="499625"/>
+<property name="gmean" value="576322"/>
+<property name="gstddev" value="0.257925"/>
+<property name="mean" value="597810"/>
+<property name="stddev" value="180591"/>
+</properties>
+    </testcase>
+    <testcase name="conv/72" value_param="(GFLOPS=0.103, K=[1 x 1], IN={1, 128, 28, 28}, OCN=512, OCV/CPU)" status="run" time="0.067" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="492603"/>
+<property name="median" value="500160"/>
+<property name="gmean" value="587835"/>
+<property name="gstddev" value="0.265211"/>
+<property name="mean" value="610685"/>
+<property name="stddev" value="184897"/>
+</properties>
+    </testcase>
+    <testcase name="conv/73" value_param="(GFLOPS=0.376, K=[1 x 1], IN={1, 24, 300, 400}, OCN=64, PM=VALID, BIAS, OCV/CPU)" status="run" time="0.703" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5054237"/>
+<property name="median" value="6393924"/>
+<property name="gmean" value="6559372"/>
+<property name="gstddev" value="0.160537"/>
+<property name="mean" value="6643224"/>
+<property name="stddev" value="1061840"/>
+</properties>
+    </testcase>
+    <testcase name="conv/74" value_param="(GFLOPS=0.347, K=[3 x 3], IN={1, 128, 28, 28}, OCN=192, P=[1 x 1], BIAS, OCV/CPU)" status="run" time="0.154" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1257034"/>
+<property name="median" value="1267553"/>
+<property name="gmean" value="1393663"/>
+<property name="gstddev" value="0.182272"/>
+<property name="mean" value="1419419"/>
+<property name="stddev" value="304302"/>
+</properties>
+    </testcase>
+    <testcase name="conv/75" value_param="(GFLOPS=0.347, K=[3 x 3], IN={1, 128, 28, 28}, OCN=192, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.142" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1259517"/>
+<property name="median" value="1271024"/>
+<property name="gmean" value="1305487"/>
+<property name="gstddev" value="0.073485"/>
+<property name="mean" value="1309361"/>
+<property name="stddev" value="112695"/>
+</properties>
+    </testcase>
+    <testcase name="conv/76" value_param="(GFLOPS=0.014, K=[3 x 3], IN={1, 128, 14, 14}, OCN=32, P=[1 x 1], OCV/CPU)" status="run" time="0.002" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="101631"/>
+<property name="median" value="102516"/>
+<property name="gmean" value="102680"/>
+<property name="gstddev" value="0.013679"/>
+<property name="mean" value="102689"/>
+<property name="stddev" value="1427"/>
+</properties>
+    </testcase>
+    <testcase name="conv/77" value_param="(GFLOPS=0.053, K=[1 x 1], IN={1, 576, 19, 19}, OCN=128, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.048" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="321691"/>
+<property name="median" value="345190"/>
+<property name="gmean" value="414709"/>
+<property name="gstddev" value="0.265082"/>
+<property name="mean" value="429518"/>
+<property name="stddev" value="114910"/>
+</properties>
+    </testcase>
+    <testcase name="conv/78" value_param="(GFLOPS=0.319, K=[3 x 3], IN={1, 192, 19, 19}, OCN=256, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.143" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1171525"/>
+<property name="median" value="1182146"/>
+<property name="gmean" value="1297873"/>
+<property name="gstddev" value="0.166926"/>
+<property name="mean" value="1317553"/>
+<property name="stddev" value="251181"/>
+</properties>
+    </testcase>
+    <testcase name="conv/79" value_param="(GFLOPS=0.315, K=[3 x 3], IN={1, 96, 75, 100}, OCN=96, S=[2 x 2], PM=SAME, BIAS, OCV/CPU)" status="run" time="0.15" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1252207"/>
+<property name="median" value="1311833"/>
+<property name="gmean" value="1352713"/>
+<property name="gstddev" value="0.111239"/>
+<property name="mean" value="1361844"/>
+<property name="stddev" value="175132"/>
+</properties>
+    </testcase>
+    <testcase name="conv/80" value_param="(GFLOPS=0.103, K=[1 x 1], IN={1, 512, 7, 7}, OCN=2048, OCV/CPU)" status="run" time="0.121" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="972027"/>
+<property name="median" value="1038217"/>
+<property name="gmean" value="1086122"/>
+<property name="gstddev" value="0.130423"/>
+<property name="mean" value="1096147"/>
+<property name="stddev" value="163608"/>
+</properties>
+    </testcase>
+    <testcase name="conv/81" value_param="(GFLOPS=0.103, K=[1 x 1], IN={1, 512, 28, 28}, OCN=128, OCV/CPU)" status="run" time="0.075" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="548066"/>
+<property name="median" value="561256"/>
+<property name="gmean" value="656440"/>
+<property name="gstddev" value="0.261626"/>
+<property name="mean" value="681330"/>
+<property name="stddev" value="204512"/>
+</properties>
+    </testcase>
+    <testcase name="conv/82" value_param="(GFLOPS=0.308, K=[1 x 1], IN={1, 320, 75, 100}, OCN=64, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.288" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2254273"/>
+<property name="median" value="2471057"/>
+<property name="gmean" value="2636802"/>
+<property name="gstddev" value="0.138565"/>
+<property name="mean" value="2662983"/>
+<property name="stddev" value="392169"/>
+</properties>
+    </testcase>
+    <testcase name="conv/83" value_param="(GFLOPS=0.299, K=[3 x 3], IN={1, 256, 13, 13}, OCN=384, P=[1 x 1], BIAS, OCV/CPU)" status="run" time="0.138" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1187528"/>
+<property name="median" value="1211591"/>
+<property name="gmean" value="1260464"/>
+<property name="gstddev" value="0.097769"/>
+<property name="mean" value="1267009"/>
+<property name="stddev" value="142241"/>
+</properties>
+    </testcase>
+    <testcase name="conv/84" value_param="(GFLOPS=0.299, K=[3 x 3], IN={1, 384, 13, 13}, OCN=256, G=2, P=[1 x 1], BIAS, OCV/CPU)" status="run" time="0.075" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="615977"/>
+<property name="median" value="620086"/>
+<property name="gmean" value="659274"/>
+<property name="gstddev" value="0.149206"/>
+<property name="mean" value="667736"/>
+<property name="stddev" value="124455"/>
+</properties>
+    </testcase>
+    <testcase name="conv/85" value_param="(GFLOPS=0.017, K=[1 x 1], IN={1, 32, 32, 64}, OCN=128, OCV/CPU)" status="run" time="0.001" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="102854"/>
+<property name="median" value="104690"/>
+<property name="gmean" value="105121"/>
+<property name="gstddev" value="0.023003"/>
+<property name="mean" value="105147"/>
+<property name="stddev" value="2483"/>
+</properties>
+    </testcase>
+    <testcase name="conv/86" value_param="(GFLOPS=0.017, K=[1 x 1], IN={1, 128, 32, 64}, OCN=32, OCV/CPU)" status="run" time="0.002" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="133854"/>
+<property name="median" value="134958"/>
+<property name="gmean" value="136164"/>
+<property name="gstddev" value="0.021436"/>
+<property name="mean" value="136193"/>
+<property name="stddev" value="2969"/>
+</properties>
+    </testcase>
+    <testcase name="conv/87" value_param="(GFLOPS=0.133, K=[3 x 3], IN={1, 128, 19, 19}, OCN=160, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.063" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="517585"/>
+<property name="median" value="521260"/>
+<property name="gmean" value="557698"/>
+<property name="gstddev" value="0.168273"/>
+<property name="mean" value="566791"/>
+<property name="stddev" value="118366"/>
+</properties>
+    </testcase>
+    <testcase name="conv/88" value_param="(GFLOPS=0.038, K=[3 x 3], IN={1, 16, 64, 128}, OCN=16, P=[1 x 1], BIAS, OCV/CPU)" status="run" time="0.005" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="13"/>
+<property name="outliers" value="1"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="325225"/>
+<property name="median" value="326876"/>
+<property name="gmean" value="327524"/>
+<property name="gstddev" value="0.008371"/>
+<property name="mean" value="327534"/>
+<property name="stddev" value="2758"/>
+</properties>
+    </testcase>
+    <testcase name="conv/89" value_param="(GFLOPS=0.126, K=[3 x 3], IN={1, 512, 5, 5}, OCN=546, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.144" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="955054"/>
+<property name="median" value="989937"/>
+<property name="gmean" value="1178172"/>
+<property name="gstddev" value="0.261566"/>
+<property name="mean" value="1222676"/>
+<property name="stddev" value="368430"/>
+</properties>
+    </testcase>
+    <testcase name="conv/90" value_param="(GFLOPS=0.248, K=[1 x 1], IN={1, 64, 150, 200}, OCN=64, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.244" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1640245"/>
+<property name="median" value="1962282"/>
+<property name="gmean" value="2176226"/>
+<property name="gstddev" value="0.241287"/>
+<property name="mean" value="2240699"/>
+<property name="stddev" value="550982"/>
+</properties>
+    </testcase>
+    <testcase name="conv/91" value_param="(GFLOPS=0.040, K=[1 x 1], IN={1, 576, 19, 19}, OCN=96, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.003" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="251192"/>
+<property name="median" value="253300"/>
+<property name="gmean" value="254745"/>
+<property name="gstddev" value="0.019985"/>
+<property name="mean" value="254791"/>
+<property name="stddev" value="5190"/>
+</properties>
+    </testcase>
+    <testcase name="conv/92" value_param="(GFLOPS=0.080, K=[3 x 3], IN={1, 96, 19, 19}, OCN=128, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.05" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="328488"/>
+<property name="median" value="334599"/>
+<property name="gmean" value="431658"/>
+<property name="gstddev" value="0.299734"/>
+<property name="mean" value="451544"/>
+<property name="stddev" value="137163"/>
+</properties>
+    </testcase>
+    <testcase name="conv/93" value_param="(GFLOPS=0.240, K=[3 x 3], IN={1, 192, 38, 38}, OCN=192, S=[2 x 2], PM=SAME, OCV/CPU)" status="run" time="0.108" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="894967"/>
+<property name="median" value="900815"/>
+<property name="gmean" value="961957"/>
+<property name="gstddev" value="0.156718"/>
+<property name="mean" value="975382"/>
+<property name="stddev" value="186343"/>
+</properties>
+    </testcase>
+    <testcase name="conv/94" value_param="(GFLOPS=0.240, K=[3 x 3], IN={1, 192, 19, 19}, OCN=192, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.109" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="900488"/>
+<property name="median" value="906266"/>
+<property name="gmean" value="984553"/>
+<property name="gstddev" value="0.192471"/>
+<property name="mean" value="1005552"/>
+<property name="stddev" value="238666"/>
+</properties>
+    </testcase>
+    <testcase name="conv/95" value_param="(GFLOPS=0.237, K=[7 x 7], IN={1, 3, 224, 224}, OCN=64, S=[2 x 2], P=[3 x 3], OCV/CPU)" status="run" time="0.138" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1066781"/>
+<property name="median" value="1140718"/>
+<property name="gmean" value="1246166"/>
+<property name="gstddev" value="0.207683"/>
+<property name="mean" value="1275841"/>
+<property name="stddev" value="307293"/>
+</properties>
+    </testcase>
+    <testcase name="conv/96" value_param="(GFLOPS=0.237, K=[7 x 7], IN={1, 3, 224, 224}, OCN=64, S=[2 x 2], PM=SAME, BIAS, OCV/CPU)" status="run" time="0.13" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1071017"/>
+<property name="median" value="1126356"/>
+<property name="gmean" value="1176602"/>
+<property name="gstddev" value="0.131233"/>
+<property name="mean" value="1187787"/>
+<property name="stddev" value="182997"/>
+</properties>
+    </testcase>
+    <testcase name="conv/97" value_param="(GFLOPS=0.111, K=[3 x 3], IN={1, 192, 10, 10}, OCN=320, PM=SAME, BIAS, OCV/CPU)" status="run" time="0.007" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="493025"/>
+<property name="median" value="496102"/>
+<property name="gmean" value="498508"/>
+<property name="gstddev" value="0.011060"/>
+<property name="mean" value="498535"/>
+<property name="stddev" value="5548"/>
+</properties>
+    </testcase>
+    <testcase name="conv/98" value_param="(GFLOPS=0.213, K=[3 x 3], IN={1, 128, 38, 38}, OCN=256, S=[2 x 2], P=[1 x 1], OCV/CPU)" status="run" time="0.095" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="100"/>
+<property name="outliers" value="8"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="785935"/>
+<property name="median" value="794034"/>
+<property name="gmean" value="849285"/>
+<property name="gstddev" value="0.170200"/>
+<property name="mean" value="863511"/>
+<property name="stddev" value="183333"/>
+</properties>
+    </testcase>
+    <testcase name="conv/99" value_param="(GFLOPS=0.213, K=[3 x 3], IN={1, 128, 19, 19}, OCN=256, D=[2 x 2], P=[2 x 2], OCV/CPU)" status="run" time="0.009" classname="Conv">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="788503"/>
+<property name="median" value="792414"/>
+<property name="gmean" value="796313"/>
+<property name="gstddev" value="0.013880"/>
+<property name="mean" value="796382"/>
+<property name="stddev" value="11216"/>
+</properties>
+    </testcase>
+  </testsuite>
+</testsuites>

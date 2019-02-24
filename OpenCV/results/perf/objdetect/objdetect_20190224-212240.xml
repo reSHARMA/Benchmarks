@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="54" failures="30" disabled="0" errors="0" timestamp="2019-02-22T12:41:50" time="36.616" cv_module_name="objdetect" cv_implementation="plain" cv_num_threads="-1" cv_version="4.0.1-dev" cv_version_build="4.0.1-dev" cv_vcs_version="4.0.1-248-g8bde6ae-dirty" cv_build_type="Release" cv_build_type_build="Release" cv_compiler="/home/reshabh/llvm-toolchain-8_8~svn353031/build-llvm/bin/clang++" cv_parallel_framework="pthreads" cv_cpu_features="SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?" name="AllTests">
+<testsuites tests="54" failures="30" disabled="0" errors="0" timestamp="2019-02-24T21:23:07" time="16.703" cv_module_name="objdetect" cv_implementation="plain" cv_num_threads="-1" cv_version="4.0.1-dev" cv_version_build="4.0.1-dev" cv_vcs_version="4.0.1-248-g8bde6ae-dirty" cv_build_type="Release" cv_build_type_build="Release" cv_compiler="/home/reshabh/llvm-toolchain-8_8~svn353031/build-llvm/bin/clang++" cv_parallel_framework="pthreads" cv_cpu_features="SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?" name="AllTests">
   <testsuite name="Perf_Objdetect_QRCode" tests="30" failures="30" disabled="0" errors="0" time="0.001">
     <testcase name="detect/0" value_param="&quot;version_1_down.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_1_down.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
@@ -65,7 +65,7 @@ Expected: PerfTestBody() doesn't throw an exception.
   OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_right.jpg in function 'findData'
 ]]></failure>
     </testcase>
-    <testcase name="detect/8" value_param="&quot;version_5_up.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
+    <testcase name="detect/8" value_param="&quot;version_5_up.jpg&quot;" status="run" time="0.001" classname="Perf_Objdetect_QRCode">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/version_5_up.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
 Failed
 Expected: PerfTestBody() doesn't throw an exception.
@@ -113,7 +113,7 @@ Expected: PerfTestBody() doesn't throw an exception.
   OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/link_ocv.jpg in function 'findData'
 ]]></failure>
     </testcase>
-    <testcase name="detect/14" value_param="&quot;link_wiki_cv.jpg&quot;" status="run" time="0.001" classname="Perf_Objdetect_QRCode">
+    <testcase name="detect/14" value_param="&quot;link_wiki_cv.jpg&quot;" status="run" time="0" classname="Perf_Objdetect_QRCode">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012&#x0A;Failed&#x0A;Expected: PerfTestBody() doesn&apos;t throw an exception.&#x0A;  Actual: it throws cv::Exception:&#x0A;  OpenCV(4.0.1-dev) /home/reshabh/OPENCV/opencv/modules/ts/src/ts.cpp:877: error: (-2:Unspecified error) OpenCV tests: Can&apos;t find required data file: cv/qrcode/link_wiki_cv.jpg in function &apos;findData&apos;&#x0A;" type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:2012
 Failed
 Expected: PerfTestBody() doesn't throw an exception.
@@ -242,24 +242,8 @@ Expected: PerfTestBody() doesn't throw an exception.
 ]]></failure>
     </testcase>
   </testsuite>
-  <testsuite name="Perf_Objdetect_Not_QRCode" tests="24" failures="0" disabled="0" errors="0" time="36.615">
-    <testcase name="detect/0" value_param="(&quot;zero&quot;, 640x480)" status="run" time="0.11" classname="Perf_Objdetect_Not_QRCode">
-<properties>
-<property name="bytesIn" value="0"/>
-<property name="bytesOut" value="0"/>
-<property name="term" value="-1"/>
-<property name="samples" value="13"/>
-<property name="outliers" value="1"/>
-<property name="frequency" value="1000000000"/>
-<property name="min" value="8244076"/>
-<property name="median" value="8311515"/>
-<property name="gmean" value="8388541"/>
-<property name="gstddev" value="0.023698"/>
-<property name="mean" value="8390730"/>
-<property name="stddev" value="202909"/>
-</properties>
-    </testcase>
-    <testcase name="detect/1" value_param="(&quot;zero&quot;, 1280x720)" status="run" time="0.226" classname="Perf_Objdetect_Not_QRCode">
+  <testsuite name="Perf_Objdetect_Not_QRCode" tests="24" failures="0" disabled="0" errors="0" time="16.702">
+    <testcase name="detect/0" value_param="(&quot;zero&quot;, 640x480)" status="run" time="0.074" classname="Perf_Objdetect_Not_QRCode">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -267,15 +251,15 @@ Expected: PerfTestBody() doesn't throw an exception.
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="22287832"/>
-<property name="median" value="22342562"/>
-<property name="gmean" value="22528291"/>
-<property name="gstddev" value="0.018579"/>
-<property name="mean" value="22531824"/>
-<property name="stddev" value="424598"/>
+<property name="min" value="7237996"/>
+<property name="median" value="7269158"/>
+<property name="gmean" value="7332995"/>
+<property name="gstddev" value="0.026893"/>
+<property name="mean" value="7335434"/>
+<property name="stddev" value="203811"/>
 </properties>
     </testcase>
-    <testcase name="detect/2" value_param="(&quot;zero&quot;, 1920x1080)" status="run" time="0.514" classname="Perf_Objdetect_Not_QRCode">
+    <testcase name="detect/1" value_param="(&quot;zero&quot;, 1280x720)" status="run" time="0.197" classname="Perf_Objdetect_Not_QRCode">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -283,31 +267,15 @@ Expected: PerfTestBody() doesn't throw an exception.
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="50461715"/>
-<property name="median" value="51474576"/>
-<property name="gmean" value="51398706"/>
-<property name="gstddev" value="0.014221"/>
-<property name="mean" value="51403411"/>
-<property name="stddev" value="737454"/>
+<property name="min" value="19503013"/>
+<property name="median" value="19525508"/>
+<property name="gmean" value="19652876"/>
+<property name="gstddev" value="0.015486"/>
+<property name="mean" value="19655021"/>
+<property name="stddev" value="309531"/>
 </properties>
     </testcase>
-    <testcase name="detect/3" value_param="(&quot;zero&quot;, 3840x2160)" status="run" time="2.741" classname="Perf_Objdetect_Not_QRCode">
-<properties>
-<property name="bytesIn" value="0"/>
-<property name="bytesOut" value="0"/>
-<property name="term" value="-1"/>
-<property name="samples" value="13"/>
-<property name="outliers" value="1"/>
-<property name="frequency" value="1000000000"/>
-<property name="min" value="201356114"/>
-<property name="median" value="211510648"/>
-<property name="gmean" value="209803295"/>
-<property name="gstddev" value="0.028143"/>
-<property name="mean" value="209879320"/>
-<property name="stddev" value="5889359"/>
-</properties>
-    </testcase>
-    <testcase name="detect/4" value_param="(&quot;random&quot;, 640x480)" status="run" time="0.085" classname="Perf_Objdetect_Not_QRCode">
+    <testcase name="detect/2" value_param="(&quot;zero&quot;, 1920x1080)" status="run" time="0.455" classname="Perf_Objdetect_Not_QRCode">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -315,15 +283,15 @@ Expected: PerfTestBody() doesn't throw an exception.
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="8252465"/>
-<property name="median" value="8379398"/>
-<property name="gmean" value="8442712"/>
-<property name="gstddev" value="0.024823"/>
-<property name="mean" value="8445081"/>
-<property name="stddev" value="213450"/>
+<property name="min" value="45391734"/>
+<property name="median" value="45418547"/>
+<property name="gmean" value="45546158"/>
+<property name="gstddev" value="0.008228"/>
+<property name="mean" value="45547555"/>
+<property name="stddev" value="378575"/>
 </properties>
     </testcase>
-    <testcase name="detect/5" value_param="(&quot;random&quot;, 1280x720)" status="run" time="0.232" classname="Perf_Objdetect_Not_QRCode">
+    <testcase name="detect/3" value_param="(&quot;zero&quot;, 3840x2160)" status="run" time="1.833" classname="Perf_Objdetect_Not_QRCode">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -331,15 +299,15 @@ Expected: PerfTestBody() doesn't throw an exception.
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="22815954"/>
-<property name="median" value="22948913"/>
-<property name="gmean" value="23071403"/>
-<property name="gstddev" value="0.012776"/>
-<property name="mean" value="23073105"/>
-<property name="stddev" value="296503"/>
+<property name="min" value="181609155"/>
+<property name="median" value="181966246"/>
+<property name="gmean" value="183199724"/>
+<property name="gstddev" value="0.016497"/>
+<property name="mean" value="183222375"/>
+<property name="stddev" value="3065764"/>
 </properties>
     </testcase>
-    <testcase name="detect/6" value_param="(&quot;random&quot;, 1920x1080)" status="run" time="0.524" classname="Perf_Objdetect_Not_QRCode">
+    <testcase name="detect/4" value_param="(&quot;random&quot;, 640x480)" status="run" time="0.073" classname="Perf_Objdetect_Not_QRCode">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -347,31 +315,15 @@ Expected: PerfTestBody() doesn't throw an exception.
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="51883168"/>
-<property name="median" value="51958175"/>
-<property name="gmean" value="52186638"/>
-<property name="gstddev" value="0.010198"/>
-<property name="mean" value="52189093"/>
-<property name="stddev" value="536317"/>
+<property name="min" value="7230103"/>
+<property name="median" value="7271210"/>
+<property name="gmean" value="7293813"/>
+<property name="gstddev" value="0.010041"/>
+<property name="mean" value="7294146"/>
+<property name="stddev" value="73705"/>
 </properties>
     </testcase>
-    <testcase name="detect/7" value_param="(&quot;random&quot;, 3840x2160)" status="run" time="19.451" classname="Perf_Objdetect_Not_QRCode">
-<properties>
-<property name="bytesIn" value="0"/>
-<property name="bytesOut" value="0"/>
-<property name="term" value="0"/>
-<property name="samples" value="100"/>
-<property name="outliers" value="8"/>
-<property name="frequency" value="1000000000"/>
-<property name="min" value="182255852"/>
-<property name="median" value="190590050"/>
-<property name="gmean" value="192197380"/>
-<property name="gstddev" value="0.040367"/>
-<property name="mean" value="192353870"/>
-<property name="stddev" value="7881035"/>
-</properties>
-    </testcase>
-    <testcase name="detect/8" value_param="(&quot;chessboard&quot;, 640x480)" status="run" time="0.161" classname="Perf_Objdetect_Not_QRCode">
+    <testcase name="detect/5" value_param="(&quot;random&quot;, 1280x720)" status="run" time="0.197" classname="Perf_Objdetect_Not_QRCode">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -379,15 +331,15 @@ Expected: PerfTestBody() doesn't throw an exception.
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="15658362"/>
-<property name="median" value="15835840"/>
-<property name="gmean" value="16014092"/>
-<property name="gstddev" value="0.022084"/>
-<property name="mean" value="16017620"/>
-<property name="stddev" value="355711"/>
+<property name="min" value="19529747"/>
+<property name="median" value="19571334"/>
+<property name="gmean" value="19624818"/>
+<property name="gstddev" value="0.006465"/>
+<property name="mean" value="19625188"/>
+<property name="stddev" value="127411"/>
 </properties>
     </testcase>
-    <testcase name="detect/9" value_param="(&quot;chessboard&quot;, 1280x720)" status="run" time="0.282" classname="Perf_Objdetect_Not_QRCode">
+    <testcase name="detect/6" value_param="(&quot;random&quot;, 1920x1080)" status="run" time="0.456" classname="Perf_Objdetect_Not_QRCode">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -395,15 +347,15 @@ Expected: PerfTestBody() doesn't throw an exception.
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="27640231"/>
-<property name="median" value="27853081"/>
-<property name="gmean" value="27929134"/>
-<property name="gstddev" value="0.008689"/>
-<property name="mean" value="27930085"/>
-<property name="stddev" value="243127"/>
+<property name="min" value="45263645"/>
+<property name="median" value="45305408"/>
+<property name="gmean" value="45380239"/>
+<property name="gstddev" value="0.004109"/>
+<property name="mean" value="45380584"/>
+<property name="stddev" value="187265"/>
 </properties>
     </testcase>
-    <testcase name="detect/10" value_param="(&quot;chessboard&quot;, 1920x1080)" status="run" time="0.632" classname="Perf_Objdetect_Not_QRCode">
+    <testcase name="detect/7" value_param="(&quot;random&quot;, 3840x2160)" status="run" time="1.823" classname="Perf_Objdetect_Not_QRCode">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -411,15 +363,15 @@ Expected: PerfTestBody() doesn't throw an exception.
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="62091944"/>
-<property name="median" value="62352688"/>
-<property name="gmean" value="62492142"/>
-<property name="gstddev" value="0.006259"/>
-<property name="mean" value="62493246"/>
-<property name="stddev" value="392390"/>
+<property name="min" value="181408438"/>
+<property name="median" value="181573310"/>
+<property name="gmean" value="181670230"/>
+<property name="gstddev" value="0.001517"/>
+<property name="mean" value="181670419"/>
+<property name="stddev" value="275885"/>
 </properties>
     </testcase>
-    <testcase name="detect/11" value_param="(&quot;chessboard&quot;, 3840x2160)" status="run" time="2.537" classname="Perf_Objdetect_Not_QRCode">
+    <testcase name="detect/8" value_param="(&quot;chessboard&quot;, 640x480)" status="run" time="0.156" classname="Perf_Objdetect_Not_QRCode">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -427,31 +379,15 @@ Expected: PerfTestBody() doesn't throw an exception.
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="248730179"/>
-<property name="median" value="250283002"/>
-<property name="gmean" value="250807913"/>
-<property name="gstddev" value="0.008396"/>
-<property name="mean" value="250815887"/>
-<property name="stddev" value="2112828"/>
+<property name="min" value="15485303"/>
+<property name="median" value="15503006"/>
+<property name="gmean" value="15562694"/>
+<property name="gstddev" value="0.007848"/>
+<property name="mean" value="15563127"/>
+<property name="stddev" value="122858"/>
 </properties>
     </testcase>
-    <testcase name="decode/0" value_param="(&quot;zero&quot;, 640x480)" status="run" time="0.124" classname="Perf_Objdetect_Not_QRCode">
-<properties>
-<property name="bytesIn" value="0"/>
-<property name="bytesOut" value="0"/>
-<property name="term" value="-1"/>
-<property name="samples" value="13"/>
-<property name="outliers" value="1"/>
-<property name="frequency" value="1000000000"/>
-<property name="min" value="9335057"/>
-<property name="median" value="9399407"/>
-<property name="gmean" value="9505953"/>
-<property name="gstddev" value="0.024164"/>
-<property name="mean" value="9508525"/>
-<property name="stddev" value="233458"/>
-</properties>
-    </testcase>
-    <testcase name="decode/1" value_param="(&quot;zero&quot;, 1280x720)" status="run" time="0.243" classname="Perf_Objdetect_Not_QRCode">
+    <testcase name="detect/9" value_param="(&quot;chessboard&quot;, 1280x720)" status="run" time="0.272" classname="Perf_Objdetect_Not_QRCode">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -459,15 +395,15 @@ Expected: PerfTestBody() doesn't throw an exception.
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="23930276"/>
-<property name="median" value="24023779"/>
-<property name="gmean" value="24229363"/>
-<property name="gstddev" value="0.014937"/>
-<property name="mean" value="24231811"/>
-<property name="stddev" value="365167"/>
+<property name="min" value="26765624"/>
+<property name="median" value="26803136"/>
+<property name="gmean" value="26874741"/>
+<property name="gstddev" value="0.006759"/>
+<property name="mean" value="26875295"/>
+<property name="stddev" value="182745"/>
 </properties>
     </testcase>
-    <testcase name="decode/2" value_param="(&quot;zero&quot;, 1920x1080)" status="run" time="0.498" classname="Perf_Objdetect_Not_QRCode">
+    <testcase name="detect/10" value_param="(&quot;chessboard&quot;, 1920x1080)" status="run" time="0.619" classname="Perf_Objdetect_Not_QRCode">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -475,15 +411,15 @@ Expected: PerfTestBody() doesn't throw an exception.
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="49212781"/>
-<property name="median" value="49620430"/>
-<property name="gmean" value="49813203"/>
-<property name="gstddev" value="0.012776"/>
-<property name="mean" value="49816882"/>
-<property name="stddev" value="641802"/>
+<property name="min" value="61147944"/>
+<property name="median" value="61192758"/>
+<property name="gmean" value="61201105"/>
+<property name="gstddev" value="0.000804"/>
+<property name="mean" value="61201123"/>
+<property name="stddev" value="49224"/>
 </properties>
     </testcase>
-    <testcase name="decode/3" value_param="(&quot;zero&quot;, 3840x2160)" status="run" time="1.917" classname="Perf_Objdetect_Not_QRCode">
+    <testcase name="detect/11" value_param="(&quot;chessboard&quot;, 3840x2160)" status="run" time="2.491" classname="Perf_Objdetect_Not_QRCode">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -491,31 +427,15 @@ Expected: PerfTestBody() doesn't throw an exception.
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="187791280"/>
-<property name="median" value="190756370"/>
-<property name="gmean" value="191231458"/>
-<property name="gstddev" value="0.013566"/>
-<property name="mean" value="191247326"/>
-<property name="stddev" value="2601835"/>
+<property name="min" value="246138286"/>
+<property name="median" value="246381410"/>
+<property name="gmean" value="246453712"/>
+<property name="gstddev" value="0.001584"/>
+<property name="mean" value="246453991"/>
+<property name="stddev" value="391043"/>
 </properties>
     </testcase>
-    <testcase name="decode/4" value_param="(&quot;random&quot;, 640x480)" status="run" time="0.126" classname="Perf_Objdetect_Not_QRCode">
-<properties>
-<property name="bytesIn" value="0"/>
-<property name="bytesOut" value="0"/>
-<property name="term" value="-1"/>
-<property name="samples" value="13"/>
-<property name="outliers" value="1"/>
-<property name="frequency" value="1000000000"/>
-<property name="min" value="9359117"/>
-<property name="median" value="9490840"/>
-<property name="gmean" value="9593932"/>
-<property name="gstddev" value="0.027189"/>
-<property name="mean" value="9597227"/>
-<property name="stddev" value="266174"/>
-</properties>
-    </testcase>
-    <testcase name="decode/5" value_param="(&quot;random&quot;, 1280x720)" status="run" time="0.244" classname="Perf_Objdetect_Not_QRCode">
+    <testcase name="decode/0" value_param="(&quot;zero&quot;, 640x480)" status="run" time="0.093" classname="Perf_Objdetect_Not_QRCode">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -523,15 +443,15 @@ Expected: PerfTestBody() doesn't throw an exception.
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="24035369"/>
-<property name="median" value="24178294"/>
-<property name="gmean" value="24293700"/>
-<property name="gstddev" value="0.013607"/>
-<property name="mean" value="24295740"/>
-<property name="stddev" value="334356"/>
+<property name="min" value="9119103"/>
+<property name="median" value="9157056"/>
+<property name="gmean" value="9201176"/>
+<property name="gstddev" value="0.012750"/>
+<property name="mean" value="9201854"/>
+<property name="stddev" value="118561"/>
 </properties>
     </testcase>
-    <testcase name="decode/6" value_param="(&quot;random&quot;, 1920x1080)" status="run" time="0.498" classname="Perf_Objdetect_Not_QRCode">
+    <testcase name="decode/1" value_param="(&quot;zero&quot;, 1280x720)" status="run" time="0.229" classname="Perf_Objdetect_Not_QRCode">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -539,15 +459,15 @@ Expected: PerfTestBody() doesn't throw an exception.
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="49198896"/>
-<property name="median" value="49528437"/>
-<property name="gmean" value="49685775"/>
-<property name="gstddev" value="0.009820"/>
-<property name="mean" value="49687938"/>
-<property name="stddev" value="490202"/>
+<property name="min" value="22767668"/>
+<property name="median" value="22797521"/>
+<property name="gmean" value="22893012"/>
+<property name="gstddev" value="0.007267"/>
+<property name="mean" value="22893558"/>
+<property name="stddev" value="167108"/>
 </properties>
     </testcase>
-    <testcase name="decode/7" value_param="(&quot;random&quot;, 3840x2160)" status="run" time="1.933" classname="Perf_Objdetect_Not_QRCode">
+    <testcase name="decode/2" value_param="(&quot;zero&quot;, 1920x1080)" status="run" time="0.486" classname="Perf_Objdetect_Not_QRCode">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -555,15 +475,15 @@ Expected: PerfTestBody() doesn't throw an exception.
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="189139266"/>
-<property name="median" value="191795298"/>
-<property name="gmean" value="192283704"/>
-<property name="gstddev" value="0.014518"/>
-<property name="mean" value="192302033"/>
-<property name="stddev" value="2812558"/>
+<property name="min" value="48544926"/>
+<property name="median" value="48561586"/>
+<property name="gmean" value="48586518"/>
+<property name="gstddev" value="0.001138"/>
+<property name="mean" value="48586546"/>
+<property name="stddev" value="55360"/>
 </properties>
     </testcase>
-    <testcase name="decode/8" value_param="(&quot;chessboard&quot;, 640x480)" status="run" time="0.107" classname="Perf_Objdetect_Not_QRCode">
+    <testcase name="decode/3" value_param="(&quot;zero&quot;, 3840x2160)" status="run" time="1.843" classname="Perf_Objdetect_Not_QRCode">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -571,15 +491,15 @@ Expected: PerfTestBody() doesn't throw an exception.
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="10204470"/>
-<property name="median" value="10623240"/>
-<property name="gmean" value="10617373"/>
-<property name="gstddev" value="0.029107"/>
-<property name="mean" value="10621418"/>
-<property name="stddev" value="308776"/>
+<property name="min" value="183461070"/>
+<property name="median" value="183753205"/>
+<property name="gmean" value="184004097"/>
+<property name="gstddev" value="0.004720"/>
+<property name="mean" value="184005948"/>
+<property name="stddev" value="872725"/>
 </properties>
     </testcase>
-    <testcase name="decode/9" value_param="(&quot;chessboard&quot;, 1280x720)" status="run" time="0.262" classname="Perf_Objdetect_Not_QRCode">
+    <testcase name="decode/4" value_param="(&quot;random&quot;, 640x480)" status="run" time="0.095" classname="Perf_Objdetect_Not_QRCode">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -587,15 +507,15 @@ Expected: PerfTestBody() doesn't throw an exception.
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="25188802"/>
-<property name="median" value="25881398"/>
-<property name="gmean" value="25930569"/>
-<property name="gstddev" value="0.025260"/>
-<property name="mean" value="25938087"/>
-<property name="stddev" value="664676"/>
+<property name="min" value="9283483"/>
+<property name="median" value="9312360"/>
+<property name="gmean" value="9386362"/>
+<property name="gstddev" value="0.019041"/>
+<property name="mean" value="9387913"/>
+<property name="stddev" value="182220"/>
 </properties>
     </testcase>
-    <testcase name="decode/10" value_param="(&quot;chessboard&quot;, 1920x1080)" status="run" time="0.534" classname="Perf_Objdetect_Not_QRCode">
+    <testcase name="decode/5" value_param="(&quot;random&quot;, 1280x720)" status="run" time="0.23" classname="Perf_Objdetect_Not_QRCode">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -603,28 +523,108 @@ Expected: PerfTestBody() doesn't throw an exception.
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="51366727"/>
-<property name="median" value="52764480"/>
-<property name="gmean" value="52739983"/>
-<property name="gstddev" value="0.012093"/>
-<property name="mean" value="52743443"/>
-<property name="stddev" value="635082"/>
+<property name="min" value="22788909"/>
+<property name="median" value="22806235"/>
+<property name="gmean" value="22933360"/>
+<property name="gstddev" value="0.014584"/>
+<property name="mean" value="22935581"/>
+<property name="stddev" value="340229"/>
 </properties>
     </testcase>
-    <testcase name="decode/11" value_param="(&quot;chessboard&quot;, 3840x2160)" status="run" time="2.633" classname="Perf_Objdetect_Not_QRCode">
+    <testcase name="decode/6" value_param="(&quot;random&quot;, 1920x1080)" status="run" time="0.489" classname="Perf_Objdetect_Not_QRCode">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
 <property name="term" value="-1"/>
-<property name="samples" value="13"/>
-<property name="outliers" value="1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="191857276"/>
-<property name="median" value="198034568"/>
-<property name="gmean" value="199187686"/>
-<property name="gstddev" value="0.029113"/>
-<property name="mean" value="199265330"/>
-<property name="stddev" value="5829622"/>
+<property name="min" value="48512008"/>
+<property name="median" value="48582970"/>
+<property name="gmean" value="48752179"/>
+<property name="gstddev" value="0.010220"/>
+<property name="mean" value="48754490"/>
+<property name="stddev" value="504543"/>
+</properties>
+    </testcase>
+    <testcase name="decode/7" value_param="(&quot;random&quot;, 3840x2160)" status="run" time="1.859" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="183801317"/>
+<property name="median" value="184075472"/>
+<property name="gmean" value="184928348"/>
+<property name="gstddev" value="0.014456"/>
+<property name="mean" value="184945950"/>
+<property name="stddev" value="2722389"/>
+</properties>
+    </testcase>
+    <testcase name="decode/8" value_param="(&quot;chessboard&quot;, 640x480)" status="run" time="0.103" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="10008916"/>
+<property name="median" value="10018814"/>
+<property name="gmean" value="10118230"/>
+<property name="gstddev" value="0.022374"/>
+<property name="mean" value="10120548"/>
+<property name="stddev" value="232197"/>
+</properties>
+    </testcase>
+    <testcase name="decode/9" value_param="(&quot;chessboard&quot;, 1280x720)" status="run" time="0.242" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="23660750"/>
+<property name="median" value="23700000"/>
+<property name="gmean" value="23914644"/>
+<property name="gstddev" value="0.019920"/>
+<property name="mean" value="23918959"/>
+<property name="stddev" value="483777"/>
+</properties>
+    </testcase>
+    <testcase name="decode/10" value_param="(&quot;chessboard&quot;, 1920x1080)" status="run" time="0.503" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="49448780"/>
+<property name="median" value="49529782"/>
+<property name="gmean" value="49698536"/>
+<property name="gstddev" value="0.011261"/>
+<property name="mean" value="49701399"/>
+<property name="stddev" value="567582"/>
+</properties>
+    </testcase>
+    <testcase name="decode/11" value_param="(&quot;chessboard&quot;, 3840x2160)" status="run" time="1.884" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="184544094"/>
+<property name="median" value="184753814"/>
+<property name="gmean" value="185636276"/>
+<property name="gstddev" value="0.014729"/>
+<property name="mean" value="185654624"/>
+<property name="stddev" value="2785468"/>
 </properties>
     </testcase>
   </testsuite>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="113" failures="93" disabled="0" errors="0" timestamp="2019-02-22T12:59:54" time="21.825" cv_module_name="features2d" cv_implementation="plain" cv_num_threads="-1" cv_version="4.0.1-dev" cv_version_build="4.0.1-dev" cv_vcs_version="4.0.1-248-g8bde6ae-dirty" cv_build_type="Release" cv_build_type_build="Release" cv_compiler="/home/reshabh/llvm-toolchain-8_8~svn353031/build-llvm/bin/clang++" cv_parallel_framework="pthreads" cv_cpu_features="SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?" name="AllTests">
-  <testsuite name="feature2d_detect" tests="57" failures="57" disabled="0" errors="0" time="2.408">
+<testsuites tests="113" failures="93" disabled="0" errors="0" timestamp="2019-02-24T23:56:10" time="11.756" cv_module_name="features2d" cv_implementation="plain" cv_num_threads="-1" cv_version="4.0.1-dev" cv_version_build="4.0.1-dev" cv_vcs_version="4.0.1-248-g8bde6ae-dirty" cv_build_type="Release" cv_build_type_build="Release" cv_compiler="/home/reshabh/llvm-toolchain-8_8~svn353031/build-llvm/bin/clang++" cv_parallel_framework="pthreads" cv_cpu_features="SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?" name="AllTests">
+  <testsuite name="feature2d_detect" tests="57" failures="57" disabled="0" errors="0" time="2.275">
     <testcase name="detect/0" value_param="(FAST_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
@@ -61,7 +61,7 @@ Failed
 Failed
   Requested file "./stitching/s2.jpg" does not exist.]]></failure>
     </testcase>
-    <testcase name="detect/12" value_param="(FAST_20_FALSE_TYPE5_8, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0.001" classname="feature2d_detect">
+    <testcase name="detect/12" value_param="(FAST_20_FALSE_TYPE5_8, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
@@ -91,7 +91,7 @@ Failed
 Failed
   Requested file "./stitching/s2.jpg" does not exist.]]></failure>
     </testcase>
-    <testcase name="detect/18" value_param="(FAST_20_FALSE_TYPE9_16, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_detect">
+    <testcase name="detect/18" value_param="(FAST_20_FALSE_TYPE9_16, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0.001" classname="feature2d_detect">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
@@ -191,7 +191,7 @@ Failed
 Failed
   Requested file "./stitching/a3.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="detect/38" value_param="(MSER_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0.001" classname="feature2d_detect">
+    <testcase name="detect/38" value_param="(MSER_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0" classname="feature2d_detect">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./stitching/s2.jpg" does not exist.]]></failure>
@@ -231,7 +231,7 @@ Failed
 Failed
   Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="detect/46" value_param="(AKAZE_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detect">
+    <testcase name="detect/46" value_param="(AKAZE_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0.001" classname="feature2d_detect">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./stitching/a3.png" does not exist.]]></failure>
@@ -256,17 +256,17 @@ Failed
 Failed
   Requested file "./stitching/s2.jpg" does not exist.]]></failure>
     </testcase>
-    <testcase name="detect/51" value_param="(BRISK_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="1.035" classname="feature2d_detect">
+    <testcase name="detect/51" value_param="(BRISK_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0.987" classname="feature2d_detect">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="detect/52" value_param="(BRISK_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="1.035" classname="feature2d_detect">
+    <testcase name="detect/52" value_param="(BRISK_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0.968" classname="feature2d_detect">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./stitching/a3.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="detect/53" value_param="(BRISK_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0.336" classname="feature2d_detect">
+    <testcase name="detect/53" value_param="(BRISK_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0.318" classname="feature2d_detect">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./stitching/s2.jpg" does not exist.]]></failure>
@@ -287,7 +287,7 @@ Failed
   Requested file "./stitching/s2.jpg" does not exist.]]></failure>
     </testcase>
   </testsuite>
-  <testsuite name="feature2d_extract" tests="18" failures="18" disabled="0" errors="0" time="1.608">
+  <testsuite name="feature2d_extract" tests="18" failures="18" disabled="0" errors="0" time="1.596">
     <testcase name="extract/0" value_param="(ORB_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0" classname="feature2d_extract">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
@@ -348,17 +348,17 @@ Failed
 Failed
   Requested file "./stitching/s2.jpg" does not exist.]]></failure>
     </testcase>
-    <testcase name="extract/12" value_param="(BRISK_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0.986" classname="feature2d_extract">
+    <testcase name="extract/12" value_param="(BRISK_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0.97" classname="feature2d_extract">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="extract/13" value_param="(BRISK_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0.31" classname="feature2d_extract">
+    <testcase name="extract/13" value_param="(BRISK_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0.312" classname="feature2d_extract">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./stitching/a3.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="extract/14" value_param="(BRISK_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0.312" classname="feature2d_extract">
+    <testcase name="extract/14" value_param="(BRISK_DEFAULT, &quot;stitching/s2.jpg&quot;)" status="run" time="0.313" classname="feature2d_extract">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/s2.jpg&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./stitching/s2.jpg" does not exist.]]></failure>
@@ -385,7 +385,7 @@ Failed
 Failed
   Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
     </testcase>
-    <testcase name="detectAndExtract/1" value_param="(ORB_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0" classname="feature2d_detectAndExtract">
+    <testcase name="detectAndExtract/1" value_param="(ORB_DEFAULT, &quot;stitching/a3.png&quot;)" status="run" time="0.001" classname="feature2d_detectAndExtract">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./stitching/a3.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./stitching/a3.png" does not exist.]]></failure>
@@ -440,7 +440,7 @@ Failed
 Failed
   Requested file "./stitching/s2.jpg" does not exist.]]></failure>
     </testcase>
-    <testcase name="detectAndExtract/12" value_param="(BRISK_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0.313" classname="feature2d_detectAndExtract">
+    <testcase name="detectAndExtract/12" value_param="(BRISK_DEFAULT, &quot;cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot;)" status="run" time="0.312" classname="feature2d_detectAndExtract">
       <failure message="/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970&#x0A;Failed&#x0A;  Requested file &quot;./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png&quot; does not exist." type=""><![CDATA[/home/reshabh/OPENCV/opencv/modules/ts/src/ts_perf.cpp:1970
 Failed
   Requested file "./cv/detectors_descriptors_evaluation/images_datasets/leuven/img1.png" does not exist.]]></failure>
@@ -471,8 +471,8 @@ Failed
   Requested file "./stitching/s2.jpg" does not exist.]]></failure>
     </testcase>
   </testsuite>
-  <testsuite name="Norm_Destination_CrossCheck_batchDistance_8U" tests="8" failures="0" disabled="0" errors="0" time="5.46">
-    <testcase name="batchDistance_8U/0" value_param="(NORM_L1, 32SC1, false)" status="run" time="0.528" classname="Norm_Destination_CrossCheck_batchDistance_8U">
+  <testsuite name="Norm_Destination_CrossCheck_batchDistance_8U" tests="8" failures="0" disabled="0" errors="0" time="3.873">
+    <testcase name="batchDistance_8U/0" value_param="(NORM_L1, 32SC1, false)" status="run" time="0.397" classname="Norm_Destination_CrossCheck_batchDistance_8U">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -480,15 +480,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="51998702"/>
-<property name="median" value="52544297"/>
-<property name="gmean" value="52723737"/>
-<property name="gstddev" value="0.015729"/>
-<property name="mean" value="52729648"/>
-<property name="stddev" value="838203"/>
+<property name="min" value="39073266"/>
+<property name="median" value="39187040"/>
+<property name="gmean" value="39523241"/>
+<property name="gstddev" value="0.019548"/>
+<property name="mean" value="39530126"/>
+<property name="stddev" value="787862"/>
 </properties>
     </testcase>
-    <testcase name="batchDistance_8U/1" value_param="(NORM_L1, 32SC1, true)" status="run" time="1.057" classname="Norm_Destination_CrossCheck_batchDistance_8U">
+    <testcase name="batchDistance_8U/1" value_param="(NORM_L1, 32SC1, true)" status="run" time="0.786" classname="Norm_Destination_CrossCheck_batchDistance_8U">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -496,15 +496,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="104659224"/>
-<property name="median" value="105173014"/>
-<property name="gmean" value="105507734"/>
-<property name="gstddev" value="0.011783"/>
-<property name="mean" value="105514377"/>
-<property name="stddev" value="1257731"/>
+<property name="min" value="78385138"/>
+<property name="median" value="78484520"/>
+<property name="gmean" value="78532345"/>
+<property name="gstddev" value="0.002374"/>
+<property name="mean" value="78532545"/>
+<property name="stddev" value="186777"/>
 </properties>
     </testcase>
-    <testcase name="batchDistance_8U/2" value_param="(NORM_L1, 32FC1, false)" status="run" time="0.388" classname="Norm_Destination_CrossCheck_batchDistance_8U">
+    <testcase name="batchDistance_8U/2" value_param="(NORM_L1, 32FC1, false)" status="run" time="0.287" classname="Norm_Destination_CrossCheck_batchDistance_8U">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -512,31 +512,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="37941550"/>
-<property name="median" value="38369564"/>
-<property name="gmean" value="38687395"/>
-<property name="gstddev" value="0.015628"/>
-<property name="mean" value="38691656"/>
-<property name="stddev" value="606579"/>
+<property name="min" value="28455219"/>
+<property name="median" value="28511697"/>
+<property name="gmean" value="28601308"/>
+<property name="gstddev" value="0.008253"/>
+<property name="mean" value="28602189"/>
+<property name="stddev" value="237789"/>
 </properties>
     </testcase>
-    <testcase name="batchDistance_8U/3" value_param="(NORM_L1, 32FC1, true)" status="run" time="0.959" classname="Norm_Destination_CrossCheck_batchDistance_8U">
-<properties>
-<property name="bytesIn" value="0"/>
-<property name="bytesOut" value="0"/>
-<property name="term" value="-1"/>
-<property name="samples" value="12"/>
-<property name="outliers" value="0"/>
-<property name="frequency" value="1000000000"/>
-<property name="min" value="78322032"/>
-<property name="median" value="78997444"/>
-<property name="gmean" value="79792575"/>
-<property name="gstddev" value="0.027952"/>
-<property name="mean" value="79821777"/>
-<property name="stddev" value="2304670"/>
-</properties>
-    </testcase>
-    <testcase name="batchDistance_8U/4" value_param="(NORM_L2SQR, 32SC1, false)" status="run" time="0.439" classname="Norm_Destination_CrossCheck_batchDistance_8U">
+    <testcase name="batchDistance_8U/3" value_param="(NORM_L1, 32FC1, true)" status="run" time="0.573" classname="Norm_Destination_CrossCheck_batchDistance_8U">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -544,15 +528,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="43253977"/>
-<property name="median" value="43763485"/>
-<property name="gmean" value="43822963"/>
-<property name="gstddev" value="0.009342"/>
-<property name="mean" value="43824689"/>
-<property name="stddev" value="411207"/>
+<property name="min" value="56688117"/>
+<property name="median" value="57090255"/>
+<property name="gmean" value="57200522"/>
+<property name="gstddev" value="0.010306"/>
+<property name="mean" value="57203275"/>
+<property name="stddev" value="595647"/>
 </properties>
     </testcase>
-    <testcase name="batchDistance_8U/5" value_param="(NORM_L2SQR, 32SC1, true)" status="run" time="0.883" classname="Norm_Destination_CrossCheck_batchDistance_8U">
+    <testcase name="batchDistance_8U/4" value_param="(NORM_L2SQR, 32SC1, false)" status="run" time="0.319" classname="Norm_Destination_CrossCheck_batchDistance_8U">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -560,15 +544,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="87406547"/>
-<property name="median" value="87837137"/>
-<property name="gmean" value="88217912"/>
-<property name="gstddev" value="0.010301"/>
-<property name="mean" value="88222148"/>
-<property name="stddev" value="916446"/>
+<property name="min" value="31579183"/>
+<property name="median" value="31624499"/>
+<property name="gmean" value="31708142"/>
+<property name="gstddev" value="0.007993"/>
+<property name="mean" value="31709059"/>
+<property name="stddev" value="255839"/>
 </properties>
     </testcase>
-    <testcase name="batchDistance_8U/6" value_param="(NORM_L2SQR, 32FC1, false)" status="run" time="0.402" classname="Norm_Destination_CrossCheck_batchDistance_8U">
+    <testcase name="batchDistance_8U/5" value_param="(NORM_L2SQR, 32SC1, true)" status="run" time="0.636" classname="Norm_Destination_CrossCheck_batchDistance_8U">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -576,15 +560,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="39606418"/>
-<property name="median" value="39916978"/>
-<property name="gmean" value="40052180"/>
-<property name="gstddev" value="0.013568"/>
-<property name="mean" value="40055524"/>
-<property name="stddev" value="549675"/>
+<property name="min" value="63359701"/>
+<property name="median" value="63396737"/>
+<property name="gmean" value="63489722"/>
+<property name="gstddev" value="0.003856"/>
+<property name="mean" value="63490148"/>
+<property name="stddev" value="245912"/>
 </properties>
     </testcase>
-    <testcase name="batchDistance_8U/7" value_param="(NORM_L2SQR, 32FC1, true)" status="run" time="0.804" classname="Norm_Destination_CrossCheck_batchDistance_8U">
+    <testcase name="batchDistance_8U/6" value_param="(NORM_L2SQR, 32FC1, false)" status="run" time="0.291" classname="Norm_Destination_CrossCheck_batchDistance_8U">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -592,115 +576,33 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="78469924"/>
-<property name="median" value="80319402"/>
-<property name="gmean" value="80327505"/>
-<property name="gstddev" value="0.009917"/>
-<property name="mean" value="80331046"/>
-<property name="stddev" value="792028"/>
+<property name="min" value="28853910"/>
+<property name="median" value="28897716"/>
+<property name="gmean" value="28998977"/>
+<property name="gstddev" value="0.007806"/>
+<property name="mean" value="28999775"/>
+<property name="stddev" value="227886"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_8U/7" value_param="(NORM_L2SQR, 32FC1, true)" status="run" time="0.584" classname="Norm_Destination_CrossCheck_batchDistance_8U">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="57843453"/>
+<property name="median" value="57980954"/>
+<property name="gmean" value="58322797"/>
+<property name="gstddev" value="0.016134"/>
+<property name="mean" value="58329713"/>
+<property name="stddev" value="958534"/>
 </properties>
     </testcase>
   </testsuite>
-  <testsuite name="Norm_CrossCheck_batchDistance_Dest_32S" tests="4" failures="0" disabled="0" errors="0" time="6.209">
-    <testcase name="batchDistance_Dest_32S/0" value_param="(NORM_HAMMING, false)" status="run" time="0.17" classname="Norm_CrossCheck_batchDistance_Dest_32S">
-<properties>
-<property name="bytesIn" value="0"/>
-<property name="bytesOut" value="0"/>
-<property name="term" value="-1"/>
-<property name="samples" value="38"/>
-<property name="outliers" value="3"/>
-<property name="frequency" value="1000000000"/>
-<property name="min" value="4160151"/>
-<property name="median" value="4167362"/>
-<property name="gmean" value="4239363"/>
-<property name="gstddev" value="0.029179"/>
-<property name="mean" value="4241139"/>
-<property name="stddev" value="126179"/>
-</properties>
-    </testcase>
-    <testcase name="batchDistance_Dest_32S/1" value_param="(NORM_HAMMING, true)" status="run" time="0.09" classname="Norm_CrossCheck_batchDistance_Dest_32S">
-<properties>
-<property name="bytesIn" value="0"/>
-<property name="bytesOut" value="0"/>
-<property name="term" value="-1"/>
-<property name="samples" value="10"/>
-<property name="outliers" value="0"/>
-<property name="frequency" value="1000000000"/>
-<property name="min" value="8781331"/>
-<property name="median" value="8879620"/>
-<property name="gmean" value="8884514"/>
-<property name="gstddev" value="0.008963"/>
-<property name="mean" value="8884835"/>
-<property name="stddev" value="79901"/>
-</properties>
-    </testcase>
-    <testcase name="batchDistance_Dest_32S/2" value_param="(NORM_HAMMING2, false)" status="run" time="5.036" classname="Norm_CrossCheck_batchDistance_Dest_32S">
-<properties>
-<property name="bytesIn" value="0"/>
-<property name="bytesOut" value="0"/>
-<property name="term" value="0"/>
-<property name="samples" value="100"/>
-<property name="outliers" value="8"/>
-<property name="frequency" value="1000000000"/>
-<property name="min" value="39956683"/>
-<property name="median" value="51434162"/>
-<property name="gmean" value="49937953"/>
-<property name="gstddev" value="0.063638"/>
-<property name="mean" value="50034784"/>
-<property name="stddev" value="3029772"/>
-</properties>
-    </testcase>
-    <testcase name="batchDistance_Dest_32S/3" value_param="(NORM_HAMMING2, true)" status="run" time="0.913" classname="Norm_CrossCheck_batchDistance_Dest_32S">
-<properties>
-<property name="bytesIn" value="0"/>
-<property name="bytesOut" value="0"/>
-<property name="term" value="-1"/>
-<property name="samples" value="10"/>
-<property name="outliers" value="0"/>
-<property name="frequency" value="1000000000"/>
-<property name="min" value="90027701"/>
-<property name="median" value="90800656"/>
-<property name="gmean" value="91130935"/>
-<property name="gstddev" value="0.015131"/>
-<property name="mean" value="91140414"/>
-<property name="stddev" value="1398858"/>
-</properties>
-    </testcase>
-  </testsuite>
-  <testsuite name="Source_CrossCheck_batchDistance_L2" tests="4" failures="0" disabled="0" errors="0" time="1.851">
-    <testcase name="batchDistance_L2/0" value_param="(8UC1, false)" status="run" time="0.454" classname="Source_CrossCheck_batchDistance_L2">
-<properties>
-<property name="bytesIn" value="0"/>
-<property name="bytesOut" value="0"/>
-<property name="term" value="-1"/>
-<property name="samples" value="10"/>
-<property name="outliers" value="0"/>
-<property name="frequency" value="1000000000"/>
-<property name="min" value="44636011"/>
-<property name="median" value="45505463"/>
-<property name="gmean" value="45292348"/>
-<property name="gstddev" value="0.007380"/>
-<property name="mean" value="45293456"/>
-<property name="stddev" value="333201"/>
-</properties>
-    </testcase>
-    <testcase name="batchDistance_L2/1" value_param="(8UC1, true)" status="run" time="0.909" classname="Source_CrossCheck_batchDistance_L2">
-<properties>
-<property name="bytesIn" value="0"/>
-<property name="bytesOut" value="0"/>
-<property name="term" value="-1"/>
-<property name="samples" value="10"/>
-<property name="outliers" value="0"/>
-<property name="frequency" value="1000000000"/>
-<property name="min" value="90014888"/>
-<property name="median" value="90851177"/>
-<property name="gmean" value="90790330"/>
-<property name="gstddev" value="0.005293"/>
-<property name="mean" value="90791474"/>
-<property name="stddev" value="480176"/>
-</properties>
-    </testcase>
-    <testcase name="batchDistance_L2/2" value_param="(32FC1, false)" status="run" time="0.194" classname="Source_CrossCheck_batchDistance_L2">
+  <testsuite name="Norm_CrossCheck_batchDistance_Dest_32S" tests="4" failures="0" disabled="0" errors="0" time="0.981">
+    <testcase name="batchDistance_Dest_32S/0" value_param="(NORM_HAMMING, false)" status="run" time="0.042" classname="Norm_CrossCheck_batchDistance_Dest_32S">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -708,15 +610,15 @@ Failed
 <property name="samples" value="13"/>
 <property name="outliers" value="1"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="14033102"/>
-<property name="median" value="14517222"/>
-<property name="gmean" value="14568541"/>
-<property name="gstddev" value="0.024465"/>
-<property name="mean" value="14572546"/>
-<property name="stddev" value="357614"/>
+<property name="min" value="3057533"/>
+<property name="median" value="3070958"/>
+<property name="gmean" value="3079132"/>
+<property name="gstddev" value="0.008232"/>
+<property name="mean" value="3079229"/>
+<property name="stddev" value="25564"/>
 </properties>
     </testcase>
-    <testcase name="batchDistance_L2/3" value_param="(32FC1, true)" status="run" time="0.294" classname="Source_CrossCheck_batchDistance_L2">
+    <testcase name="batchDistance_Dest_32S/1" value_param="(NORM_HAMMING, true)" status="run" time="0.064" classname="Norm_CrossCheck_batchDistance_Dest_32S">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -724,33 +626,49 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="28710857"/>
-<property name="median" value="29119826"/>
-<property name="gmean" value="29295958"/>
-<property name="gstddev" value="0.018302"/>
-<property name="mean" value="29300400"/>
-<property name="stddev" value="540895"/>
+<property name="min" value="6243622"/>
+<property name="median" value="6269930"/>
+<property name="gmean" value="6286486"/>
+<property name="gstddev" value="0.008991"/>
+<property name="mean" value="6286716"/>
+<property name="stddev" value="57081"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_Dest_32S/2" value_param="(NORM_HAMMING2, false)" status="run" time="0.29" classname="Norm_CrossCheck_batchDistance_Dest_32S">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="28904079"/>
+<property name="median" value="28950892"/>
+<property name="gmean" value="28978974"/>
+<property name="gstddev" value="0.003748"/>
+<property name="mean" value="28979158"/>
+<property name="stddev" value="109048"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_Dest_32S/3" value_param="(NORM_HAMMING2, true)" status="run" time="0.584" classname="Norm_CrossCheck_batchDistance_Dest_32S">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="58003824"/>
+<property name="median" value="58081862"/>
+<property name="gmean" value="58382695"/>
+<property name="gstddev" value="0.013764"/>
+<property name="mean" value="58387724"/>
+<property name="stddev" value="816323"/>
 </properties>
     </testcase>
   </testsuite>
-  <testsuite name="Norm_CrossCheck_batchDistance_32F" tests="4" failures="0" disabled="0" errors="0" time="3.353">
-    <testcase name="batchDistance_32F/0" value_param="(NORM_L1, false)" status="run" time="2.346" classname="Norm_CrossCheck_batchDistance_32F">
-<properties>
-<property name="bytesIn" value="0"/>
-<property name="bytesOut" value="0"/>
-<property name="term" value="-1"/>
-<property name="samples" value="75"/>
-<property name="outliers" value="6"/>
-<property name="frequency" value="1000000000"/>
-<property name="min" value="30275621"/>
-<property name="median" value="30747025"/>
-<property name="gmean" value="30937375"/>
-<property name="gstddev" value="0.028724"/>
-<property name="mean" value="30950262"/>
-<property name="stddev" value="921823"/>
-</properties>
-    </testcase>
-    <testcase name="batchDistance_32F/1" value_param="(NORM_L1, true)" status="run" time="0.625" classname="Norm_CrossCheck_batchDistance_32F">
+  <testsuite name="Source_CrossCheck_batchDistance_L2" tests="4" failures="0" disabled="0" errors="0" time="1.15">
+    <testcase name="batchDistance_L2/0" value_param="(8UC1, false)" status="run" time="0.292" classname="Source_CrossCheck_batchDistance_L2">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -758,15 +676,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="61083937"/>
-<property name="median" value="61850764"/>
-<property name="gmean" value="62295768"/>
-<property name="gstddev" value="0.018033"/>
-<property name="mean" value="62304952"/>
-<property name="stddev" value="1135989"/>
+<property name="min" value="28845655"/>
+<property name="median" value="28925536"/>
+<property name="gmean" value="29016713"/>
+<property name="gstddev" value="0.008180"/>
+<property name="mean" value="29017591"/>
+<property name="stddev" value="239142"/>
 </properties>
     </testcase>
-    <testcase name="batchDistance_32F/2" value_param="(NORM_L2SQR, false)" status="run" time="0.126" classname="Norm_CrossCheck_batchDistance_32F">
+    <testcase name="batchDistance_L2/1" value_param="(8UC1, true)" status="run" time="0.581" classname="Source_CrossCheck_batchDistance_L2">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -774,15 +692,15 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="12133500"/>
-<property name="median" value="12490550"/>
-<property name="gmean" value="12492175"/>
-<property name="gstddev" value="0.023665"/>
-<property name="mean" value="12495331"/>
-<property name="stddev" value="296743"/>
+<property name="min" value="57862359"/>
+<property name="median" value="57906600"/>
+<property name="gmean" value="58003040"/>
+<property name="gstddev" value="0.004065"/>
+<property name="mean" value="58003473"/>
+<property name="stddev" value="236780"/>
 </properties>
     </testcase>
-    <testcase name="batchDistance_32F/3" value_param="(NORM_L2SQR, true)" status="run" time="0.256" classname="Norm_CrossCheck_batchDistance_32F">
+    <testcase name="batchDistance_L2/2" value_param="(32FC1, false)" status="run" time="0.093" classname="Source_CrossCheck_batchDistance_L2">
 <properties>
 <property name="bytesIn" value="0"/>
 <property name="bytesOut" value="0"/>
@@ -790,12 +708,94 @@ Failed
 <property name="samples" value="10"/>
 <property name="outliers" value="0"/>
 <property name="frequency" value="1000000000"/>
-<property name="min" value="24614164"/>
-<property name="median" value="25210874"/>
-<property name="gmean" value="25467797"/>
-<property name="gstddev" value="0.027059"/>
-<property name="mean" value="25476215"/>
-<property name="stddev" value="692391"/>
+<property name="min" value="9069537"/>
+<property name="median" value="9074728"/>
+<property name="gmean" value="9116918"/>
+<property name="gstddev" value="0.013250"/>
+<property name="mean" value="9117646"/>
+<property name="stddev" value="122828"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_L2/3" value_param="(32FC1, true)" status="run" time="0.184" classname="Source_CrossCheck_batchDistance_L2">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="18249127"/>
+<property name="median" value="18291770"/>
+<property name="gmean" value="18329927"/>
+<property name="gstddev" value="0.007366"/>
+<property name="mean" value="18330378"/>
+<property name="stddev" value="136176"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="Norm_CrossCheck_batchDistance_32F" tests="4" failures="0" disabled="0" errors="0" time="0.945">
+    <testcase name="batchDistance_32F/0" value_param="(NORM_L1, false)" status="run" time="0.223" classname="Norm_CrossCheck_batchDistance_32F">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="22092854"/>
+<property name="median" value="22146490"/>
+<property name="gmean" value="22204223"/>
+<property name="gstddev" value="0.005246"/>
+<property name="mean" value="22204499"/>
+<property name="stddev" value="116754"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_32F/1" value_param="(NORM_L1, true)" status="run" time="0.45" classname="Norm_CrossCheck_batchDistance_32F">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="44388006"/>
+<property name="median" value="44479594"/>
+<property name="gmean" value="44869726"/>
+<property name="gstddev" value="0.021370"/>
+<property name="mean" value="44879083"/>
+<property name="stddev" value="980146"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_32F/2" value_param="(NORM_L2SQR, false)" status="run" time="0.089" classname="Norm_CrossCheck_batchDistance_32F">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8817931"/>
+<property name="median" value="8875494"/>
+<property name="gmean" value="8878275"/>
+<property name="gstddev" value="0.005517"/>
+<property name="mean" value="8878397"/>
+<property name="stddev" value="48985"/>
+</properties>
+    </testcase>
+    <testcase name="batchDistance_32F/3" value_param="(NORM_L2SQR, true)" status="run" time="0.181" classname="Norm_CrossCheck_batchDistance_32F">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="-1"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="17898144"/>
+<property name="median" value="17965398"/>
+<property name="gmean" value="17984225"/>
+<property name="gstddev" value="0.004185"/>
+<property name="mean" value="17984367"/>
+<property name="stddev" value="75305"/>
 </properties>
     </testcase>
   </testsuite>
