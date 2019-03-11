@@ -1,0 +1,89 @@
+NAME           = out7s
+SPEEDTEST_OPTS = --shrink-memory --reprepare --stats --heap 10000000 64 --journal wal --size 5
+CC_OPTS        = -DSQLITE_ENABLE_MEMSYS5 -mllvm -enable-gvn-hoist=true -mllvm -simplifycfg-sink-common=false
+   text	   data	    bss	    dec	    hex	filename
+1231851	   8048	   1864	1241763	 12f2a3	sqlite3.o
+-rwxrwxr-x 1 reshabh reshabh 6550368 Feb 20 16:22 speedtest1
+==28390== Cachegrind, a cache and branch-prediction profiler
+==28390== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==28390== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==28390== Command: ./speedtest1 speedtest1.db --shrink-memory --reprepare --stats --heap 10000000 64 --journal wal --size 5
+==28390== 
+--28390-- warning: L3 cache found, using its data for the LL simulation.
+-- Speedtest1 for SQLite 3.27.1 2019-02-08 13:17:39 0eca3dd3d38b31c92b49ca2d311128
+ 100 - 2500 INSERTs into table with no index.......................    0.562s
+ 110 - 2500 ordered INSERTS with one index/PK......................    0.538s
+ 120 - 2500 unordered INSERTS with one index/PK....................    0.499s
+ 130 - 25 SELECTS, numeric BETWEEN, unindexed......................    0.173s
+ 140 - 10 SELECTS, LIKE, unindexed.................................    0.233s
+ 142 - 10 SELECTS w/ORDER BY, unindexed............................    0.331s
+ 145 - 10 SELECTS w/ORDER BY and LIMIT, unindexed..................    0.210s
+ 150 - CREATE INDEX five times.....................................    0.242s
+ 160 - 500 SELECTS, numeric BETWEEN, indexed.......................    0.328s
+ 161 - 500 SELECTS, numeric BETWEEN, PK............................    0.386s
+ 170 - 500 SELECTS, text BETWEEN, indexed..........................    0.579s
+ 180 - 2500 INSERTS with three indexes.............................    0.333s
+ 190 - DELETE and REFILL one table.................................    0.342s
+ 200 - VACUUM......................................................    0.335s
+ 210 - ALTER TABLE ADD COLUMN, and query...........................    0.072s
+ 230 - 500 UPDATES, numeric BETWEEN, indexed.......................    0.325s
+ 240 - 2500 UPDATES of individual rows.............................    0.841s
+ 250 - One big UPDATE of the whole 2500-row table..................    0.091s
+ 260 - Query added column after filling............................    0.007s
+ 270 - 500 DELETEs, numeric BETWEEN, indexed.......................    0.368s
+ 280 - 2500 DELETEs of individual rows.............................    0.617s
+ 290 - Refill two 2500-row tables using REPLACE....................    0.659s
+ 300 - Refill a 2500-row table using (b&1)==(a&1)..................    0.509s
+ 310 - 500 four-ways joins.........................................    0.899s
+ 320 - subquery in result set......................................    0.211s
+ 400 - 3500 REPLACE ops on an IPK..................................    0.605s
+ 410 - 3500 SELECTS on an IPK......................................    0.937s
+ 500 - 3500 REPLACE on TEXT PK.....................................    0.595s
+ 510 - 3500 SELECTS on a TEXT PK...................................    1.026s
+ 520 - 3500 SELECT DISTINCT........................................    0.126s
+ 980 - PRAGMA integrity_check......................................    0.378s
+ 990 - ANALYZE.....................................................    0.120s
+       TOTAL.......................................................   13.477s
+-- Compile option: COMPILER=clang-8.0.0
+-- Compile option: ENABLE_MEMSYS5
+-- Compile option: THREADSAFE=1
+-- Lookaside Slots Used:        1 (max 84)
+-- Successful lookasides:       721168
+-- Lookaside size faults:       1021
+-- Lookaside OOM faults:        0
+-- Pager Heap Usage:            10240 bytes
+-- Page cache hits:             141447
+-- Page cache misses:           52999
+-- Page cache writes:           1150
+-- Schema Heap Usage:           11328 bytes
+-- Statement Heap Usage:        0 bytes
+-- Memory Used (bytes):         0 (max 4459712)
+-- Outstanding Allocations:     0 (max 655)
+-- Pcache Overflow Bytes:       0 (max 3887104)
+-- Largest Allocation:          262144 bytes
+-- Largest Pcache Allocation:   4360 bytes
+-- Bytes received by read():    239859911
+-- Bytes sent to write():       6338943
+-- Read() system calls:         112685
+-- Write() system calls:        59440
+-- Bytes rcvd from storage:     0
+-- Bytes sent to storage:       6426624
+-- Cancelled write bytes:       32768
+==28390== 
+==28390== I   refs:      1,054,717,026
+==28390== I1  misses:       31,710,431
+==28390== LLi misses:            8,244
+==28390== I1  miss rate:          3.01%
+==28390== LLi miss rate:          0.00%
+==28390== 
+==28390== D   refs:        486,132,674  (322,913,231 rd   + 163,219,443 wr)
+==28390== D1  misses:        6,141,298  (  4,361,477 rd   +   1,779,821 wr)
+==28390== LLd misses:           57,985  (     15,391 rd   +      42,594 wr)
+==28390== D1  miss rate:           1.3% (        1.4%     +         1.1%  )
+==28390== LLd miss rate:           0.0% (        0.0%     +         0.0%  )
+==28390== 
+==28390== LL refs:          37,851,729  ( 36,071,908 rd   +   1,779,821 wr)
+==28390== LL misses:            66,229  (     23,635 rd   +      42,594 wr)
+==28390== LL miss rate:            0.0% (        0.0%     +         0.0%  )
+   text	   data	    bss	    dec	    hex	filename
+1231851	   8048	   1864	1241763	 12f2a3	sqlite3.o
