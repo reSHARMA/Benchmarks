@@ -18,10 +18,10 @@
 
 ### Binary size results 
 
-The size was calculated as described at [Measuring the size](../readme.md).
+The size was calculated as described at [Measuring the size](../README.md).
 The results are available at [size-results](./size/README.md)
 
 ### Performance results
 
-The performance was calculated as described at [Measuring the performance](../readme.md)
+The performance was calculated as described at [Measuring the performance](../README.md)
 The results are available at [perf-results](./perf/README.md)
