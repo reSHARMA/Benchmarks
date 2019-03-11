@@ -1,0 +1,232 @@
+                           SPEC(R) CINT2006 Summary
+                                    -- --
+                           Fri Mar  8 11:56:58 2019
+
+CPU2006 License: --                                      Test date: Mar-2019
+Test sponsor: --                             Hardware availability: --      
+Tested by:    --                             Software availability: --      
+
+                Base     Base       Base        Peak     Peak       Peak
+Benchmarks      Ref.   Run Time     Ratio       Ref.   Run Time     Ratio
+-------------- ------  ---------  ---------    ------  ---------  ---------
+400.perlbench    9770        234       41.8 S                                  
+400.perlbench    9770        237       41.2 *                                  
+400.perlbench    9770        274       35.7 S                                  
+401.bzip2        9650        402       24.0 S                                  
+401.bzip2        9650        337       28.6 S                                  
+401.bzip2        9650        353       27.3 *                                  
+403.gcc          8050        266       30.2 S                                  
+403.gcc          8050        220       36.5 S                                  
+403.gcc          8050        222       36.3 *                                  
+429.mcf          9120        350       26.0 S                                  
+429.mcf          9120        262       34.8 S                                  
+429.mcf          9120        271       33.7 *                                  
+445.gobmk       10490        376       27.9 S                                  
+445.gobmk       10490        352       29.8 S                                  
+445.gobmk       10490        354       29.6 *                                  
+456.hmmer        9330        311       30.0 S                                  
+456.hmmer        9330        281       33.2 *                                  
+456.hmmer        9330        281       33.2 S                                  
+458.sjeng       12100        386       31.4 S                                  
+458.sjeng       12100        347       34.9 S                                  
+458.sjeng       12100        348       34.8 *                                  
+462.libquantum  20720        405       51.2 S                                  
+462.libquantum  20720        347       59.7 S                                  
+462.libquantum  20720        391       53.0 *                                  
+464.h264ref     22130        398       55.5 *                                  
+464.h264ref     22130        372       59.5 S                                  
+464.h264ref     22130        401       55.1 S                                  
+471.omnetpp      6250        358       17.4 *                                  
+471.omnetpp      6250        308       20.3 S                                  
+471.omnetpp      6250        364       17.2 S                                  
+473.astar        7020        298       23.5 S                                  
+473.astar        7020        343       20.5 S                                  
+473.astar        7020        331       21.2 *                                  
+483.xalancbmk    6900        180       38.4 S                                  
+483.xalancbmk    6900        216       32.0 S                                  
+483.xalancbmk    6900        205       33.7 *                                  
+==============================================================================
+400.perlbench    9770        237       41.2 *                                  
+401.bzip2        9650        353       27.3 *                                  
+403.gcc          8050        222       36.3 *                                  
+429.mcf          9120        271       33.7 *                                  
+445.gobmk       10490        354       29.6 *                                  
+456.hmmer        9330        281       33.2 *                                  
+458.sjeng       12100        348       34.8 *                                  
+462.libquantum  20720        391       53.0 *                                  
+464.h264ref     22130        398       55.5 *                                  
+471.omnetpp      6250        358       17.4 *                                  
+473.astar        7020        331       21.2 *                                  
+483.xalancbmk    6900        205       33.7 *                                  
+ SPECint(R)_base2006                   33.1
+ SPECint2006                                                        Not Run
+
+
+                                   HARDWARE
+                                   --------
+            CPU Name: Intel Core i5-4670
+ CPU Characteristics:  
+             CPU MHz: --
+                 FPU: --
+      CPU(s) enabled: -1 cores, 1 chip, -1 cores/chip, -1 threads/core
+    CPU(s) orderable: --
+       Primary Cache: --
+     Secondary Cache: --
+            L3 Cache: --
+         Other Cache: --
+              Memory: 7.461 GB fixme: If using DDR3, format is:
+                      'N GB (M x N GB nRxn PCn-nnnnnR-n, ECC)'
+      Disk Subsystem: 428 GB  add more disk info here
+      Other Hardware: --
+
+
+                                   SOFTWARE
+                                   --------
+    Operating System: Ubuntu 16.04.4 LTS
+                      4.15.0-45-generic
+            Compiler: --
+       Auto Parallel: No
+         File System: ext4
+        System State: Run level 5 (add definition here)
+       Base Pointers: --
+       Peak Pointers: Not Applicable
+      Other Software: --
+
+
+                                Platform Notes
+                                --------------
+     Sysinfo program /home/reshabh/SPEC_BENCHMARKS/Docs/sysinfo
+     $Rev: 6775 $ $Date:: 2011-08-16 #$ 8787f7622badcf24e01c368b1db4377c
+     running on nisha Fri Mar  8 11:57:00 2019
+    
+     This section contains SUT (System Under Test) info as seen by
+     some common utilities.  To remove or add to this section, see:
+       http://www.spec.org/cpu2006/Docs/config.html#sysinfo
+    
+     From /proc/cpuinfo
+        model name : Intel(R) Core(TM) i5-4670 CPU @ 3.40GHz
+           1 "physical id"s (chips)
+           4 "processors"
+        cores, siblings (Caution: counting these is hw and system dependent.  The
+        following excerpts from /proc/cpuinfo might not be reliable.  Use with
+        caution.)
+           cpu cores : 4
+           siblings  : 4
+           physical 0: cores 0 1 2 3
+        cache size : 6144 KB
+    
+     From /proc/meminfo
+        MemTotal:        7823384 kB
+        HugePages_Total:       0
+        Hugepagesize:       2048 kB
+    
+     /usr/bin/lsb_release -d
+        Ubuntu 16.04.4 LTS
+    
+     From /etc/*release* /etc/*version*
+        debian_version: stretch/sid
+        os-release:
+           NAME="Ubuntu"
+           VERSION="16.04.4 LTS (Xenial Xerus)"
+           ID=ubuntu
+           ID_LIKE=debian
+           PRETTY_NAME="Ubuntu 16.04.4 LTS"
+           VERSION_ID="16.04"
+           HOME_URL="http://www.ubuntu.com/"
+           SUPPORT_URL="http://help.ubuntu.com/"
+    
+     uname -a:
+        Linux nisha 4.15.0-45-generic #48~16.04.1-Ubuntu SMP Tue Jan 29 18:03:48 UTC
+        2019 x86_64 x86_64 x86_64 GNU/Linux
+    
+     run-level 5 Feb 18 05:47
+    
+     SPEC is set to: /home/reshabh/SPEC_BENCHMARKS
+        Filesystem     Type  Size  Used Avail Use% Mounted on
+        /dev/sda9      ext4  428G  396G   11G  98% /home
+    
+     (End of data from sysinfo program)
+
+                           Base Compiler Invocation
+                           ------------------------
+C benchmarks: 
+     /home/reshabh/llvm-toolchain-8_8~svn353031/build-llvm/bin/clang
+
+C++ benchmarks: 
+     /home/reshabh/llvm-toolchain-8_8~svn353031/build-llvm/bin/clang++
+
+
+                            Base Portability Flags
+                            ----------------------
+  400.perlbench: -DSPEC_CPU_LP64 -DSPEC_CPU_LINUX_X64
+      401.bzip2: -DSPEC_CPU_LP64
+        403.gcc: -DSPEC_CPU_LP64
+        429.mcf: -DSPEC_CPU_LP64
+      445.gobmk: -DSPEC_CPU_LP64
+      456.hmmer: -DSPEC_CPU_LP64
+      458.sjeng: -DSPEC_CPU_LP64
+ 462.libquantum: -DSPEC_CPU_LP64 -DSPEC_CPU_LINUX
+    464.h264ref: -DSPEC_CPU_LP64
+    471.omnetpp: -DSPEC_CPU_LP64
+      473.astar: -DSPEC_CPU_LP64
+  483.xalancbmk: -DSPEC_CPU_LP64 -DSPEC_CPU_LINUX
+
+
+                           Base Optimization Flags
+                           -----------------------
+C benchmarks:
+
+  400.perlbench: -std=gnu89 -v -Ofast -fno-strict-aliasing -mllvm
+                 -enable-gvn-hoist=true -simplifycfg-sink-common=false -stats
+                 -w -DSPEC_CPU2006(*) -DSPEC_CPU_NOINLINE(*)
+
+      401.bzip2: -std=gnu89 -v -Ofast -fno-strict-aliasing -mllvm
+                 -enable-gvn-hoist=true -simplifycfg-sink-common=false -stats
+                 -w
+
+        403.gcc: -std=gnu89 -v -Ofast -fno-strict-aliasing -mllvm
+                 -enable-gvn-hoist=true -simplifycfg-sink-common=false -stats
+                 -w -DSPEC_CPU_LINUX(*)
+
+        429.mcf: -std=gnu89 -v -Ofast -fno-strict-aliasing -mllvm
+                 -enable-gvn-hoist=true -simplifycfg-sink-common=false -stats
+                 -w -DSPEC_CPU_LINUX_X64(*) -DSPEC_CPU2006(*)
+                 -DSPEC_CPU_NOINLINE(*)
+
+      445.gobmk: Same as 401.bzip2
+
+      456.hmmer: Same as 401.bzip2
+
+      458.sjeng: Same as 401.bzip2
+
+ 462.libquantum: Same as 401.bzip2
+
+    464.h264ref: -std=gnu89 -v -Ofast -fno-strict-aliasing -mllvm
+                 -enable-gvn-hoist=true -simplifycfg-sink-common=false -stats
+                 -w -fsigned-char
+
+C++ benchmarks: 
+     -std=c++98 -v -Ofast -fno-strict-aliasing -mllvm -enable-gvn-hoist=true
+     -simplifycfg-sink-common=false -stats -w
+
+(*) Indicates optimization flags found in portability variables
+
+                               Base Other Flags
+                               ----------------
+C benchmarks:
+
+        403.gcc: -Dalloca=_alloca
+
+      456.hmmer: -funsigned-char
+
+
+    SPEC and SPECint are registered trademarks of the Standard Performance
+    Evaluation Corporation.  All other brand and product names appearing
+    in this result are trademarks or registered trademarks of their
+    respective holders.
+-----------------------------------------------------------------------------
+For questions about this result, please contact the tester.
+For other inquiries, please contact webmaster@spec.org.
+Copyright 2006-2019 Standard Performance Evaluation Corporation
+Tested with SPEC CPU2006 v1.2.
+Report generated on Fri Mar  8 15:45:45 2019 by CPU2006 ASCII formatter v6400.
