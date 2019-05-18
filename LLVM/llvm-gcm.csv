@@ -1,4 +1,4 @@
-O3,O3+gcm,binary,Diff in size (more is good),Percentage decrease (more is good)
+O3 binary size (in bytes),O3+gcm binary size (in bytes),binary name,Decrease in binary size in bytes (more is good),Percentage decrease in size(more is good)
 20590888,20582240,arcmt-test,8648,0.04199916
 32039504,32046336,bugpoint,-6832,-0.021323676
 12912,12912,c-arcmt-test,0,0
